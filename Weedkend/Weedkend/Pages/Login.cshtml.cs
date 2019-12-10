@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Weedkend.Models;
@@ -18,18 +19,24 @@ namespace Weedkend
         {
             using (var context = new MyContext())
             {
-                var user = context.Set<Account>().FirstOrDefault(u => u.UserName == username && u.Password == password && u.Status.Equals("active"));
-                var role = context.Set<Role>().FirstOrDefault(r => r.RoleId == user.Role);
+                var user = context.Set<Account>().FirstOrDefault(u => (u.UserName == username || u.Email == username) && u.Password == password && u.Status.Equals("active"));
+
                 if (user == null)
                 {
-                    TempData["ERROR"] = "Invalid username password!";
+                    TempData["ERROR"] = "Username or password is incorrect!";
                     return Page();
                 }
-                else if (role.RoleName.Equals("admin"))
+                else
                 {
+                    var role = context.Set<Role>().FirstOrDefault(r => r.RoleId == user.Role);
+                    HttpContext.Session.SetString("username", user.FullName);
+                    HttpContext.Session.SetString("role", role.RoleName);
+                    HttpContext.Session.SetString("img", user.ImgAvatar);
+
                     return Redirect("/homeadmin");
+
                 }
-                else return Redirect("/homepage");
+
             }
         }
     }

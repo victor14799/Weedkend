@@ -55,6 +55,8 @@ namespace Weedkend.Models
                     .IsRequired()
                     .HasMaxLength(50);
 
+                entity.Property(e => e.ImgAvatar).IsUnicode(false);
+
                 entity.Property(e => e.Password)
                     .IsRequired()
                     .HasMaxLength(50)
