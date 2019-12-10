@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Weedkend.Models
 {
@@ -11,6 +12,8 @@ namespace Weedkend.Models
         }
 
         public string BrandId { get; set; }
+
+        [Display(Name = "Brand Name")]
         public string BrandName { get; set; }
 
         public ICollection<Product> Product { get; set; }

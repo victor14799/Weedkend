@@ -1,0 +1,73 @@
+﻿@page
+@model Weedkend.Pages.Admin.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Product.ProductId" />
+            <div class="form-group">
+                <label asp-for="Product.ProName" class="control-label"></label>
+                <input asp-for="Product.ProName" class="form-control" />
+                <span asp-validation-for="Product.ProName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.ProBrand" class="control-label"></label>
+                <select asp-for="Product.ProBrand" class="form-control" asp-items="@((List<SelectListItem>)ViewData["ProBrand"])"></select>
+                <span asp-validation-for="Product.ProBrand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Category" class="control-label"></label>
+                <select asp-for="Product.Category" class="form-control" asp-items="@((List<SelectListItem>)ViewData["ProCategory"])"></select>
+                <span asp-validation-for="Product.Category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Price" class="control-label"></label>
+                <input asp-for="Product.Price" class="form-control" />
+                <span asp-validation-for="Product.Price" class="text-danger"></span>
+            </div>
+            @{ 
+                var imgUrl = "/images/" + Model.Product.ImgUrl;
+            }
+            <div class="form-group">
+                <label asp-for="Product.ImgUrl" class="control-label"></label>
+                <img asp-append-version="true" src="@imgUrl" height="50" width="50" />
+                <input asp-for="Product.ImgUrl" type="file" value="@Model.Product.ImgUrl" class="form-control" />
+                @*<span asp-validation-for="Product.ImgUrl" class="text-danger"></span>*@
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Description" class="control-label"></label>
+                <input asp-for="Product.Description" class="form-control" />
+                <span asp-validation-for="Product.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Status" class="control-label"></label>
+                <select asp-for="Product.Status" class="form-control" >
+                    <option value="inStock">in stock</option>
+                    <option value="outOfStock">out of stock</option>
+                </select>
+                <span asp-validation-for="Product.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

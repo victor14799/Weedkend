@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Weedkend.Pages.Admin
 {
-    public class AdminHomePageModel : PageModel
+    public class IndexModel : PageModel
     {
         public void OnGet()
         {
