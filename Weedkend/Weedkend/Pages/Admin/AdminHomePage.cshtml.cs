@@ -12,10 +12,30 @@ namespace Weedkend.Pages.Admin
     {
         public string FullName { get; set; }
         public string Avatar { get; set; }
-        public void OnGet()
+
+        public string Role { get; set; }
+        public IActionResult OnGet()
         {
             FullName = HttpContext.Session.GetString("username");
             Avatar = HttpContext.Session.GetString("img");
+            Role = HttpContext.Session.GetString("role");
+
+            if (string.IsNullOrEmpty(FullName))
+            {
+                return Redirect("/login");
+            }
+
+            if (Role == "admin")
+            {
+                return Page();
+            }
+            else return Redirect("/notAccess");
+        }
+
+        public IActionResult OnGetLogout()
+        {
+            HttpContext.Session.Clear();
+            return Redirect("/login");
         }
     }
 }
