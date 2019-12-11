@@ -33,10 +33,12 @@ namespace Weedkend
                     HttpContext.Session.SetString("role", role.RoleName);
                     HttpContext.Session.SetString("img", user.ImgAvatar);
 
-                    return Redirect("/homeadmin");
-
+                    if (role.RoleName.Equals("admin"))
+                    {
+                        return Redirect("/Admin/adminpage");
+                    }
+                    else return Redirect("/");
                 }
-
             }
         }
     }

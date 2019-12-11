@@ -110,3 +110,9 @@ D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Weedkend
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Weedkend.dll
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Weedkend.pdb
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Weedkend.csproj.CopyComplete
+C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Index.cshtml.g.cs
+C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Product\Create.cshtml.g.cs
+C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Product\Delete.cshtml.g.cs
+C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Product\Details.cshtml.g.cs
+C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Product\Edit.cshtml.g.cs
+C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Product\Index.cshtml.g.cs
