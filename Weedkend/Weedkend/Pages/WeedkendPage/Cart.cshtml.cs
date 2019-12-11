@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Weedkend.Pages.Admin
+namespace Weedkend.Pages.WeedkendPage
 {
-    public class IndexModel : PageModel
+    public class CartModel : PageModel
     {
         public void OnGet()
         {

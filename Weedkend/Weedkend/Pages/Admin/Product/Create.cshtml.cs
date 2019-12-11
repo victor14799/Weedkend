@@ -54,6 +54,7 @@ namespace Weedkend.Pages.Admin.Product
                 }
 
                 Product.Status = "inStock";
+
                 context.Product.Add(Product);
                 await context.SaveChangesAsync();
             }
