@@ -20,5 +20,6 @@ namespace Weedkend.Models
 
             return value == null ? default(T) : JsonConvert.DeserializeObject<T>(value);
         }
+
     }
 }
