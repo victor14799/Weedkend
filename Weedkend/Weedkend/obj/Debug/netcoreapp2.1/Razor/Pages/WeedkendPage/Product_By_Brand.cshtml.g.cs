@@ -85,12 +85,12 @@ using Weedkend;
             WriteLiteral("lex-left -->\r\n\r\n        <div class=\"flex-col medium-text-center\">\r\n\r\n\r\n            <p class=\"woocommerce-result-count hide-for-medium\">\r\n                Showing all 12 results\r\n            </p>\r\n            ");
             EndContext();
             BeginContext(1397, 665, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3406116ee933477f8e021c805574ef64", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c1dfa928e1141b4bfa9fc73b0eb9d05", async() => {
                 BeginContext(1445, 114, true);
                 WriteLiteral("\r\n                <select name=\"orderby\" class=\"orderby\" aria-label=\"Đơn hàng của cửa hàng\">\r\n                    ");
                 EndContext();
                 BeginContext(1559, 63, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "41ef4fd507554287a6e02bae125bce46", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f1df322f45bf4bdb893ca90f62c69b6b", async() => {
                     BeginContext(1586, 27, true);
                     WriteLiteral("Thứ tự theo mức độ phổ biến");
                     EndContext();
@@ -112,7 +112,7 @@ using Weedkend;
                 WriteLiteral("\r\n                    ");
                 EndContext();
                 BeginContext(1644, 57, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0cfcafdc35f7489cacaf98da3b25bd6c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "220e76f9a3714a0f837eebdfe25439af", async() => {
                     BeginContext(1667, 25, true);
                     WriteLiteral("Thứ tự theo điểm đánh giá");
                     EndContext();
@@ -134,7 +134,7 @@ using Weedkend;
                 WriteLiteral("\r\n                    ");
                 EndContext();
                 BeginContext(1723, 38, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "526f0cdf04b7405d89d6f8e2e0d52e65", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e56ddb83436d4dccbdefda8d29405dbe", async() => {
                     BeginContext(1744, 8, true);
                     WriteLiteral("Mới nhất");
                     EndContext();
@@ -156,7 +156,7 @@ using Weedkend;
                 WriteLiteral("\r\n                    ");
                 EndContext();
                 BeginContext(1783, 80, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bceadf2f5d4a4ea29befe123191d1e2e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e387524b071746e190f2caedbbb142e4", async() => {
                     BeginContext(1825, 29, true);
                     WriteLiteral("Thứ tự theo giá: thấp đến cao");
                     EndContext();
@@ -179,7 +179,7 @@ using Weedkend;
                 WriteLiteral("\r\n                    ");
                 EndContext();
                 BeginContext(1885, 67, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "97d824a6dd454738aea1ed2b80212ba6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "abfdf6b7deda4c44b5d438cb414f6745", async() => {
                     BeginContext(1912, 31, true);
                     WriteLiteral("Thứ tự theo giá: cao xuống thấp");
                     EndContext();
@@ -233,7 +233,7 @@ using Weedkend;
                     <span class=""widget-title shop-sidebar"">TÌM KIẾM</span><div class=""is-divider small""></div>");
             EndContext();
             BeginContext(2533, 1020, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb0772efa0694d6a84aa5020eb2459af", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f2160b5bd4d448ab23183e8607e5507", async() => {
                 BeginContext(2614, 932, true);
                 WriteLiteral(@"
                         <div class=""flex-row relative"">
@@ -395,7 +395,7 @@ using Weedkend;
                     <span class=""widget-title shop-sidebar"">Lọc theo giá</span><div class=""is-divider small""></div>");
             EndContext();
             BeginContext(17596, 1480, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5f69ff6b30e64329a48f2a54a1303784", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aaebaf91fb2f47a58c694a2481e72e71", async() => {
                 BeginContext(17678, 1391, true);
                 WriteLiteral(@"
                         <div class=""price_slider_wrapper"">

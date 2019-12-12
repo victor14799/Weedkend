@@ -14,12 +14,15 @@ namespace Weedkend.Pages.WeedkendPage
         public double Total { get; set; }
         public void OnGet()
         {
+
             cart = SessionExtensions.Get<List<Item>>(HttpContext.Session, "cart");
             if (cart != null)
+            {
                 Total = cart.Sum(i => i.Product.Price * i.Quantity);
+            }
 
         }
-        public IActionResult OnGetBuyNow(string id)
+        public IActionResult OnPostBuyNow(string id, int quantity)
         {
             var productModel = new ProductModel();
             cart = SessionExtensions.Get<List<Item>>(HttpContext.Session, "cart");
@@ -29,7 +32,7 @@ namespace Weedkend.Pages.WeedkendPage
                 cart.Add(new Item
                 {
                     Product = productModel.Find(id),
-                    Quantity = 1
+                    Quantity = quantity
                 });
                 SessionExtensions.Set(HttpContext.Session, "cart", cart);
             }
@@ -41,7 +44,7 @@ namespace Weedkend.Pages.WeedkendPage
                     cart.Add(new Item
                     {
                         Product = productModel.Find(id),
-                        Quantity = 1
+                        Quantity = quantity
                     });
                 }
                 else
@@ -57,6 +60,10 @@ namespace Weedkend.Pages.WeedkendPage
             cart = SessionExtensions.Get<List<Item>>(HttpContext.Session, "cart");
             int index = Exists(cart, id);
             cart.RemoveAt(index);
+            if (cart.Count == 0)
+            {
+                cart = null;
+            }
             SessionExtensions.Set(HttpContext.Session, "cart", cart);
             return RedirectToPage("Cart");
         }

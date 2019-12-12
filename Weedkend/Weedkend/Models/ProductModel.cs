@@ -11,23 +11,10 @@ namespace Weedkend.Models
 
         public ProductModel()
         {
-            Products = new List<Product>()
+            using (var context = new MyContext())
             {
-                new Product
-                {
-                    ProductId =new Guid(), ProName="Sửa rửa mặt",Price=10000, 
-                },
-                new Product
-                {
-                    ProductId =new Guid(), ProName="Sửa",Price=15000, 
-                },new Product
-                {
-                    ProductId =new Guid(), ProName="Sửa rửa mặt",Price=150000, 
-                },new Product
-                {
-                    ProductId =new Guid(), ProName="Sửa rửa mặt",Price=10000,
-                }
-            };
+                Products = context.Set<Product>().ToList();
+            }
 
         }
         public List<Product> FindAll()
