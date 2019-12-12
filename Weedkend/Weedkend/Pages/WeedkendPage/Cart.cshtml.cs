@@ -15,7 +15,8 @@ namespace Weedkend.Pages.WeedkendPage
         public void OnGet()
         {
             cart = SessionExtensions.Get<List<Item>>(HttpContext.Session, "cart");
-            Total = cart.Sum(i => i.Product.Price * i.Quantity);
+            if (cart != null)
+                Total = cart.Sum(i => i.Product.Price * i.Quantity);
 
         }
         public IActionResult OnGetBuyNow(string id)

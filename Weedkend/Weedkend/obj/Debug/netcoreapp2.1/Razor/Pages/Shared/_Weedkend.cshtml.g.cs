@@ -58,7 +58,7 @@ using Weedkend;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(25, 7662, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c2dcf7370deb4d1bb6e7f493aa948580", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "345c94970f314a8eba4c71d8e816c97d", async() => {
                 BeginContext(31, 1357, true);
                 WriteLiteral(@"
   <!-- <link rel=""stylesheet"" href=""file1.css"">
@@ -105,7 +105,7 @@ using Weedkend;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(7691, 53194, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "870e38c9ff4047298231c55321fed6ae", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e85694e2d2e241faa108b1514b741314", async() => {
                 BeginContext(7901, 4742, true);
                 WriteLiteral(@"<div id=""yith-wcwl-popup-message"" style=""display: none;""><div id=""yith-wcwl-message""></div></div>
 
@@ -179,7 +179,7 @@ using Weedkend;
       <div class=""searchform-wrapper ux-search-box relative form-flat is-normal"">");
                 EndContext();
                 BeginContext(12643, 848, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3632776da60740b38428ca4a38d52f96", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "40ebc69d068f458aa7d7258105b96520", async() => {
                     BeginContext(12724, 760, true);
                     WriteLiteral(@"
       <div class=""flex-row relative"">
@@ -543,7 +543,7 @@ Write(RenderBody());
       <div class=""searchform-wrapper ux-search-box relative form-flat is-normal"">");
                 EndContext();
                 BeginContext(45022, 848, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d5d5f6a884c414595b4c4c19194f043", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "48b6e045920d4242999af45c8a133925", async() => {
                     BeginContext(45103, 760, true);
                     WriteLiteral(@"
       <div class=""flex-row relative"">

@@ -96,7 +96,7 @@ using Weedkend;
             WriteLiteral("</td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(512, 73, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "873aedb9afb44dcfa85553a4d87f2296", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "58ec162c83a74e9691d4afa90726d0e9", async() => {
                 BeginContext(574, 7, true);
                 WriteLiteral("Buy Now");
                 EndContext();

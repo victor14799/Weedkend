@@ -2,6 +2,7 @@
 @model Weedkend.Pages.WeedkendPage.CartModel
 @{
     ViewData["Title"] = "Cart";
+    var cart = Model.cart;
     Layout = "~/Pages/Shared/_Weedkend.cshtml";
 }
 
@@ -26,9 +27,9 @@
         <div class="woocommerce">
             <div class="woocommerce-notices-wrapper">
                 <div class="woocommerce-message message-wrapper" role="alert">
-                    <div class="message-container container success-color medium-text-center">
+                    @*<div class="message-container container success-color medium-text-center">
                         <i class="icon-checkmark"></i>			Customer matched zone "Hồ Chí Minh"
-                    </div>
+                    </div>*@
                 </div>
             </div><div class="woocommerce row row-large row-divided">
                 <div class="col large-7 pb-0 ">
@@ -39,16 +40,20 @@
 
 
                             <table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
-                                <thead>
-                                    <tr>
-                                        <th class="product-name" colspan="3">Sản phẩm</th>
-                                        <th class="product-price">Giá</th>
-                                        <th class="product-quantity">Số lượng</th>
-                                        <th class="product-subtotal">Tổng</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @{ foreach (var item in Model.cart)
+                                @if (cart != null)
+                                {
+                                    <thead>
+                                        <tr>
+                                            <th class="product-name" colspan="3">Sản phẩm</th>
+                                            <th class="product-price">Giá</th>
+                                            <th class="product-quantity">Số lượng</th>
+                                            <th class="product-subtotal">Tổng</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+
+                                        @foreach (var item in Model.cart)
                                         {
                                             <tr class="woocommerce-cart-form__cart-item cart_item">
 
@@ -89,24 +94,34 @@
                                                 </td>
                                             </tr>
                                         }
-                                    }
-                                    <tr>
-                                        <td colspan="6" class="actions clear">
+
+                                        <tr>
+                                            <td colspan="6" class="actions clear">
 
 
-                                            <div class="continue-shopping pull-left text-left">
-                                                <a class="button-continue-shopping button primary is-outline" href="https://classic.vn/shop/">
-                                                    ←&nbsp;Tiếp tục xem sản phẩm
-                                                </a>
-                                            </div>
+                                                <div class="continue-shopping pull-left text-left">
+                                                    <a class="button-continue-shopping button primary is-outline" href="https://classic.vn/shop/">
+                                                        ←&nbsp;Tiếp tục xem sản phẩm
+                                                    </a>
+                                                </div>
 
-                                            <button type="submit" class="button primary mt-0 pull-left small" name="update_cart" value="Cập nhật giỏ hàng" disabled="">Cập nhật giỏ hàng</button>
+                                                <button type="submit" class="button primary mt-0 pull-left small" name="update_cart" value="Cập nhật giỏ hàng" disabled="">Cập nhật giỏ hàng</button>
 
-                                            <input type="hidden" id="woocommerce-cart-nonce" name="woocommerce-cart-nonce" value="80c4360d54"><input type="hidden" name="_wp_http_referer" value="/cart/">
-                                        </td>
-                                    </tr>
+                                                <input type="hidden" id="woocommerce-cart-nonce" name="woocommerce-cart-nonce" value="80c4360d54"><input type="hidden" name="_wp_http_referer" value="/cart/">
+                                            </td>
+                                        </tr>
 
-                                </tbody>
+                                    </tbody>
+                                }
+                                else
+                                {
+                                    <p>Không có sản phẩm trong giỏ hàng</p>
+                                    <div class="continue-shopping pull-left text-left">
+                                        <a class="button-continue-shopping button primary is-outline" href="https://classic.vn/shop/">
+                                            ←&nbsp;Tiếp tục xem sản phẩm
+                                        </a>
+                                    </div>
+                                }
                             </table>
                         </div>
                     </form>
