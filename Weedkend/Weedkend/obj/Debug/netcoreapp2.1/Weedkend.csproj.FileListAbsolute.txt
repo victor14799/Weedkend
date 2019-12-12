@@ -113,3 +113,5 @@ D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pa
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Product_By_Brand.g.cshtml.cs
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Home.g.cshtml.cs
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Cart.g.cshtml.cs
+D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Checkout_2.g.cshtml.cs
+D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Product_Detail.g.cshtml.cs
