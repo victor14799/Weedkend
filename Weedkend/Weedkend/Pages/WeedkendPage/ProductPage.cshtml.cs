@@ -15,8 +15,11 @@ namespace Weedkend
 
         public void OnGet()
         {
+            double TotalPrice = SessionExtensions.Get<double>(HttpContext.Session, "total");
+            ViewData["Total"] = TotalPrice.ToString("#,###");
             using (var context = new MyContext())
             {
+
                 Products = context.Product.Include(p => p.CategoryNavigation).ToList();
             }
         }

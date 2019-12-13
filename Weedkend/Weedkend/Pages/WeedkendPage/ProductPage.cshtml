@@ -1,7 +1,7 @@
-﻿@page "/productPage"
+﻿@page "/products"
 @model Weedkend.ProductPageModel
 @{
-    ViewData["Title"] = "ProductPage";
+    ViewData["Title"] = "Product Page";
     Layout = "~/Pages/Shared/_Weedkend.cshtml";
     var Products = @Model.Products;
 }
@@ -232,7 +232,7 @@
                                             </p>
                                             <p class="name product-title"><a href="/products/{@item.ProductId}"> @item.ProName&amp;Guy</a></p>
                                         </div><div class="price-wrapper">
-                                            <span class="price"><span class="woocommerce-Price-amount amount">@item.Price&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
+                                            <span class="price"><span class="woocommerce-Price-amount amount">@item.Price.ToString("#,###")&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
                                         </div>
                                     </div><!-- box-text -->
                                 </div><!-- box -->

@@ -59,7 +59,7 @@ using Weedkend;
             WriteLiteral("\r\n<h1>Index</h1>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(183, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d21e5ff9e288491cab59d5cedabf0a25", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7a71ab67ace242f9a59a559fadcc3ba6", async() => {
                 BeginContext(204, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -221,7 +221,7 @@ WriteAttributeValue("", 1735, url, 1735, 4, false);
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(1890, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a496997eed6a4c549c785add36e67a0d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "129c7660d8594e2da0a649dbee288b21", async() => {
                 BeginContext(1942, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -256,7 +256,7 @@ WriteAttributeValue("", 1735, url, 1735, 4, false);
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1970, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f1436acce1954e4f8f78be08b02a11c0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ba09633bfdba498d81af703b02096b5c", async() => {
                 BeginContext(2025, 7, true);
                 WriteLiteral("Details");
                 EndContext();

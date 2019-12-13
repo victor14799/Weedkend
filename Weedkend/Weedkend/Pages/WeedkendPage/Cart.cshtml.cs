@@ -19,6 +19,9 @@ namespace Weedkend.Pages.WeedkendPage
             if (cart != null)
             {
                 Total = cart.Sum(i => i.Product.Price * i.Quantity);
+                SessionExtensions.Set(HttpContext.Session, "total", Total);
+                double TotalPrice = SessionExtensions.Get<double>(HttpContext.Session, "total");
+                ViewData["Total"] = TotalPrice.ToString("#,###");
             }
 
         }

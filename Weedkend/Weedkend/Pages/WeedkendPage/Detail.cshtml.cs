@@ -13,7 +13,9 @@ namespace Weedkend
         public Product product { get; set; }
         public void OnGet(string id)
         {
-            using(var context = new MyContext())
+            double TotalPrice = SessionExtensions.Get<double>(HttpContext.Session, "total");
+            ViewData["Total"] = TotalPrice.ToString("#,###");
+            using (var context = new MyContext())
             {
                 product = context.Set<Product>().FirstOrDefault(p => p.ProductId.ToString() == id);
             }
