@@ -24,13 +24,19 @@ namespace Weedkend.Pages.WeedkendPage
         {
             ProductGroup = new List<List<Weedkend.Models.Product>>();
             List<Weedkend.Models.Product> HairProducts = await _context.Product
-                                                        .Where(p => p.Category == "3")
+                                                        .Where(p => p.Category == "1")
+                                                        .Include(p => p.CategoryNavigation)
+                                                        .Include(p => p.ProBrandNavigation)
                                                         .ToListAsync();
             List<Weedkend.Models.Product> SkinProducts = await _context.Product
-                                                        .Where(p => p.Category == "1")
+                                                        .Where(p => p.Category == "2")
+                                                        .Include(p => p.CategoryNavigation)
+                                                        .Include(p => p.ProBrandNavigation)
                                                         .ToListAsync();
             List<Weedkend.Models.Product> PerfumeProducts = await _context.Product
-                                                        .Where(p => p.Category == "2")
+                                                        .Where(p => p.Category == "4")
+                                                        .Include(p => p.CategoryNavigation)
+                                                        .Include(p => p.ProBrandNavigation)
                                                         .ToListAsync();
             ProductGroup.Add(HairProducts);
             ProductGroup.Add(SkinProducts);
