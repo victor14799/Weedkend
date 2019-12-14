@@ -57,7 +57,7 @@
                                                 <td class="product-remove">
                                                     <a asp-page-handler="delete" asp-route-id="@item.Product.ProductId.ToString()" class="remove" aria-label="Xóa sản phẩm này" data-product_id="1761" data-product_sku="gatsby-moving-rubber-gatsby-xam">×</a>
                                                 </td>
-                                                
+
 
                                                 <td class="product-thumbnail">
                                                     <a href="https://classic.vn/shop/gatsby-moving-rubber-gatsby-xam/">
@@ -114,11 +114,12 @@
                                 }
                                 else
                                 {
-                                    <p>Không có sản phẩm trong giỏ hàng</p>
-                                    <div class="continue-shopping pull-left text-left">
-                                        <a class="button-continue-shopping button primary is-outline" href="/products">
-                                            ←&nbsp;Tiếp tục xem sản phẩm
-                                        </a>
+                                    <div class="text-center pt pb">
+                                        <div class="woocommerce-notices-wrapper"></div><p class="cart-empty woocommerce-info">Chưa có sản phẩm nào trong giỏ hàng.</p>		<p class="return-to-shop">
+                                            <a class="button primary wc-backward" href="/products">
+                                                Quay trở lại cửa hàng
+                                            </a>
+                                        </p>
                                     </div>
                                 }
                             </table>

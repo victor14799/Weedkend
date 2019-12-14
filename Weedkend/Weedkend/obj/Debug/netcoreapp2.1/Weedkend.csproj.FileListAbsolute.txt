@@ -116,9 +116,9 @@ C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pag
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Product\Index.cshtml.g.cs
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_Weedkend.cshtml.g.cs
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Cart.cshtml.g.cs
-C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Checkout_2.cshtml.g.cs
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Home.cshtml.g.cs
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Product_By_Brand.cshtml.g.cs
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_LayoutAdmin.cshtml.g.cs
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Detail.cshtml.g.cs
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\ProductPage.cshtml.g.cs
+C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Checkout.cshtml.g.cs
