@@ -58,7 +58,7 @@ using Weedkend;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(25, 10371, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d4953b2ca6ce4c5bae8387f96b77addb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a93cba1f1ad44e9290d170e354e88595", async() => {
                 BeginContext(31, 2061, true);
                 WriteLiteral(@"
     <!-- <link rel=""stylesheet"" href=""file1.css"">
@@ -362,7 +362,7 @@ using Weedkend;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(10400, 66810, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc3cc41fd5eb49859ef73d3a34a42162", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f824fc7f44f43cba4108ff15a33fab7", async() => {
                 BeginContext(10610, 5760, true);
                 WriteLiteral(@"
     <div id=""yith-wcwl-popup-message"" style=""display: none;""><div id=""yith-wcwl-message""></div></div>
@@ -445,7 +445,7 @@ using Weedkend;
                                             ");
                 EndContext();
                 BeginContext(16370, 1413, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b6130232b0a7445388f199f3e4c017b4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2ad04ebea09410391bd4c0cbd676242", async() => {
                     BeginContext(16451, 1325, true);
                     WriteLiteral(@"
                                                 <div class=""flex-row relative"">
@@ -853,7 +853,7 @@ using Weedkend;
                             ");
                 EndContext();
                 BeginContext(57739, 1205, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "29300427e6ef4af0bb450bd86b21c555", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9b13ea5e207a49e484645b85ac4dcb0d", async() => {
                     BeginContext(57820, 1117, true);
                     WriteLiteral(@"
                                 <div class=""flex-row relative"">

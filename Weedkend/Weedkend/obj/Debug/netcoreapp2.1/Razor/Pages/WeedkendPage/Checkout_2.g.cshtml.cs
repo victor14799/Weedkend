@@ -175,7 +175,7 @@ using Weedkend;
                             ");
             EndContext();
             BeginContext(1017, 2332, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "00d72074f31b4b24910d0615b7afc884", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f4001dc755b54b7eaf811d7109535f07", async() => {
                 BeginContext(1113, 2229, true);
                 WriteLiteral(@"
 
@@ -237,7 +237,7 @@ using Weedkend;
                             ");
             EndContext();
             BeginContext(3871, 1017, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4bcd30205a9e440ba5b8ba27fe3e75b7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c9d32846326c4022bd0a6cd9dbccc582", async() => {
                 BeginContext(3981, 900, true);
                 WriteLiteral(@"
 
@@ -284,7 +284,7 @@ using Weedkend;
                             ");
             EndContext();
             BeginContext(5427, 46967, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eac8ff52c3054fc59f27edd03460d7bc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f93851f4a13a4f08a3f05cb52fe91b4a", async() => {
                 BeginContext(5596, 3941, true);
                 WriteLiteral(@"
 
@@ -324,7 +324,7 @@ using Weedkend;
                                                                     ");
                 EndContext();
                 BeginContext(9537, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e68fb0c36059491a9672e3f4ebfe8582", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e65dc295494f4f1f8e3cc8a32420b2ac", async() => {
                     BeginContext(9554, 19, true);
                     WriteLiteral("Chọn tỉnh/thành phố");
                     EndContext();
@@ -346,7 +346,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(9652, 37, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a752aea1536415298514c83fc352c97", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30f0a1e3c559491ab0a5cd147da494ac", async() => {
                     BeginContext(9674, 6, true);
                     WriteLiteral("Hà Nội");
                     EndContext();
@@ -368,7 +368,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(9759, 66, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "357bccc3702a4dcfadfea345cd5d0f43", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1ab4efd6f0642c993d40d2c2466f5bd", async() => {
                     BeginContext(9805, 11, true);
                     WriteLiteral("Hồ Chí Minh");
                     EndContext();
@@ -391,7 +391,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(9895, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f268a8120e343268b42a9bea11e8f55", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8874b925715422bbe4a5779f9d4abec", async() => {
                     BeginContext(9919, 8, true);
                     WriteLiteral("An Giang");
                     EndContext();
@@ -413,7 +413,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(10006, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e33c1758d5c2477fbe819db6db25dc99", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30cc1c19e1e84212a843d93241b8c7ca", async() => {
                     BeginContext(10031, 9, true);
                     WriteLiteral("Bắc Giang");
                     EndContext();
@@ -435,7 +435,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(10119, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ac342909235b4e999470ee6b45a88c69", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5ceb69a5359a41ba946dc0f6985d8e9d", async() => {
                     BeginContext(10142, 7, true);
                     WriteLiteral("Bắc Kạn");
                     EndContext();
@@ -457,7 +457,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(10228, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "70e5f4929cc0444e978052ffebec07b9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "36e65c0259c4479fbfc203d49ac64f3d", async() => {
                     BeginContext(10252, 8, true);
                     WriteLiteral("Bạc Liêu");
                     EndContext();
@@ -479,7 +479,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(10339, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "105f62082c2b4410b697a7ddf0da2697", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0baac03acf994907a3a0312f128563df", async() => {
                     BeginContext(10363, 8, true);
                     WriteLiteral("Bắc Ninh");
                     EndContext();
@@ -501,7 +501,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(10450, 55, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "34157d117ff54765953c2c9f6bcef79d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "80d85c5adc03462f91e1e0d21050d9a5", async() => {
                     BeginContext(10479, 17, true);
                     WriteLiteral("Bà Rịa - Vũng Tàu");
                     EndContext();
@@ -523,7 +523,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(10575, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76effb64c60d4a8bbba8a36df69485fa", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0f0d803c575f4c88a8460b380324a835", async() => {
                     BeginContext(10598, 7, true);
                     WriteLiteral("Bến Tre");
                     EndContext();
@@ -545,7 +545,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(10684, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "69c026e0a1f0416f931694d12d4ba5d5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "12bafe7cf8d04e8ebb80ec7e096255d3", async() => {
                     BeginContext(10709, 9, true);
                     WriteLiteral("Bình Định");
                     EndContext();
@@ -567,7 +567,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(10797, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "99d3343aad1a4ac6855d6ca58fb24962", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "14a197418af1494ea8440e4f36979bbe", async() => {
                     BeginContext(10823, 10, true);
                     WriteLiteral("Bình Dương");
                     EndContext();
@@ -589,7 +589,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(10912, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "37818dbaa34e4a988e43fd1aaf5cb970", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cda8bb8819554f0598d1d08d0be6d8c6", async() => {
                     BeginContext(10938, 10, true);
                     WriteLiteral("Bình Phước");
                     EndContext();
@@ -611,7 +611,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(11027, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "840e7eec4aa84a668dea668546afe437", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c27e897644c747ae8c8882b2f031baae", async() => {
                     BeginContext(11053, 10, true);
                     WriteLiteral("Bình Thuận");
                     EndContext();
@@ -633,7 +633,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(11142, 37, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "163b3a4a2401440294807fa2baade9e2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "817c7a3bf3014412be60d400cfd5bc17", async() => {
                     BeginContext(11164, 6, true);
                     WriteLiteral("Cà Mau");
                     EndContext();
@@ -655,7 +655,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(11249, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e14261bdf4354c579c93e5a392045a35", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea7f0e1c133c49629ea0a41a5458fe9e", async() => {
                     BeginContext(11272, 7, true);
                     WriteLiteral("Cần Thơ");
                     EndContext();
@@ -677,7 +677,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(11358, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dcbd2e7251bc4678868390fbb90bc4b1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0fdc25f074ee437aa3976902eb524b7c", async() => {
                     BeginContext(11382, 8, true);
                     WriteLiteral("Cao Bằng");
                     EndContext();
@@ -699,7 +699,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(11469, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ca36e27514045cfa0f7ffcd28cdc8e2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5455b21527e44ce3973707033c64c6ac", async() => {
                     BeginContext(11492, 7, true);
                     WriteLiteral("Đắk Lắk");
                     EndContext();
@@ -721,7 +721,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(11578, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f48ac6a8a63a4fbc9fc6addb42ee47e0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2bdddeb29d384690b1efe6bce4b2e37c", async() => {
                     BeginContext(11602, 8, true);
                     WriteLiteral("Đắk Nông");
                     EndContext();
@@ -743,7 +743,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(11689, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "964b541c19f341219a739be03aa9f48e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da48d38bb90a4cf790c2de3e85d499e2", async() => {
                     BeginContext(11712, 7, true);
                     WriteLiteral("Đà Nẵng");
                     EndContext();
@@ -765,7 +765,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(11798, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "370b33125fa44a64b5125e24a45f4cd4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "485cf14c847d4df5934dca550b2adb55", async() => {
                     BeginContext(11823, 9, true);
                     WriteLiteral("Điện Biên");
                     EndContext();
@@ -787,7 +787,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(11911, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "823fe1960b804ab9bfc370e1984f0535", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "32625bdef28a45eaaa5b2aabe967b4bd", async() => {
                     BeginContext(11935, 8, true);
                     WriteLiteral("Đồng Nai");
                     EndContext();
@@ -809,7 +809,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(12022, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a277f6cd42143fbad7f4e58f50fe961", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8cfcbd2d37a945b580faec6064bf4666", async() => {
                     BeginContext(12047, 9, true);
                     WriteLiteral("Đồng Tháp");
                     EndContext();
@@ -831,7 +831,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(12135, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "543b8c5f843240518e91b4ce3267c1dd", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adca17154dc24cbc8164e947f0fec1df", async() => {
                     BeginContext(12158, 7, true);
                     WriteLiteral("Gia Lai");
                     EndContext();
@@ -853,7 +853,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(12244, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "14d3d075a71a4e3cadd5f047a218b2c7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5adbd81e6a2244549716f1999d4953f9", async() => {
                     BeginContext(12268, 8, true);
                     WriteLiteral("Hà Giang");
                     EndContext();
@@ -875,7 +875,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(12355, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e02ddfcd883548498e4925814806d29b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a82309bbd51e406eb90c95a297699426", async() => {
                     BeginContext(12380, 9, true);
                     WriteLiteral("Hải Dương");
                     EndContext();
@@ -897,7 +897,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(12468, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "757fd86d22534446aee3ce0cf96f3e25", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "45d61cd91c5b40198f59dcab7bd78399", async() => {
                     BeginContext(12493, 9, true);
                     WriteLiteral("Hải Phòng");
                     EndContext();
@@ -919,7 +919,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(12581, 37, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7614a1dad7b940be831b76ca8ceec01c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "45dee12c47614cc8bcd5faf2e2bd6cdb", async() => {
                     BeginContext(12603, 6, true);
                     WriteLiteral("Hà Nam");
                     EndContext();
@@ -941,7 +941,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(12688, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5eddb80aa296469b96b55e74fe2ecb97", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c31761c09f4f4e83896f06c435b32f64", async() => {
                     BeginContext(12711, 7, true);
                     WriteLiteral("Hà Tĩnh");
                     EndContext();
@@ -963,7 +963,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(12797, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5b7b4d58e1e14d95bc3befd3d47d4fa9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d306520515a34644a5858ec7e4277194", async() => {
                     BeginContext(12822, 9, true);
                     WriteLiteral("Hậu Giang");
                     EndContext();
@@ -985,7 +985,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(12910, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "13ae6230b7134bee9b5d0a4439b69806", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "771a358379db48b69951ef7e5c9a9bee", async() => {
                     BeginContext(12934, 8, true);
                     WriteLiteral("Hòa Bình");
                     EndContext();
@@ -1007,7 +1007,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(13021, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fe40a9587d114f388f6c880bb512fb7f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "63d893e1ef5a40f1bd0e3c6a86dd68b8", async() => {
                     BeginContext(13045, 8, true);
                     WriteLiteral("Hưng Yên");
                     EndContext();
@@ -1029,7 +1029,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(13132, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8cc7a8c11cb64cac8cc47941b3c2a1d8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c86f2c64351a4023a11e5c1a84f9733f", async() => {
                     BeginContext(13157, 9, true);
                     WriteLiteral("Khánh Hòa");
                     EndContext();
@@ -1051,7 +1051,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(13245, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "51ef03941b3748eb89f39e4d36d86cb3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "980ec1e5d3fe4beba3814c66fa68427e", async() => {
                     BeginContext(13271, 10, true);
                     WriteLiteral("Kiên Giang");
                     EndContext();
@@ -1073,7 +1073,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(13360, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b68d347577024f319473c79e6fde1aaa", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86a3cea052734ccca1bf6975e09c1159", async() => {
                     BeginContext(13383, 7, true);
                     WriteLiteral("Kon Tum");
                     EndContext();
@@ -1095,7 +1095,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(13469, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8b26dd491122417f97e0002e7fc10491", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18a24a4ed10a4e50b1b25b47cf4c62b4", async() => {
                     BeginContext(13493, 8, true);
                     WriteLiteral("Lai Châu");
                     EndContext();
@@ -1117,7 +1117,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(13580, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b47596d589144470b3178c89bcf8a152", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6544e868011e4826b74e2aaa1427c7f7", async() => {
                     BeginContext(13604, 8, true);
                     WriteLiteral("Lâm Đồng");
                     EndContext();
@@ -1139,7 +1139,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(13691, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cefa79340feb40fe93e61e50bb70c737", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0d69a1605a9940dd8133fb96651fb09a", async() => {
                     BeginContext(13715, 8, true);
                     WriteLiteral("Lạng Sơn");
                     EndContext();
@@ -1161,7 +1161,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(13802, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9aaa0e1186e542ef971c522e576ff152", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "faaa0a1c561c4b7cba5dbccbc7e185b0", async() => {
                     BeginContext(13825, 7, true);
                     WriteLiteral("Lào Cai");
                     EndContext();
@@ -1183,7 +1183,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(13911, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f87dee3cbc424a24b1719540d03b80aa", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5df4fa5fc9f74a72a5d777b9ec2a9a27", async() => {
                     BeginContext(13934, 7, true);
                     WriteLiteral("Long An");
                     EndContext();
@@ -1205,7 +1205,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(14020, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ce26fbec0ccc4e2db443c7cda5789e04", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c16da23a840744e495fd43dd96990c19", async() => {
                     BeginContext(14044, 8, true);
                     WriteLiteral("Nam Định");
                     EndContext();
@@ -1227,7 +1227,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(14131, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "229e2f21f40746e2ba01339d19d01fd0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e4369d8e38e456caca3b2e7d9079852", async() => {
                     BeginContext(14154, 7, true);
                     WriteLiteral("Nghệ An");
                     EndContext();
@@ -1249,7 +1249,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(14240, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b66f4e77bb24711b8ec2e1099d35af5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0617fec53afd42f9a5337f243c731748", async() => {
                     BeginContext(14265, 9, true);
                     WriteLiteral("Ninh Bình");
                     EndContext();
@@ -1271,7 +1271,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(14353, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6bd4c7a0824b4c9b8864449c634217ed", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "701e2020dfcd49838474832b27744d01", async() => {
                     BeginContext(14379, 10, true);
                     WriteLiteral("Ninh Thuận");
                     EndContext();
@@ -1293,7 +1293,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(14468, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "53630e16d55b4d5fb4570ef2d8e7c3db", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30d888337970414aaea23a3830a8fa1d", async() => {
                     BeginContext(14491, 7, true);
                     WriteLiteral("Phú Thọ");
                     EndContext();
@@ -1315,7 +1315,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(14577, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cb96844b2013407fbd796a529f4dd03e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c4cabe7e9b64fceae46712006442194", async() => {
                     BeginContext(14600, 7, true);
                     WriteLiteral("Phú Yên");
                     EndContext();
@@ -1337,7 +1337,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(14686, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28051ecdc9e64af6870420d144c766a7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e3b0c86800614fa287917771c8349857", async() => {
                     BeginContext(14712, 10, true);
                     WriteLiteral("Quảng Bình");
                     EndContext();
@@ -1359,7 +1359,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(14801, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d4213048d994d2581560f322572662f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b2521284971b4c77a77415d66697b71d", async() => {
                     BeginContext(14826, 9, true);
                     WriteLiteral("Quảng Nam");
                     EndContext();
@@ -1381,7 +1381,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(14914, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "873c864143ee44b7a365c62b97eb164c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1bedaebd4564411ba04dcdce6dacdb3e", async() => {
                     BeginContext(14940, 10, true);
                     WriteLiteral("Quảng Ngãi");
                     EndContext();
@@ -1403,7 +1403,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(15029, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c10fcdb3ea44777ae63e7d5215a9a23", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e8f1129387384ad484eabb61b7fd0c9e", async() => {
                     BeginContext(15055, 10, true);
                     WriteLiteral("Quảng Ninh");
                     EndContext();
@@ -1425,7 +1425,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(15144, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea8b12a37840464a8db3e4103f2e52fe", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9009ccbe69bb464ab79f39844883ca94", async() => {
                     BeginContext(15169, 9, true);
                     WriteLiteral("Quảng Trị");
                     EndContext();
@@ -1447,7 +1447,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(15257, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e076b2e33b67436a8fea5bba53885654", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d25124353856448fa5b30e4c7d98ce77", async() => {
                     BeginContext(15282, 9, true);
                     WriteLiteral("Sóc Trăng");
                     EndContext();
@@ -1469,7 +1469,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(15370, 37, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e79da83254f04f4fa330d2bb8306e0ad", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0e64033ba7c4a4ba271c35c368acd1f", async() => {
                     BeginContext(15392, 6, true);
                     WriteLiteral("Sơn La");
                     EndContext();
@@ -1491,7 +1491,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(15477, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "612210656c3f48d69c1fb1cc6bc48ca2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "482786415ac54cc193ed6b46c7cc1750", async() => {
                     BeginContext(15501, 8, true);
                     WriteLiteral("Tây Ninh");
                     EndContext();
@@ -1513,7 +1513,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(15588, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b78596c22d6a4e71829f4f186896b7ad", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2e982c2605fb4c33996ddeed2c0a0636", async() => {
                     BeginContext(15613, 9, true);
                     WriteLiteral("Thái Bình");
                     EndContext();
@@ -1535,7 +1535,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(15701, 47, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3ccfccabbea447929238eed4ba9e1c94", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6daead82f70047edaff4796c496eb590", async() => {
                     BeginContext(15728, 11, true);
                     WriteLiteral("Thái Nguyên");
                     EndContext();
@@ -1557,7 +1557,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(15818, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da236f84fc084de69fb682feb7ecdb47", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "121d562b3ed242d383eff5b551874ff6", async() => {
                     BeginContext(15843, 9, true);
                     WriteLiteral("Thanh Hóa");
                     EndContext();
@@ -1579,7 +1579,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(15931, 52, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "849c7846a1b140ab8e7575530d322db3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8fb31001b3544fd898dfb1d6959fd45", async() => {
                     BeginContext(15960, 14, true);
                     WriteLiteral("Thừa Thiên Huế");
                     EndContext();
@@ -1601,7 +1601,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(16053, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6fddb88833cc4c6a9b3bcd7fa4a763e2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18edfb3aa921479494182f369bfab08a", async() => {
                     BeginContext(16079, 10, true);
                     WriteLiteral("Tiền Giang");
                     EndContext();
@@ -1623,7 +1623,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(16168, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a8d734315fa45a8b410921d29fc7563", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e13a1d370fae4be0956ba43e79cdc924", async() => {
                     BeginContext(16192, 8, true);
                     WriteLiteral("Trà Vinh");
                     EndContext();
@@ -1645,7 +1645,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(16279, 47, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c1d27763904d4335940baa0da930b6c5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5fd7d708cccb480cbdbc26956bb212e7", async() => {
                     BeginContext(16306, 11, true);
                     WriteLiteral("Tuyên Quang");
                     EndContext();
@@ -1667,7 +1667,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(16396, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc18ec2122f142fdb6de74d02ce483aa", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "61e2728c48a044d0beac9cbcacc621c6", async() => {
                     BeginContext(16421, 9, true);
                     WriteLiteral("Vĩnh Long");
                     EndContext();
@@ -1689,7 +1689,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(16509, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3ce851fddbc048b4942dff77794be983", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "765a145291cb4359aac9fe767c38eb36", async() => {
                     BeginContext(16534, 9, true);
                     WriteLiteral("Vĩnh Phúc");
                     EndContext();
@@ -1711,7 +1711,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(16622, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0a201f819c604b3eb1575948dbdef1aa", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c2bbd143620448e8a2521c45b8a10d58", async() => {
                     BeginContext(16645, 7, true);
                     WriteLiteral("Yên Bái");
                     EndContext();
@@ -1739,7 +1739,7 @@ using Weedkend;
                                                                 ");
                 EndContext();
                 BeginContext(18019, 61, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ee9aa0ca87b248f8a47bcdd65e8d010f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86bff5296bea438c81cd5a1511875471", async() => {
                     BeginContext(18056, 15, true);
                     WriteLiteral("Chọn quận huyện");
                     EndContext();
@@ -1762,7 +1762,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(18146, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8648193e091243df85c25a36286cc43b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ac87094db2f64034947f9a7d9ab82489", async() => {
                     BeginContext(18166, 16, true);
                     WriteLiteral("Huyện Bình Chánh");
                     EndContext();
@@ -1784,7 +1784,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(18257, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86b55e570e5248b8a3c91dd65675a996", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d7f138896284432396743ecaa2de0bf2", async() => {
                     BeginContext(18277, 13, true);
                     WriteLiteral("Huyện Cần Giờ");
                     EndContext();
@@ -1806,7 +1806,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(18365, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "de0da985633140d3891376eb911c6ea3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f1d7731215e94705885837ac50f86d12", async() => {
                     BeginContext(18385, 12, true);
                     WriteLiteral("Huyện Củ Chi");
                     EndContext();
@@ -1828,7 +1828,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(18472, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad39c7057c054dfaa742d50af8c33891", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10fbf7bf3cd5488b9dfe577d68b9c3cb", async() => {
                     BeginContext(18492, 13, true);
                     WriteLiteral("Huyện Hóc Môn");
                     EndContext();
@@ -1850,7 +1850,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(18580, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b289fb14264d47c2831c1476e90c6de0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "caf8b93fb00a4cdeb679769587708a62", async() => {
                     BeginContext(18600, 12, true);
                     WriteLiteral("Huyện Nhà Bè");
                     EndContext();
@@ -1872,7 +1872,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(18687, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d1f1045bf9c64bbba1604bce8a097a98", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6ee4a1a34fd74cd9ad53a09dde105edd", async() => {
                     BeginContext(18707, 6, true);
                     WriteLiteral("Quận 1");
                     EndContext();
@@ -1894,7 +1894,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(18788, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55437ad50dd24da09b869445962604fc", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f9bf03a14cd446dbb788287c48150358", async() => {
                     BeginContext(18808, 6, true);
                     WriteLiteral("Quận 2");
                     EndContext();
@@ -1916,7 +1916,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(18889, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2369bfafaddc4b369ea9aa4afd4647cd", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b723d64d42884995a4f2527cf71a1631", async() => {
                     BeginContext(18909, 6, true);
                     WriteLiteral("Quận 3");
                     EndContext();
@@ -1938,7 +1938,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(18990, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a37772e07bc42b8b681e0f467d5464d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c6cd04f8a25147b2975ebcb47140d95d", async() => {
                     BeginContext(19010, 6, true);
                     WriteLiteral("Quận 4");
                     EndContext();
@@ -1960,7 +1960,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(19091, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "24a5033b5074451092de32b024d39df9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "21c831959be54aa9bb298bde9d83b299", async() => {
                     BeginContext(19111, 6, true);
                     WriteLiteral("Quận 5");
                     EndContext();
@@ -1982,7 +1982,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(19192, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f2d9938c6e32490a884229ade961507b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d422873ba94147a0870a9b971d8f99c8", async() => {
                     BeginContext(19212, 6, true);
                     WriteLiteral("Quận 6");
                     EndContext();
@@ -2004,7 +2004,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(19293, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2753e95390d34fb3abd049d672f82d73", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e0cd6a80bce42f696296a72b58a0d19", async() => {
                     BeginContext(19313, 6, true);
                     WriteLiteral("Quận 7");
                     EndContext();
@@ -2026,7 +2026,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(19394, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e983fbee852d42d383ce7864e9058725", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1fda8c2aeea04bf3af0ef9ea8aa574b0", async() => {
                     BeginContext(19414, 6, true);
                     WriteLiteral("Quận 8");
                     EndContext();
@@ -2048,7 +2048,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(19495, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f192bdb31ac34846a4cf7a1ebd2632f2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a6de3096cc44e909267c12951eb3ed8", async() => {
                     BeginContext(19515, 6, true);
                     WriteLiteral("Quận 9");
                     EndContext();
@@ -2070,7 +2070,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(19596, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d6d5425beec245e7a92fb7495296f11d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9de2eaca671d4a22b96ff686869bac32", async() => {
                     BeginContext(19616, 7, true);
                     WriteLiteral("Quận 10");
                     EndContext();
@@ -2092,7 +2092,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(19698, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "60447bef2e32456eaa0807a340ccb5ac", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86f44a3240414e44b5965180c506891f", async() => {
                     BeginContext(19718, 7, true);
                     WriteLiteral("Quận 11");
                     EndContext();
@@ -2114,7 +2114,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(19800, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "80587f3311974e47a0c920a268b13ed0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c362caa068794a249d915a0314834f2b", async() => {
                     BeginContext(19820, 7, true);
                     WriteLiteral("Quận 12");
                     EndContext();
@@ -2136,7 +2136,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(19902, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fa8ed13cf84147a99be9d508ffcd3355", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a917236f0f6b489497be686dfc9ec7b2", async() => {
                     BeginContext(19922, 15, true);
                     WriteLiteral("Quận Bình Thạnh");
                     EndContext();
@@ -2158,7 +2158,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(20012, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "53881b617b654873855196ff5527b560", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "feeb3d22cf79496885d8bd26a77e0125", async() => {
                     BeginContext(20032, 13, true);
                     WriteLiteral("Quận Bình Tân");
                     EndContext();
@@ -2180,7 +2180,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(20120, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d4ce28af98e1415fb8a170b377539154", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8d4c40dfb3b04639b438efa9763eea34", async() => {
                     BeginContext(20140, 11, true);
                     WriteLiteral("Quận Gò Vấp");
                     EndContext();
@@ -2202,7 +2202,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(20226, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f2e0155331148d7b4263a47f6b9ed0d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "efe97052837e4541acbd651056b27955", async() => {
                     BeginContext(20246, 14, true);
                     WriteLiteral("Quận Phú Nhuận");
                     EndContext();
@@ -2224,7 +2224,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(20335, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7a0e074ba53f4db7bf787f6f07db9ea3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cadea59e57c34e1ba1a65c9076250d0a", async() => {
                     BeginContext(20355, 12, true);
                     WriteLiteral("Quận Thủ Đức");
                     EndContext();
@@ -2246,7 +2246,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(20442, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6dd2988f9c0445a5a28c52b49e326e55", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e88ace6768c46738ff5988232205f33", async() => {
                     BeginContext(20462, 13, true);
                     WriteLiteral("Quận Tân Bình");
                     EndContext();
@@ -2268,7 +2268,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                ");
                 EndContext();
                 BeginContext(20550, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b2a5955dd1e34798a2d41b03a67e4ca9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0030191c68304d3e80ca1a2ac7ed99d4", async() => {
                     BeginContext(20570, 12, true);
                     WriteLiteral("Quận Tân Phú");
                     EndContext();
@@ -2295,7 +2295,7 @@ using Weedkend;
                                                                 ");
                 EndContext();
                 BeginContext(21929, 60, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0be81cb596364f6c8887377edd73200f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f5834ea921574da1b437ca634a31bd97", async() => {
                     BeginContext(21966, 14, true);
                     WriteLiteral("Chọn xã/phường");
                     EndContext();
@@ -2364,7 +2364,7 @@ using Weedkend;
                 WriteLiteral("ing_state\" id=\"shipping_state\" class=\"select  select2-hidden-accessible\" data-allow_clear=\"true\" data-placeholder=\"Chọn tỉnh/thành phố\" tabindex=\"-1\" aria-hidden=\"true\">\r\n                                                                        ");
                 EndContext();
                 BeginContext(27352, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b1479fa1f545483dbcf366c62ba9776a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a7987370609546d796d9aea0b6ec2c72", async() => {
                     BeginContext(27369, 19, true);
                     WriteLiteral("Chọn tỉnh/thành phố");
                     EndContext();
@@ -2386,7 +2386,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(27471, 37, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0d4c951f0439431d87ac1724645cf1fd", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "40a4e67d606d4420955e875cc9cdb192", async() => {
                     BeginContext(27493, 6, true);
                     WriteLiteral("Hà Nội");
                     EndContext();
@@ -2408,7 +2408,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(27582, 66, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "58a70dbd029b4da5b8bb15f6e5fdcde1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c99a2055cc44cd88ae823282a14956f", async() => {
                     BeginContext(27628, 11, true);
                     WriteLiteral("Hồ Chí Minh");
                     EndContext();
@@ -2431,7 +2431,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(27722, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "059a7d0731984dbf9b2e7ea96121d4f2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f19299aa14a4fe4a6cba3ae9a807081", async() => {
                     BeginContext(27746, 8, true);
                     WriteLiteral("An Giang");
                     EndContext();
@@ -2453,7 +2453,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(27837, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e1d645040b904c6eb19b95b06f89c7da", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e1f559d34534505bfe85481b18b2661", async() => {
                     BeginContext(27862, 9, true);
                     WriteLiteral("Bắc Giang");
                     EndContext();
@@ -2475,7 +2475,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(27954, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d7dc5675067e409cb24fcd770d8ee25a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "80edd3ff7bf845489ca7d351a8625dd8", async() => {
                     BeginContext(27977, 7, true);
                     WriteLiteral("Bắc Kạn");
                     EndContext();
@@ -2497,7 +2497,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(28067, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8bd75ff6baea4cc7be9222128c864183", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "91e195f2e1fd4902ba09003b1fced996", async() => {
                     BeginContext(28091, 8, true);
                     WriteLiteral("Bạc Liêu");
                     EndContext();
@@ -2519,7 +2519,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(28182, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "942d1f25f0bf4e018f96dcb1594e190c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "794a4ece4d424538947a4f808e462c18", async() => {
                     BeginContext(28206, 8, true);
                     WriteLiteral("Bắc Ninh");
                     EndContext();
@@ -2541,7 +2541,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(28297, 55, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec2437243bad40fa862ce29143d51bfe", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "909e0e76ac874d499cfaf3c52db475e0", async() => {
                     BeginContext(28326, 17, true);
                     WriteLiteral("Bà Rịa - Vũng Tàu");
                     EndContext();
@@ -2563,7 +2563,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(28426, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0cf3c85a8b243b6be2da79b92befb21", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cf4ade24fa3d484fa772c2fc331648ff", async() => {
                     BeginContext(28449, 7, true);
                     WriteLiteral("Bến Tre");
                     EndContext();
@@ -2585,7 +2585,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(28539, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1cbc236963a44f079aaeddcee942dbda", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a6bbb9554414a9481ccf1a79adb07fc", async() => {
                     BeginContext(28564, 9, true);
                     WriteLiteral("Bình Định");
                     EndContext();
@@ -2607,7 +2607,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(28656, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "afe587895d9e4b0880ccf032fb1edc5b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2ca8d2ca62534be697018130d982669f", async() => {
                     BeginContext(28682, 10, true);
                     WriteLiteral("Bình Dương");
                     EndContext();
@@ -2629,7 +2629,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(28775, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d831acea35d944529638b50e915b4303", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f406e3c8ea9b4e9b8872908f27771f81", async() => {
                     BeginContext(28801, 10, true);
                     WriteLiteral("Bình Phước");
                     EndContext();
@@ -2651,7 +2651,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(28894, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a0632647872e41a99c3b9255c8a8b42c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f3087432b94041a58da6025b4589d20e", async() => {
                     BeginContext(28920, 10, true);
                     WriteLiteral("Bình Thuận");
                     EndContext();
@@ -2673,7 +2673,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(29013, 37, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c4db2ab8380477a8b7afc53c44a8133", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6bd6600498fc42608ff4a803e1d4e49a", async() => {
                     BeginContext(29035, 6, true);
                     WriteLiteral("Cà Mau");
                     EndContext();
@@ -2695,7 +2695,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(29124, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2405114acfc64e46b35ed5dc56425a4d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "beb23c17798d45a6828d496d9f6d70d2", async() => {
                     BeginContext(29147, 7, true);
                     WriteLiteral("Cần Thơ");
                     EndContext();
@@ -2717,7 +2717,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(29237, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cbd5179db2c6454baca1197dd21d9ea5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "27c9ea077b344a46883d4ebb42dc6d9e", async() => {
                     BeginContext(29261, 8, true);
                     WriteLiteral("Cao Bằng");
                     EndContext();
@@ -2739,7 +2739,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(29352, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "56ac241af4b945d7810dfe611cadb2ad", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c2e1f9fe6e834994bef90db2c8f26a17", async() => {
                     BeginContext(29375, 7, true);
                     WriteLiteral("Đắk Lắk");
                     EndContext();
@@ -2761,7 +2761,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(29465, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a983a325bf524f3096fad117a79dc971", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "05a2b4bbcf54465eb0ad2212caa2c288", async() => {
                     BeginContext(29489, 8, true);
                     WriteLiteral("Đắk Nông");
                     EndContext();
@@ -2783,7 +2783,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(29580, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "abda9f0a308a43a7a1b84e1240d45232", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "856b92fe8094466e9a5aed34872933db", async() => {
                     BeginContext(29603, 7, true);
                     WriteLiteral("Đà Nẵng");
                     EndContext();
@@ -2805,7 +2805,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(29693, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e7fc6a67c24b47c79e99ffe864b0acbe", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a387c1bcf68428f96830ebb277e95d3", async() => {
                     BeginContext(29718, 9, true);
                     WriteLiteral("Điện Biên");
                     EndContext();
@@ -2827,7 +2827,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(29810, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff311c4d2caa4a458fcd424e79fcfee4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66e0122bea4d4b419c040eaa80638a99", async() => {
                     BeginContext(29834, 8, true);
                     WriteLiteral("Đồng Nai");
                     EndContext();
@@ -2849,7 +2849,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(29925, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "621f6dcd91814562a1f283a95d5c8937", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cec26af8c1124f7db978ededd6cb5928", async() => {
                     BeginContext(29950, 9, true);
                     WriteLiteral("Đồng Tháp");
                     EndContext();
@@ -2871,7 +2871,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(30042, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca75ff13053c4bf5b4162b1b734c7261", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19f13f4744f045f6975c1828fd6a6ea3", async() => {
                     BeginContext(30065, 7, true);
                     WriteLiteral("Gia Lai");
                     EndContext();
@@ -2893,7 +2893,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(30155, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a3f060fdd5b4d0e8c4ec2025b65e0c9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "550d76600dbc4b439aa218d12431e4ed", async() => {
                     BeginContext(30179, 8, true);
                     WriteLiteral("Hà Giang");
                     EndContext();
@@ -2915,7 +2915,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(30270, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2f3bb212a954783baf8f005372cc51f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aea269c24d9f413db7414b267c190b16", async() => {
                     BeginContext(30295, 9, true);
                     WriteLiteral("Hải Dương");
                     EndContext();
@@ -2937,7 +2937,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(30387, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "93639430356d439695963def311af619", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "203d1f54681a4f41b0618d9c98f769e6", async() => {
                     BeginContext(30412, 9, true);
                     WriteLiteral("Hải Phòng");
                     EndContext();
@@ -2959,7 +2959,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(30504, 37, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55577128c216436f89b72e016e1c5855", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0e8f8906e4694d999a1e9648696ae9d5", async() => {
                     BeginContext(30526, 6, true);
                     WriteLiteral("Hà Nam");
                     EndContext();
@@ -2981,7 +2981,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(30615, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "05b02fa69e294485a303c32d06c47893", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16b8fec09a1c4cdcac4955b5175554ac", async() => {
                     BeginContext(30638, 7, true);
                     WriteLiteral("Hà Tĩnh");
                     EndContext();
@@ -3003,7 +3003,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(30728, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8e3c5e7d07274383a0ba395eea272a2b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9021cdb887684752b8ed2874a586fbdb", async() => {
                     BeginContext(30753, 9, true);
                     WriteLiteral("Hậu Giang");
                     EndContext();
@@ -3025,7 +3025,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(30845, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d9155c19192441fbb5a5899d1876fba", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6855b92585cb4fa3a05313cdf21c704c", async() => {
                     BeginContext(30869, 8, true);
                     WriteLiteral("Hòa Bình");
                     EndContext();
@@ -3047,7 +3047,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(30960, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3e10e9e57033414c96a7b52328217da4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fa5dbeaac71b43f3a28cfc646f6c6528", async() => {
                     BeginContext(30984, 8, true);
                     WriteLiteral("Hưng Yên");
                     EndContext();
@@ -3069,7 +3069,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(31075, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2394b25d182044a7b68e406b05b78db9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fbcc570812104bf5a856cb0832ef4e46", async() => {
                     BeginContext(31100, 9, true);
                     WriteLiteral("Khánh Hòa");
                     EndContext();
@@ -3091,7 +3091,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(31192, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e0cd6305bdfc4847987d125b9960f6a6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4f6e036d0ed34adc938cbe8f1cd624d9", async() => {
                     BeginContext(31218, 10, true);
                     WriteLiteral("Kiên Giang");
                     EndContext();
@@ -3113,7 +3113,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(31311, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4a906151b2dc4a81bc96fc5cf40f7d63", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0b5e38cd94bd4f0483f429c20495d87e", async() => {
                     BeginContext(31334, 7, true);
                     WriteLiteral("Kon Tum");
                     EndContext();
@@ -3135,7 +3135,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(31424, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "52b903dbcf0e43389275bcafb4ac54ad", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9b9847a04b634d01b84e19c9ffa0e310", async() => {
                     BeginContext(31448, 8, true);
                     WriteLiteral("Lai Châu");
                     EndContext();
@@ -3157,7 +3157,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(31539, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b7274f4596a9422f83dd19e662260a94", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65b23d6ae34c4b9a917a79b0e12c6f82", async() => {
                     BeginContext(31563, 8, true);
                     WriteLiteral("Lâm Đồng");
                     EndContext();
@@ -3179,7 +3179,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(31654, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b8234d0d0b9746cfb92e3b984f936a33", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9dd5b4f5750241d28d5bfbba30a08f72", async() => {
                     BeginContext(31678, 8, true);
                     WriteLiteral("Lạng Sơn");
                     EndContext();
@@ -3201,7 +3201,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(31769, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "684617fe89594a16a39644381bda638d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2d55d5a183ea43cfa1923d05dd97da05", async() => {
                     BeginContext(31792, 7, true);
                     WriteLiteral("Lào Cai");
                     EndContext();
@@ -3223,7 +3223,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(31882, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "310d50ff87ed46879a91aea88ccdfaed", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cf336945b4464c59b2e35cceeaa85740", async() => {
                     BeginContext(31905, 7, true);
                     WriteLiteral("Long An");
                     EndContext();
@@ -3245,7 +3245,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(31995, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d77bb5207054eb98ea8cac0c2210128", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8bb9018efda44c98a067ecb6c48d05c1", async() => {
                     BeginContext(32019, 8, true);
                     WriteLiteral("Nam Định");
                     EndContext();
@@ -3267,7 +3267,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(32110, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c83a14c88e604743a7a173cbfc09d61e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e8bcd26719d543508d9f1841dc047933", async() => {
                     BeginContext(32133, 7, true);
                     WriteLiteral("Nghệ An");
                     EndContext();
@@ -3289,7 +3289,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(32223, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c99318de0374326a1df13b26d065293", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0580e5c844134fc8878e798ea5275d7e", async() => {
                     BeginContext(32248, 9, true);
                     WriteLiteral("Ninh Bình");
                     EndContext();
@@ -3311,7 +3311,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(32340, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca7d3fb313ce4c898715d5b15ea7bfe8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8196504459c24de7b5afcfae20520ce7", async() => {
                     BeginContext(32366, 10, true);
                     WriteLiteral("Ninh Thuận");
                     EndContext();
@@ -3333,7 +3333,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(32459, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "58b2c1ff3df749698ea264cec496ea2e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf15b5e19a044518a91aab0d12aad2fe", async() => {
                     BeginContext(32482, 7, true);
                     WriteLiteral("Phú Thọ");
                     EndContext();
@@ -3355,7 +3355,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(32572, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c5b4f95ecd7a45cca55dc39a0ae00235", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b90d0f4c933c4707add71de1a4d56e46", async() => {
                     BeginContext(32595, 7, true);
                     WriteLiteral("Phú Yên");
                     EndContext();
@@ -3377,7 +3377,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(32685, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b7147a23a2c49f187b0336eabbaca22", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f157b473dda4427a8658ecb87eaa3b9", async() => {
                     BeginContext(32711, 10, true);
                     WriteLiteral("Quảng Bình");
                     EndContext();
@@ -3399,7 +3399,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(32804, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c8e72aafb194724a36578882ddd67c4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d30833a175f64f08a6e43d328c38e358", async() => {
                     BeginContext(32829, 9, true);
                     WriteLiteral("Quảng Nam");
                     EndContext();
@@ -3421,7 +3421,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(32921, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "05a2f5432e5f4cac96d0e6da6adf8936", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f8160722633145be8feb85534724f1eb", async() => {
                     BeginContext(32947, 10, true);
                     WriteLiteral("Quảng Ngãi");
                     EndContext();
@@ -3443,7 +3443,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(33040, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "51c7140e6d204c50b7187cbb5d19b861", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "80d17b4b862d4354a1413afbd0d00fae", async() => {
                     BeginContext(33066, 10, true);
                     WriteLiteral("Quảng Ninh");
                     EndContext();
@@ -3465,7 +3465,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(33159, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "353a72e3ba654c4c9d3a971a8facdd13", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "64ab52cd1b5a41489c7e169d525c009c", async() => {
                     BeginContext(33184, 9, true);
                     WriteLiteral("Quảng Trị");
                     EndContext();
@@ -3487,7 +3487,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(33276, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "152e7f5e680e421d97b7e8e0ad0d070c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "850a612ce94144e6907840eecfccb4c7", async() => {
                     BeginContext(33301, 9, true);
                     WriteLiteral("Sóc Trăng");
                     EndContext();
@@ -3509,7 +3509,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(33393, 37, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "77433ca25fa848ba81ee76ab5e6a2401", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "edbdd4e9ce1d4d7d8656821c257b6fb8", async() => {
                     BeginContext(33415, 6, true);
                     WriteLiteral("Sơn La");
                     EndContext();
@@ -3531,7 +3531,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(33504, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "90bcf3d86f7c44c88d901b3f9f8139cf", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "413fc77e604146258a9f0271d99ce56f", async() => {
                     BeginContext(33528, 8, true);
                     WriteLiteral("Tây Ninh");
                     EndContext();
@@ -3553,7 +3553,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(33619, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7d8f1adf39a64469bf81164773c1291b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "62a17e8f968449b5a92a032be73ceb18", async() => {
                     BeginContext(33644, 9, true);
                     WriteLiteral("Thái Bình");
                     EndContext();
@@ -3575,7 +3575,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(33736, 47, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fd2c85aa6ff04739bf50da1f13749ffa", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "77d1ec695f174a82a94c217512e4eca6", async() => {
                     BeginContext(33763, 11, true);
                     WriteLiteral("Thái Nguyên");
                     EndContext();
@@ -3597,7 +3597,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(33857, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "961f5f1ceca44f4ca8bd1c421ee125f2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3e40107cfb2d4adc86b2f6c274d52fa6", async() => {
                     BeginContext(33882, 9, true);
                     WriteLiteral("Thanh Hóa");
                     EndContext();
@@ -3619,7 +3619,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(33974, 52, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "34f2b6d8e84e45129480eddb43a004fd", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a3012e32b9c840bb83cf5344991b38ac", async() => {
                     BeginContext(34003, 14, true);
                     WriteLiteral("Thừa Thiên Huế");
                     EndContext();
@@ -3641,7 +3641,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(34100, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "63a08b73264242949bfd43cdffcf1268", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4fa3f9ce2e534edc9783795490bb2a1b", async() => {
                     BeginContext(34126, 10, true);
                     WriteLiteral("Tiền Giang");
                     EndContext();
@@ -3663,7 +3663,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(34219, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad76f7486f9e4af983ea363088939cee", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86f41f987a9646148451e05adcadce7a", async() => {
                     BeginContext(34243, 8, true);
                     WriteLiteral("Trà Vinh");
                     EndContext();
@@ -3685,7 +3685,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(34334, 47, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e0e916e81c2943be9d5b6d350392ab26", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "adeb751947fd4ea094922107caa3681a", async() => {
                     BeginContext(34361, 11, true);
                     WriteLiteral("Tuyên Quang");
                     EndContext();
@@ -3707,7 +3707,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(34455, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47b00eb3de9d428495b64455a414e72e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "943c9caf8a83432798fc1d7589aeafaa", async() => {
                     BeginContext(34480, 9, true);
                     WriteLiteral("Vĩnh Long");
                     EndContext();
@@ -3729,7 +3729,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(34572, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6aa09aca6208467c8471aadbbcb9f06b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "78fb3815a54d4b7a993a639b462f0030", async() => {
                     BeginContext(34597, 9, true);
                     WriteLiteral("Vĩnh Phúc");
                     EndContext();
@@ -3751,7 +3751,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                        ");
                 EndContext();
                 BeginContext(34689, 39, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "20754ef2fba64c0f8a740c3033ec2aab", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c342df298a74c3daaea46707719330a", async() => {
                     BeginContext(34712, 7, true);
                     WriteLiteral("Yên Bái");
                     EndContext();
@@ -3779,7 +3779,7 @@ using Weedkend;
                                                                     ");
                 EndContext();
                 BeginContext(36112, 61, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c631f16026974b4eb486e50821646054", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aba52d589024428aa9fded92449884e0", async() => {
                     BeginContext(36149, 15, true);
                     WriteLiteral("Chọn quận huyện");
                     EndContext();
@@ -3802,7 +3802,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(36243, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1483d594b6744c0e9fcde878e5f1963b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5953908e72814966bc9a5fcdebe459a5", async() => {
                     BeginContext(36263, 16, true);
                     WriteLiteral("Huyện Bình Chánh");
                     EndContext();
@@ -3824,7 +3824,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(36358, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c808c0943d7f4d1595030efa5e6bf39e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4c18615d318445e297bd64966f6c12ce", async() => {
                     BeginContext(36378, 13, true);
                     WriteLiteral("Huyện Cần Giờ");
                     EndContext();
@@ -3846,7 +3846,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(36470, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "37107caba2ee4e16aaa9c3717efc0941", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98b27fa6adb248b39cd7f80ff5ecb3a8", async() => {
                     BeginContext(36490, 12, true);
                     WriteLiteral("Huyện Củ Chi");
                     EndContext();
@@ -3868,7 +3868,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(36581, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "639da43d00fa42928b6ce7c408fec064", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa8aa4f2cb5b4e7c863bf33fc3b4df91", async() => {
                     BeginContext(36601, 13, true);
                     WriteLiteral("Huyện Hóc Môn");
                     EndContext();
@@ -3890,7 +3890,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(36693, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3938c675c5ca4d4288396a3421f1a34d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7d456d64d79747c0913d8d4375e818c5", async() => {
                     BeginContext(36713, 12, true);
                     WriteLiteral("Huyện Nhà Bè");
                     EndContext();
@@ -3912,7 +3912,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(36804, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6fadb1a855744949a2fe95b503180740", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86cb8aa63f354e518cc2d976f5b6566a", async() => {
                     BeginContext(36824, 6, true);
                     WriteLiteral("Quận 1");
                     EndContext();
@@ -3934,7 +3934,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(36909, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cca7d76751e94a11a4b4826fbb7e3123", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a30050936587447e95c7a95ed2636d48", async() => {
                     BeginContext(36929, 6, true);
                     WriteLiteral("Quận 2");
                     EndContext();
@@ -3956,7 +3956,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(37014, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "48a4d53a35f441a08f277657f3844b82", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d60909daf3b643a697b41ba8321c909e", async() => {
                     BeginContext(37034, 6, true);
                     WriteLiteral("Quận 3");
                     EndContext();
@@ -3978,7 +3978,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(37119, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9cc743b5e3384fbb8a4509a231ec6bb5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ba2a69a4455e440aa5a583202c840701", async() => {
                     BeginContext(37139, 6, true);
                     WriteLiteral("Quận 4");
                     EndContext();
@@ -4000,7 +4000,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(37224, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f4cb33cefb294def997dcc817529860a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8fe0b3b353da43448a54e40092f7d498", async() => {
                     BeginContext(37244, 6, true);
                     WriteLiteral("Quận 5");
                     EndContext();
@@ -4022,7 +4022,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(37329, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "13e23d3f26d547d3ba1f037115796721", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f9d00e790dc49c5be490e8e97456f4c", async() => {
                     BeginContext(37349, 6, true);
                     WriteLiteral("Quận 6");
                     EndContext();
@@ -4044,7 +4044,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(37434, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b281c2675ef44cea4b11853f3c83890", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1af1682b47bf48089e63ad737d23456b", async() => {
                     BeginContext(37454, 6, true);
                     WriteLiteral("Quận 7");
                     EndContext();
@@ -4066,7 +4066,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(37539, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "50ecb9650fe74f9fbec256bfd9f429d3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4b874108da7a4210a744786c023e8bc8", async() => {
                     BeginContext(37559, 6, true);
                     WriteLiteral("Quận 8");
                     EndContext();
@@ -4088,7 +4088,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(37644, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a0fbba105e8d4abbaf8754e2fc604f02", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5f31e4fc71d0478886d1e93d471870c3", async() => {
                     BeginContext(37664, 6, true);
                     WriteLiteral("Quận 9");
                     EndContext();
@@ -4110,7 +4110,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(37749, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2c680bd8ebf429188ccd343a627e915", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ad8dfaac8094102ae609ecc6d0671ad", async() => {
                     BeginContext(37769, 7, true);
                     WriteLiteral("Quận 10");
                     EndContext();
@@ -4132,7 +4132,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(37855, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d7474abffe743c9ac656ae47f9a07d5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "480646de6e894e27b143415f27e96a28", async() => {
                     BeginContext(37875, 7, true);
                     WriteLiteral("Quận 11");
                     EndContext();
@@ -4154,7 +4154,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(37961, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3927d45d76ea42f5bbb519be37a091c6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "29e944a4119b4b20af66174cda89dd8b", async() => {
                     BeginContext(37981, 7, true);
                     WriteLiteral("Quận 12");
                     EndContext();
@@ -4176,7 +4176,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(38067, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8b3f3b054f1242a5a7780a56810ba149", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f49e3aba3d8344ca8da028d912c2cb94", async() => {
                     BeginContext(38087, 15, true);
                     WriteLiteral("Quận Bình Thạnh");
                     EndContext();
@@ -4198,7 +4198,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(38181, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d258f63fecbb43a4bcdc85f54f3ab9f7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "612325cf2de74c5582422ea2e10ae928", async() => {
                     BeginContext(38201, 13, true);
                     WriteLiteral("Quận Bình Tân");
                     EndContext();
@@ -4220,7 +4220,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(38293, 40, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "928a947694ed4719b6664f757e4fd0be", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "739f4890bd1c49b981d9c7c1697a3eb6", async() => {
                     BeginContext(38313, 11, true);
                     WriteLiteral("Quận Gò Vấp");
                     EndContext();
@@ -4242,7 +4242,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(38403, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "13c1e52cfe5f4845bdfe592c106e0c25", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "07c65fde301f4c1d89bb173b957b28d6", async() => {
                     BeginContext(38423, 14, true);
                     WriteLiteral("Quận Phú Nhuận");
                     EndContext();
@@ -4264,7 +4264,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(38516, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0d914e197bbb4d1ab21d8fa553ae7291", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "85d6779b2bf341bdb7e046fa9acb090f", async() => {
                     BeginContext(38536, 12, true);
                     WriteLiteral("Quận Thủ Đức");
                     EndContext();
@@ -4286,7 +4286,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(38627, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "75c9133f84554a86a54bbed55ee85cb3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55a8bd29d6b044589d6adcabeeb47a91", async() => {
                     BeginContext(38647, 13, true);
                     WriteLiteral("Quận Tân Bình");
                     EndContext();
@@ -4308,7 +4308,7 @@ using Weedkend;
                 WriteLiteral("\r\n                                                                    ");
                 EndContext();
                 BeginContext(38739, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "515b659a00c2416880ff7deded8a01d4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "77e97d11996d4e3184087b395b916af6", async() => {
                     BeginContext(38759, 12, true);
                     WriteLiteral("Quận Tân Phú");
                     EndContext();
@@ -4335,7 +4335,7 @@ using Weedkend;
                                                                     ");
                 EndContext();
                 BeginContext(40140, 60, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "34d9da890ea34a08b85e691ac98dc312", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "29702aba09664428864ccd570cef6424", async() => {
                     BeginContext(40177, 14, true);
                     WriteLiteral("Chọn xã/phường");
                     EndContext();
