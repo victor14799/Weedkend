@@ -1,5 +1,5 @@
 ﻿@page
-@model Weedkend.Pages.WeedkendPage.Product_By_BrandModel
+@model Weedkend.Pages.WeedkendPage.BrandModel
 @{
     ViewData["Title"] = "Product_By_Brand";
     Layout = "~/Pages/Shared/_Weedkend.cshtml";
@@ -9,7 +9,14 @@
     <div class="page-title-inner flex-row  medium-flex-wrap container">
         <div class="flex-col flex-grow medium-text-center">
             <div class="is-large">
-                <nav class="woocommerce-breadcrumb breadcrumbs"><a href="https://classic.vn">Trang chủ</a> <span class="divider">/</span> <a href="https://classic.vn/shop/">Shop</a> <span class="divider">/</span> <a href="https://classic.vn/cua-hang/thuong-hieu/">Thương Hiệu</a> <span class="divider">/</span> Hanz De Fuko</nav>
+                <nav class="woocommerce-breadcrumb breadcrumbs">
+                <a href="https://classic.vn">Trang chủ</a> 
+                <span class="divider">/</span> 
+                <a href="https://classic.vn/shop/">Shop</a> 
+                <span class="divider">/</span> 
+                <a href="https://classic.vn/cua-hang/thuong-hieu/">Thương Hiệu </a> 
+                <span class="divider">/</span>@Model.Products[0].ProBrandNavigation.BrandName 
+                </nav>
             </div>
             <div class="category-filtering category-filter-row show-for-medium">
                 <a href="#" data-open="#shop-sidebar" data-visible-after="true" data-pos="left" class="filter-button uppercase plain">
