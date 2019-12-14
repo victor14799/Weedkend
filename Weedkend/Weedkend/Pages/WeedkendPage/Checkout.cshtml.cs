@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Weedkend.Pages.WeedkendPage
 {
-    public class Checkout_2Model : PageModel
+    public class CheckoutModel : PageModel
     {
         public void OnGet()
         {
