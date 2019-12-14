@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "OrderSuccess";
     Layout = "~/Pages/Shared/_Weedkend.cshtml";
+    var cart = Model.cart;
 }
 
 <div id="content" class="content-area page-wrapper" role="main">
@@ -28,28 +29,33 @@
                                     </thead>
 
                                     <tbody>
-                                        <tr class="woocommerce-table__line-item order_item">
+                                        @if (cart != null)
+                                        {
+                                            foreach (var item in cart)
+                                            {
+                                                <tr class="woocommerce-table__line-item order_item">
 
-                                            <td class="woocommerce-table__product-name product-name">
-                                                <a href="https://classic.vn/shop/may-say-toc-nam-suker/">Máy sấy tóc Surker SK-3901</a> <strong class="product-quantity">× 1</strong>
-                                            </td>
+                                                    <td class="woocommerce-table__product-name product-name">
+                                                        <a asp-page="detail" asp-route-id="@item.Product.ProductId">@item.Product.ProName</a> <strong class="product-quantity">× @item.Quantity</strong>
+                                                    </td>
 
-                                            <td class="woocommerce-table__product-total product-total">
-                                                <span class="woocommerce-Price-amount amount">420,000&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span>
-                                            </td>
+                                                    <td class="woocommerce-table__product-total product-total">
+                                                        <span class="woocommerce-Price-amount amount">@((item.Product.Price * item.Quantity).ToString("#,###"))&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span>
+                                                    </td>
 
-                                        </tr>
-
+                                                </tr>
+                                            }
+                                        }
                                     </tbody>
 
                                     <tfoot>
                                         <tr>
                                             <th scope="row">Tổng số phụ:</th>
-                                            <td><span class="woocommerce-Price-amount amount">420,000&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></td>
+                                            <td><span class="woocommerce-Price-amount amount">@ViewData["Total"]&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">Giao nhận hàng:</th>
-                                            <td><span class="woocommerce-Price-amount amount">30,000&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span>&nbsp;<small class="shipped_via">qua Giao hàng Toàn quốc</small></td>
+                                            <td><span class="woocommerce-Price-amount amount">0&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ (Free)</span></span>&nbsp;<small class="shipped_via">qua Giao hàng Toàn quốc</small></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">Phương thức thanh toán:</th>
@@ -57,7 +63,7 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">Tổng cộng:</th>
-                                            <td><span class="woocommerce-Price-amount amount">450,000&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></td>
+                                            <td><span class="woocommerce-Price-amount amount">@ViewData["Total"]&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></td>
                                         </tr>
                                     </tfoot>
                                 </table>
@@ -74,7 +80,7 @@
                                 <ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details">
 
                                     <li class="woocommerce-order-overview__order order">
-                                        Mã đơn hàng:						<strong>15272</strong>
+                                        Mã đơn hàng:						<strong>@Model.OrderID</strong>
                                     </li>
 
                                     <li class="woocommerce-order-overview__date date">
