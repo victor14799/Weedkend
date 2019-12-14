@@ -12,7 +12,7 @@ namespace Weedkend
     {
         public List<Item> cart { get; set; }
         public double Total { get; set; }
-        public string OrderID { get; set; }
+        public Orders Order { get; set; }
         public void OnGet()
         {
             List<Item> list = SessionExtensions.Get<List<Item>>(HttpContext.Session, "cart");
@@ -22,9 +22,13 @@ namespace Weedkend
                 Total = cart.Sum(i => i.Product.Price * i.Quantity);
                 SessionExtensions.Set(HttpContext.Session, "total", Total);
                 double TotalPrice = SessionExtensions.Get<double>(HttpContext.Session, "total");
-                OrderID = SessionExtensions.Get<string>(HttpContext.Session, "OrderID");
+
                 ViewData["Total"] = TotalPrice.ToString("#,###");
             }
+            Orders o = SessionExtensions.Get<Orders>(HttpContext.Session, "order");
+            Order = o;
+
+            HttpContext.Session.Clear();
         }
     }
 }

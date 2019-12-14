@@ -48,9 +48,10 @@ namespace Weedkend.Pages.WeedkendPage
                 orders.OrderId = new Guid(byteOrder);
                 orders.CustomerId = customer.CustomerId;
                 orders.Datetime = DateTime.Now;
+                SessionExtensions.Set(HttpContext.Session, "order", orders);
                 context.Set<Orders>().Add(orders);
-
                 context.SaveChanges();
+
 
                 if (cart != null)
                 {
@@ -62,8 +63,8 @@ namespace Weedkend.Pages.WeedkendPage
                         ordersDetail.UnitPrice = item.Product.Price;
                         ordersDetail.Quantity = item.Quantity;
                         context.Set<OrdersDetail>().Add(ordersDetail);
+                        context.SaveChanges();
                     }
-                    context.SaveChanges();
                 }
                 else
                 {
