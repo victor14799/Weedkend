@@ -38,9 +38,15 @@ namespace Weedkend.Pages.WeedkendPage
                                                         .Include(p => p.CategoryNavigation)
                                                         .Include(p => p.ProBrandNavigation)
                                                         .ToListAsync();
+            List<Weedkend.Models.Product> NewProducts = await _context.Product
+                                                        .Include(p => p.CategoryNavigation)
+                                                        .Include(p => p.ProBrandNavigation)
+                                                        .ToListAsync();
+            NewProducts = NewProducts.Skip(NewProducts.Count - 5).Take(5).ToList();
             ProductGroup.Add(HairProducts);
             ProductGroup.Add(SkinProducts);
             ProductGroup.Add(PerfumeProducts);
+            ProductGroup.Add(NewProducts);
             return Page();
         }
     }

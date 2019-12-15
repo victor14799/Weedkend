@@ -86,7 +86,6 @@ D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pa
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Product\Index.g.cshtml.cs
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Contact.g.cshtml.cs
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
-D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Index.g.cshtml.cs
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Login.g.cshtml.cs
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\NotAccessPage.g.cshtml.cs
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Privacy.g.cshtml.cs
@@ -97,7 +96,6 @@ D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pa
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Brand.g.cshtml.cs
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Cart.g.cshtml.cs
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Category.g.cshtml.cs
-D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Checkout_2.g.cshtml.cs
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Home.g.cshtml.cs
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewImports.g.cshtml.cs
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewStart.g.cshtml.cs
@@ -114,3 +112,8 @@ D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\bin\Debug\netcoreapp2.1\Weedkend
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\bin\Debug\netcoreapp2.1\Weedkend.Views.pdb
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Weedkend.Views.pdb
 D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Weedkend.csproj.CopyComplete
+D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Weedkend.csprojAssemblyReference.cache
+D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_LayoutAdmin.g.cshtml.cs
+D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Checkout.g.cshtml.cs
+D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Detail.g.cshtml.cs
+D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\ProductPage.g.cshtml.cs

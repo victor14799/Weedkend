@@ -3,7 +3,7 @@
 
 @{
     ViewData["Title"] = "Edit";
-    Layout = "~/Pages/Shared/_Layout.cshtml";
+    Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
 }
 
 <h1>Edit</h1>
@@ -36,11 +36,11 @@
                 <span asp-validation-for="Product.Price" class="text-danger"></span>
             </div>
             @{ 
-                var imgUrl = "/img/product" + Model.Product.ImgUrl;
+                var imgUrl = "/img/product/" + Model.Product.ImgUrl;
             }
             <div class="form-group">
                 <label asp-for="Product.ImgUrl" class="control-label"></label>
-                <img asp-append-version="true" src="@imgUrl" height="50" width="50" />
+                <img asp-append-version="true" src="@imgUrl" style="height: 150px; width: 150px;" />
                 <input asp-for="Product.ImgUrl" type="file" value="@Model.Product.ImgUrl" class="form-control" />
                 @*<span asp-validation-for="Product.ImgUrl" class="text-danger"></span>*@
             </div>
