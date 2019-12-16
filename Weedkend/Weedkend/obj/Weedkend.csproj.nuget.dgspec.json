@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj": {}
+    "C:\\Users\\dungh\\Desktop\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj": {
+    "C:\\Users\\dungh\\Desktop\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj",
+        "projectUniqueName": "C:\\Users\\dungh\\Desktop\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj",
         "projectName": "Weedkend",
-        "projectPath": "C:\\Users\\PC\\Desktop\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\Weedkend\\Weedkend\\Weedkend\\obj\\",
+        "projectPath": "C:\\Users\\dungh\\Desktop\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj",
+        "packagesPath": "C:\\Users\\dungh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dungh\\Desktop\\Weedkend\\Weedkend\\Weedkend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dungh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

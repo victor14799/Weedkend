@@ -1,0 +1,136 @@
+﻿@page "/createaccount"
+@model Weedkend.AccountCreateModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AccountCreate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:deepskyblue;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .input-container {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .icon {
+            padding: 10px;
+            background: dodgerblue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+        }
+
+            .input-field:focus {
+                border: 2px solid dodgerblue;
+            }
+
+        /* Set a style for the submit button */
+        .btn {
+            background-color: dodgerblue;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+            .btn:hover {
+                opacity: 1;
+            }
+
+        .text-danger {
+            color: #e74a3b !important;
+        }
+
+        a.text-danger:hover, a.text-danger:focus {
+            color: #be2617 !important;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <form method="post" asp-page-handler="create" style="max-width:500px;margin:auto">
+                <div class="container">
+                    <h2>Register Account</h2>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <span asp-validation-for="Account.UserName" class="text-danger"></span>
+                    <span class="text-danger"> @ViewData["Duplica"] </span>
+                    <div class="input-container">
+                        <input asp-for="Account.UserName" class="input-field" maxlength="25" placeholder="Username" /><br />
+                    </div>
+                    <span asp-validation-for="Account.Password" class="text-danger"></span>
+
+                    <div class="input-container">
+                        <input asp-for="Account.Password" class="input-field" maxlength="50" placeholder="Password" />
+                    </div>
+                    <span asp-validation-for="Account.FullName" class="text-danger"></span>
+
+                    <div class="input-container">
+                        <input asp-for="Account.FullName" class="input-field" maxlength="50" placeholder="Full Name" />
+                    </div>
+                    <span asp-validation-for="Account.PhoneNo" class="text-danger"></span>
+
+                    <div class="input-container">
+                        <input asp-for="Account.PhoneNo" type="number" min="0" class="input-field" maxlength="10" placeholder="Phone"/>
+                    </div>
+                    <span asp-validation-for="Account.Email" class="text-danger"></span>
+
+                    <div class="input-container">
+                        <input asp-for="Account.Email" class="input-field" placeholder="Email" />
+                    </div>
+                    <span asp-validation-for="Account.Address" class="text-danger"></span>
+
+                    <div class="input-container">
+                        <input asp-for="Account.Address" class="input-field" placeholder="Address" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+            </form>
+
+            <div class="container signin">
+                <p>Already have an account? <a asp-page="Login">Sign in</a>.</p>
+            </div>
+            <div class="container signin">
+                <a asp-page="Index" class="registerbtn">Back to Home</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+</body>
+</html>

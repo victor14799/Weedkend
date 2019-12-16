@@ -29,6 +29,7 @@ namespace Weedkend
                 else
                 {
                     var role = context.Set<Role>().FirstOrDefault(r => r.RoleId == user.Role);
+                    HttpContext.Session.SetString("fullname", user.UserName);
                     HttpContext.Session.SetString("username", user.FullName);
                     HttpContext.Session.SetString("role", role.RoleName);
                     HttpContext.Session.SetString("img", user.ImgAvatar);
