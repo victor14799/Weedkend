@@ -13,7 +13,7 @@ namespace Weedkend.Models
 
         public Guid ProductId { get; set; }
         [Required]
-        [Display(Name = "Product Name")]
+        [Display(Name = "Tên sản phẩm")]
         public string ProName { get; set; }
 
         [Required]

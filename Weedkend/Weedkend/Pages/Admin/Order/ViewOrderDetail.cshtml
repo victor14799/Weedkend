@@ -1,0 +1,41 @@
+﻿@page "/viewOrderDetail"
+@model Weedkend.ViewOrderDetailModel
+
+@{
+    ViewData["Title"] = "Order Detail";
+    Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
+    var products = Model.Products;
+}
+
+<div>
+    <h4>Chi tiết đơn hàng</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OrdersDetail.Order.OrderId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OrdersDetail.Order.OrderId)
+        </dd>
+        <dt>
+            <p>Tổng đơn</p>
+        </dt>
+        <dd>
+            @Model.Total.ToString("#,###") VNĐ
+        </dd>
+        <dt>
+            <p>Sản phẩm</p>
+        </dt>
+        <dd>
+            @foreach (var item in products)
+            {
+            <p>
+                @item.ProName
+            </p>
+            }
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="viewOrders">Back to List</a>
+</div>

@@ -5,6 +5,7 @@
     Layout = "~/Pages/Shared/_Weedkend.cshtml";
     var cart = @Model.cart;
     var total = ViewData["Total"];
+    var err = Model.Err;
 }
 
 <main id="main" class="">
@@ -115,21 +116,37 @@
                                                         <label for="billing_last_name" class="">
                                                             Họ và tên&nbsp;<abbr class="required" title="bắt buộc">*</abbr>
                                                         </label><span class="woocommerce-input-wrapper">
+
                                                             <input required type="text" class="input-text " name="FullName" placeholder="Họ tên của bạn" value="">
+                                                            @if (!string.IsNullOrEmpty(err.FullNameErr))
+                                                            {
+                                                                <span style="color:red">@err.FullNameErr</span>
+                                                            }
                                                         </span>
                                                     </p>
+
                                                     <p class="form-row form-row-first validate-required validate-phone" data-priority="20">
                                                         <label for="billing_phone" class="">
                                                             Số điện thoại&nbsp;<abbr class="required" title="bắt buộc">*</abbr>
                                                         </label>
                                                         <span class="woocommerce-input-wrapper">
+
                                                             <input required type="tel" class="input-text " name="phone" placeholder="Số điện thoại của bạn" value="" autocomplete="tel">
+                                                            @if (!string.IsNullOrEmpty(err.PhoneNoErr))
+                                                            {
+                                                                <span style="color:red">@err.PhoneNoErr</span>
+                                                            }
                                                         </span>
                                                     </p>
                                                     <p class="form-row form-row-last validate-required validate-email" id="billing_email_field" data-priority="21">
                                                         <label for="billing_email" class="">Địa chỉ email&nbsp;<abbr class="required" title="bắt buộc">*</abbr></label>
                                                         <span class="woocommerce-input-wrapper">
+
                                                             <input required type="email" class="input-text " name="email" id="billing_email" placeholder="Email của bạn" value="" autocomplete="email username">
+                                                            @if (!string.IsNullOrEmpty(err.EmailErr))
+                                                            {
+                                                                <span style="color:red">@err.EmailErr</span>
+                                                            }
                                                         </span>
                                                     </p>
                                                     @*<p class="form-row form-row-first address-field update_totals_on_change validate-required" id="billing_state_field" data-priority="30">
@@ -243,7 +260,12 @@
                                                             Địa chỉ&nbsp;<abbr class="required" title="bắt buộc">*</abbr>
                                                         </label>
                                                         <span class="woocommerce-input-wrapper">
+
                                                             <input type="text" class="input-text " name="address" placeholder="Ví dụ: Số 20, ngõ 90" value="" required>
+                                                            @if (!string.IsNullOrEmpty(err.AddressErr))
+                                                            {
+                                                                <span style="color:red">@err.AddressErr</span>
+                                                            }
                                                         </span>
                                                     </p>
                                                 </div>

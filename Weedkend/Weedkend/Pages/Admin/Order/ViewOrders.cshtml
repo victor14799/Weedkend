@@ -1,0 +1,50 @@
+﻿@page "/viewOrder"
+@model Weedkend.ViewOrdersModel
+
+@{
+    ViewData["Title"] = "Orders";
+    Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
+    var Orders = Model.Orders;
+    int count = 1;
+}
+
+<h2>Danh sách đơn hàng</h2>
+
+<table class="table">
+    <thead>
+
+        <tr>
+            <th>STT</th>
+            <th>Ngày đặt hàng</th>
+            <th>Tên Khách Hàng</th>
+            <th>Địa Chỉ</th>
+            <th>Số điện thoại</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Orders)
+        {
+            <tr>
+                <td>
+                    <p>@(count++)</p>
+                </td>
+                <td>
+                    <p>@item.Datetime</p>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customer.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customer.ShipAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customer.PhoneNo)
+                </td>
+                <td>
+                    <a asp-page="viewOrderDetail" asp-route-id="@item.OrderId">Chi tiết</a> |
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

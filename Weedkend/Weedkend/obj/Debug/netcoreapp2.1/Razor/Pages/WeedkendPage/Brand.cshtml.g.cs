@@ -109,12 +109,12 @@ using Weedkend;
             ");
             EndContext();
             BeginContext(1548, 665, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d69a003eb52c4680889d45fc467798b7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "594026a5355f414b918ec304e1c2fba8", async() => {
                 BeginContext(1596, 114, true);
                 WriteLiteral("\r\n                <select name=\"orderby\" class=\"orderby\" aria-label=\"Đơn hàng của cửa hàng\">\r\n                    ");
                 EndContext();
                 BeginContext(1710, 63, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "188c1f1c059d4e4dbc42eb5d29e5696a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a5d944acf3134c0589105e93c58f2f87", async() => {
                     BeginContext(1737, 27, true);
                     WriteLiteral("Thứ tự theo mức độ phổ biến");
                     EndContext();
@@ -136,7 +136,7 @@ using Weedkend;
                 WriteLiteral("\r\n                    ");
                 EndContext();
                 BeginContext(1795, 57, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "45dd5029fe3f4c9eae863cdaf16873b1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e230b6e8131f434399affd6004872e15", async() => {
                     BeginContext(1818, 25, true);
                     WriteLiteral("Thứ tự theo điểm đánh giá");
                     EndContext();
@@ -158,7 +158,7 @@ using Weedkend;
                 WriteLiteral("\r\n                    ");
                 EndContext();
                 BeginContext(1874, 38, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c5951ef533e48bcb561e8782dce28a9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "42bfeb969c224769b3a0070706345ada", async() => {
                     BeginContext(1895, 8, true);
                     WriteLiteral("Mới nhất");
                     EndContext();
@@ -180,7 +180,7 @@ using Weedkend;
                 WriteLiteral("\r\n                    ");
                 EndContext();
                 BeginContext(1934, 80, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "236c39f3c8ee48f2bf9bcf302790ed57", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "535b932c7ce84073b962bc1d28cb2518", async() => {
                     BeginContext(1976, 29, true);
                     WriteLiteral("Thứ tự theo giá: thấp đến cao");
                     EndContext();
@@ -203,7 +203,7 @@ using Weedkend;
                 WriteLiteral("\r\n                    ");
                 EndContext();
                 BeginContext(2036, 67, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca72283f6b6947488d372ca4b4df4f3a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d67a521fc364270a56193f25addf772", async() => {
                     BeginContext(2063, 31, true);
                     WriteLiteral("Thứ tự theo giá: cao xuống thấp");
                     EndContext();
@@ -257,7 +257,7 @@ using Weedkend;
                     <span class=""widget-title shop-sidebar"">TÌM KIẾM</span><div class=""is-divider small""></div>");
             EndContext();
             BeginContext(2684, 1020, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30e4129dfa70473e8198297c034bdeb0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "265c8037d78543efa5d72f6fccfc1167", async() => {
                 BeginContext(2765, 932, true);
                 WriteLiteral(@"
                         <div class=""flex-row relative"">
@@ -419,7 +419,7 @@ using Weedkend;
                     <span class=""widget-title shop-sidebar"">Lọc theo giá</span><div class=""is-divider small""></div>");
             EndContext();
             BeginContext(17747, 1480, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fe0541973bb44f88ac71063c71691eab", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "44806c392875400387e2a951fecc06fa", async() => {
                 BeginContext(17829, 1391, true);
                 WriteLiteral(@"
                         <div class=""price_slider_wrapper"">
