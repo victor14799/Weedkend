@@ -2,6 +2,9 @@
 @model Weedkend.Pages.Admin.DeleteModel
 
 @{
+    TempData["FullName"] = @Model.FullName;
+    TempData["Image"] = @Model.Avatar;
+    TempData["Title"] = "Admin";
     ViewData["Title"] = "Delete";
     Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
 }

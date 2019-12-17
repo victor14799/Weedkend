@@ -27,16 +27,19 @@ namespace Weedkend.Pages.WeedkendPage
                                                         .Where(p => p.Category == "1")
                                                         .Include(p => p.CategoryNavigation)
                                                         .Include(p => p.ProBrandNavigation)
+                                                        .Take(4)
                                                         .ToListAsync();
             List<Weedkend.Models.Product> SkinProducts = await _context.Product
                                                         .Where(p => p.Category == "2")
                                                         .Include(p => p.CategoryNavigation)
                                                         .Include(p => p.ProBrandNavigation)
+                                                        .Take(4)
                                                         .ToListAsync();
             List<Weedkend.Models.Product> PerfumeProducts = await _context.Product
                                                         .Where(p => p.Category == "4")
                                                         .Include(p => p.CategoryNavigation)
                                                         .Include(p => p.ProBrandNavigation)
+                                                        .Take(4)
                                                         .ToListAsync();
             List<Weedkend.Models.Product> NewProducts = await _context.Product
                                                         .Include(p => p.CategoryNavigation)

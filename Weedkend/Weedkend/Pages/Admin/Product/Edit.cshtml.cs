@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -18,7 +19,9 @@ namespace Weedkend.Pages.Admin
         //{
         //    _context = context;
         //}
-
+        public string FullName { get; set; }
+        public string Avatar { get; set; }
+        public string Role { get; set; }
         public List<SelectListItem> ProCategory { get; set; }
         public List<SelectListItem> ProBrand { get; set; }
 
@@ -27,40 +30,53 @@ namespace Weedkend.Pages.Admin
 
         public async Task<IActionResult> OnGetAsync(Guid id)
         {
-            using (var context = new MyContext())
+            FullName = HttpContext.Session.GetString("username");
+            Avatar = HttpContext.Session.GetString("img");
+            Role = HttpContext.Session.GetString("role");
+
+            if (string.IsNullOrEmpty(FullName))
             {
-                if (id == null)
-                {
-                    return NotFound();
-                }
-
-                Product = await context.Product
-                    .Include(p => p.CategoryNavigation)
-                    .Include(p => p.ProBrandNavigation)
-                    .FirstOrDefaultAsync(m => m.ProductId == id);
-
-                if (Product == null)
-                {
-                    return NotFound();
-                }
-
-                ProCategory = context.Category.Select(c => new SelectListItem
-                {
-                    Value = c.CategoryId.ToString(),
-                    Text = c.CategoryName
-                }).ToList();
-
-                ViewData["ProCategory"] = ProCategory;
-
-                ProBrand = context.Brand.Select(b => new SelectListItem
-                {
-                    Value = b.BrandId.ToString(),
-                    Text = b.BrandName
-                }).ToList();
-
-                ViewData["ProBrand"] = ProBrand;
+                return Redirect("/login");
             }
-            return Page();
+
+            if (Role == "admin")
+            {
+                using (var context = new MyContext())
+                {
+                    if (id == null)
+                    {
+                        return NotFound();
+                    }
+
+                    Product = await context.Product
+                        .Include(p => p.CategoryNavigation)
+                        .Include(p => p.ProBrandNavigation)
+                        .FirstOrDefaultAsync(m => m.ProductId == id);
+
+                    if (Product == null)
+                    {
+                        return NotFound();
+                    }
+
+                    ProCategory = context.Category.Select(c => new SelectListItem
+                    {
+                        Value = c.CategoryId.ToString(),
+                        Text = c.CategoryName
+                    }).ToList();
+
+                    ViewData["ProCategory"] = ProCategory;
+
+                    ProBrand = context.Brand.Select(b => new SelectListItem
+                    {
+                        Value = b.BrandId.ToString(),
+                        Text = b.BrandName
+                    }).ToList();
+
+                    ViewData["ProBrand"] = ProBrand;
+                }
+                return Page();
+            }
+            else return Redirect("/notAccess");
         }
 
         public async Task<IActionResult> OnPostAsync()

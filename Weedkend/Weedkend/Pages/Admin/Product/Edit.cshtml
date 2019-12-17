@@ -2,6 +2,9 @@
 @model Weedkend.Pages.Admin.EditModel
 
 @{
+    TempData["FullName"] = @Model.FullName;
+    TempData["Image"] = @Model.Avatar;
+    TempData["Title"] = "Admin";
     ViewData["Title"] = "Edit";
     Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
 }

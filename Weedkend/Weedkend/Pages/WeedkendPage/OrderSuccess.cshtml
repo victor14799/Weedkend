@@ -1,0 +1,114 @@
+﻿@page "/orderSuccess"
+@model Weedkend.OrderSuccessModel
+@{
+    ViewData["Title"] = "OrderSuccess";
+    Layout = "~/Pages/Shared/_Weedkend.cshtml";
+    var cart = Model.cart;
+}
+
+<div id="content" class="content-area page-wrapper" role="main">
+    <div class="row row-main">
+        <div class="large-12 col">
+            <div class="col-inner">
+                <div class="woocommerce">
+                    <div class="row">
+                        <div class="large-7 col">
+
+                            <p>Trả tiền mặt khi giao hàng</p>
+                            <section class="woocommerce-order-details">
+
+                                <h2 class="woocommerce-order-details__title">Chi tiết đơn hàng</h2>
+
+                                <table class="woocommerce-table woocommerce-table--order-details shop_table order_details">
+
+                                    <thead>
+                                        <tr>
+                                            <th class="woocommerce-table__product-name product-name">Sản phẩm</th>
+                                            <th class="woocommerce-table__product-table product-total">Tổng</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        @if (cart != null)
+                                        {
+                                            foreach (var item in cart)
+                                            {
+                                                <tr class="woocommerce-table__line-item order_item">
+
+                                                    <td class="woocommerce-table__product-name product-name">
+                                                        <a asp-page="detail" asp-route-id="@item.Product.ProductId">@item.Product.ProName</a> <strong class="product-quantity">× @item.Quantity</strong>
+                                                    </td>
+
+                                                    <td class="woocommerce-table__product-total product-total">
+                                                        <span class="woocommerce-Price-amount amount">@((item.Product.Price * item.Quantity).ToString("#,###"))&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span>
+                                                    </td>
+
+                                                </tr>
+                                            }
+                                        }
+                                    </tbody>
+
+                                    <tfoot>
+                                        <tr>
+                                            <th scope="row">Tổng số phụ:</th>
+                                            <td><span class="woocommerce-Price-amount amount">@ViewData["Total"]&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Giao nhận hàng:</th>
+                                            <td><span class="woocommerce-Price-amount amount">0&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ (Free)</span></span>&nbsp;<small class="shipped_via">qua Giao hàng Toàn quốc</small></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Phương thức thanh toán:</th>
+                                            <td>Trả tiền mặt khi nhận hàng COD</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Tổng cộng:</th>
+                                            <td><span class="woocommerce-Price-amount amount">@ViewData["Total"]&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                            </section>
+
+
+                        </div>
+
+                        <div class="large-5 col">
+                            <div class="is-well col-inner entry-content">
+                                <p class="success-color woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><strong>Cảm ơn bạn. Đơn hàng của bạn đã được nhận.</strong></p>
+
+                                <ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details">
+
+                                    <li class="woocommerce-order-overview__order order">
+                                        Mã đơn hàng:						<strong>@Model.Order.OrderId</strong>
+                                    </li>
+
+                                    <li class="woocommerce-order-overview__date date">
+                                        Ngày:							<strong>@Model.Order.Datetime.ToString("dd/MM/yyyy")</strong>
+                                    </li>
+
+
+                                    <li class="woocommerce-order-overview__total total">
+                                        Tổng cộng:						<strong><span class="woocommerce-Price-amount amount">@ViewData["Total"]&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></strong>
+                                    </li>
+
+                                    <li class="woocommerce-order-overview__payment-method method">
+                                        Phương thức thanh toán:							<strong>Trả tiền mặt khi nhận hàng COD</strong>
+                                    </li>
+
+                                </ul>
+
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+            </div><!-- .col-inner -->
+        </div><!-- .large-12 -->
+    </div><!-- .row -->
+</div>

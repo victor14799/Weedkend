@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Weedkend.Models
 {
     public partial class OrdersDetail
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid OrderId { get; set; }
         public Guid ProductId { get; set; }
         public double UnitPrice { get; set; }

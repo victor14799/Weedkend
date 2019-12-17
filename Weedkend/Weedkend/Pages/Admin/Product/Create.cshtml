@@ -1,6 +1,9 @@
 ﻿@page
 @model Weedkend.Pages.Admin.Product.CreateModel
 @{
+    TempData["FullName"] = @Model.FullName;
+    TempData["Image"] = @Model.Avatar;
+    TempData["Title"] = "Admin";
     ViewData["Title"] = "Create";
     Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
 }

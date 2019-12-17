@@ -11,6 +11,8 @@ namespace Weedkend
     public class DetailModel : PageModel
     {
         public Product product { get; set; }
+
+        public IList<Weedkend.Models.Brand> Brands { get; set; }
         public void OnGet(string id)
         {
             double TotalPrice = SessionExtensions.Get<double>(HttpContext.Session, "total");
@@ -18,6 +20,8 @@ namespace Weedkend
             using (var context = new MyContext())
             {
                 product = context.Set<Product>().FirstOrDefault(p => p.ProductId.ToString() == id);
+
+                Brands = context.Brand.ToList();
             }
         }
     }

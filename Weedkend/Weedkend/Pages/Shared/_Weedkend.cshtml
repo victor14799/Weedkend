@@ -1,4 +1,18 @@
-﻿<!DOCTYPE html>
+﻿
+@{
+    var GetTotal = ViewData["Total"];
+    string total = "";
+    if (GetTotal != null)
+    {
+        total = GetTotal.ToString();
+    }
+    if (string.IsNullOrEmpty(total))
+    {
+        total = 0 + "";
+    }
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <!-- <link rel="stylesheet" href="file1.css">
@@ -6,6 +20,7 @@
     <link rel="stylesheet" href="file3.css">
     <link rel="stylesheet" href="file4.css">
     <link rel="stylesheet" href="file5.css"> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" id="flatsome-main-css" href="https://classic.vn/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.8.4" type="text/css" media="all">
     <style id="custom-css" type="text/css">
         :root {
@@ -279,6 +294,7 @@
     <link rel="stylesheet" id="flatsome-woocommerce-wishlist-css" href="https://classic.vn/wp-content/themes/flatsome/inc/integrations/wc-yith-wishlist/wishlist.css?ver=3.4" type="text/css" media="all">
     <link rel="stylesheet" id="flatsome-shop-css" href="https://classic.vn/wp-content/themes/flatsome/assets/css/flatsome-shop.css?ver=3.8.4" type="text/css" media="all">
     <link rel="stylesheet" id="rps-style-css" href="https://classic.vn/wp-content/plugins/recent-posts-slider/css/style.css?ver=5.2.4" type="text/css" media="all">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
 </head>
 
 <body data-rsssl="1" class="archive tax-product_cat term-hanz-de-fuko term-32 theme-flatsome woocommerce woocommerce-page woocommerce-js full-width lightbox nav-dropdown-has-arrow" style="overflow-x: visible;">
@@ -307,11 +323,11 @@
 
                         <div class="flex-col hide-for-medium flex-right">
                             <ul class="nav top-bar-nav nav-right nav-small  nav-line-bottom">
-                                <li id="menu-item-841" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-841"><a href="https://classic.vn/gioi-thieu-vietwax/" class="nav-top-link">About</a></li>
-                                <li id="menu-item-14220" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-14220"><a href="https://vietwax.com/cau-hoi-faq/" class="nav-top-link">Help</a></li>
-                                <li id="menu-item-840" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-840"><a href="https://classic.vn/lien-he/" class="nav-top-link">Contact</a></li>
+                                <li id="menu-item-841" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-841"><a href="/about" class="nav-top-link">About</a></li>
+                                @*<li id="menu-item-14220" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-14220"><a href="https://vietwax.com/cau-hoi-faq/" class="nav-top-link">Help</a></li>*@
+                                <li id="menu-item-840" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-840"><a href="/contact" class="nav-top-link">Contact</a></li>
                                 <li class="html header-social-icons ml-0">
-                                    <div class="social-icons follow-icons"><a href="https://www.facebook.com/classicstore.vn" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain facebook tooltip tooltipstered"><i class="icon-facebook"></i></a><a href="https://www.instagram.com/vietwax/" target="_blank" rel="noopener noreferrer nofollow" data-label="Instagram" class="icon plain  instagram tooltip tooltipstered"><i class="icon-instagram"></i></a><a href="mailto:admin@classic.vn" data-label="E-mail" rel="nofollow" class="icon plain  email tooltip tooltipstered"><i class="icon-envelop"></i></a><a href="https://www.youtube.com/channel/UCzIWNshq7e9lgkrVtTUcPew" target="_blank" rel="noopener noreferrer nofollow" data-label="YouTube" class="icon plain  youtube tooltip tooltipstered"><i class="icon-youtube"></i></a></div>
+                                    <div class="social-icons follow-icons"><a href="https://www.facebook.com/classicstore.vn" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon plain facebook tooltip tooltipstered"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/vietwax/" target="_blank" rel="noopener noreferrer nofollow" data-label="Instagram" class="icon plain  instagram tooltip tooltipstered"><i class="fab fa-instagram"></i></i></a><a href="mailto:admin@classic.vn" data-label="E-mail" rel="nofollow" class="icon plain  email tooltip tooltipstered"><i class="fas fa-envelope-square"></i></a><a href="https://www.youtube.com/channel/UCzIWNshq7e9lgkrVtTUcPew" target="_blank" rel="noopener noreferrer nofollow" data-label="YouTube" class="icon plain  youtube tooltip tooltipstered"><i class="fab fa-youtube"></i></a></div>
                                 </li>
                             </ul>
                         </div><!-- .flex-col right -->
@@ -330,8 +346,8 @@
                         <!-- Logo -->
                         <div id="logo" class="flex-col logo">
                             <!-- Header logo -->
-                            <a href="https://classic.vn/" title="Classic Store - Sáp vuốt tóc | Mỹ phẩm Nam chính hãng tại TPHCM" rel="home">
-                                <img width="166" height="100" src="https://vietwax.com/wp-content/uploads/2019/05/classic1.jpg" class="header_logo header-logo" alt="Classic Store"><img width="166" height="100" src="https://vietwax.com/wp-content/uploads/2019/05/classic1.jpg" class="header-logo-dark" alt="Classic Store">
+                            <a href="/" title="The Weedkend - Sáp vuốt tóc | Mỹ phẩm Nam chính hãng tại TPHCM" rel="home">
+                                <img width="166" height="100" src="~/img/logo/The Weedkend-logo.png" class="header_logo header-logo" alt="Classic Store"><img width="166" height="100" src="https://vietwax.com/wp-content/uploads/2019/05/classic1.jpg" class="header-logo-dark" alt="Classic Store">
                             </a>
                         </div>
 
@@ -354,11 +370,10 @@
                                 <li class="header-search-form search-form html relative has-icon">
                                     <div class="header-search-form-wrapper">
                                         <div class="searchform-wrapper ux-search-box relative form-flat is-normal">
-                                            <form role="search" method="get" class="searchform" action="https://classic.vn/">
+                                            <form asp-page="./ProductPage" asp-page-handler="search" method="post"class="searchform">
                                                 <div class="flex-row relative">
                                                     <div class="flex-col flex-grow">
-                                                        <input type="search" class="search-field mb-0" name="s" value="" placeholder="Tìm kiếm…" autocomplete="off">
-                                                        <input type="hidden" name="post_type" value="product">
+                                                        <input name="search" type="search" class="search-field mb-0" placeholder="Tìm kiếm…" >
                                                     </div><!-- .flex-col -->
                                                     <div class="flex-col">
                                                         <button type="submit" class="ux-search-submit submit-button secondary button icon mb-0">
@@ -380,8 +395,8 @@
                                 <li class="account-item has-icon
       ">
 
-                                    <a href="https://classic.vn/my-account-2/" class="nav-top-link nav-top-not-logged-in " data-open="#login-form-popup">
-                                        <i class="icon-user"></i>
+                                    <a href="/login" class="nav-top-link nav-top-not-logged-in " data-open="#login-form-popup">
+                                        <i class="fas fa-user"></i>
                                     </a><!-- .account-login-link -->
 
 
@@ -394,10 +409,9 @@
 
 
                                         <span class="header-cart-title">
-                                            <span class="cart-price"><span class="woocommerce-Price-amount amount">@ViewData["Total"]&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
+                                            <span class="cart-price"><span class="woocommerce-Price-amount amount">@total&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
                                         </span>
-
-                                        <i class="icon-shopping-basket" data-icon-label="0">
+                                        <i class="fas fa-shopping-cart" data-icon-label="0"></i>
                                         </i>
                                     </a>
 
@@ -421,10 +435,9 @@
                             <ul class="mobile-nav nav nav-right ">
                                 <li class="cart-item has-icon">
 
-                                    <a href="https://classic.vn/cart/" class="header-cart-link off-canvas-toggle nav-top-link is-small" data-open="#cart-popup" data-class="off-canvas-cart" title="Giỏ hàng" data-pos="right">
+                                    <a href="/cart" class="header-cart-link off-canvas-toggle nav-top-link is-small" data-open="#cart-popup" data-class="off-canvas-cart" title="Giỏ hàng" data-pos="right">
 
-                                        <i class="icon-shopping-basket" data-icon-label="0">
-                                        </i>
+                                        <<i class="fas fa-shopping-cart" data-icon-label="0"></i>
                                     </a>
 
 
@@ -458,7 +471,7 @@
                         <div class="flex-col hide-for-medium flex-left">
                             <ul class="nav header-nav header-bottom-nav nav-left  nav-size-large nav-spacing-xlarge nav-uppercase">
                                 <li id="menu-item-3256" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  menu-item-3256 has-dropdown">
-                                    <a class="nav-top-link">Cửa Hàng<i class="icon-angle-down"></i></a>
+                                    <a href="/products" class="nav-top-link">Sản Phẩm</a>
                                     <ul class="nav-dropdown nav-dropdown-simple nav-dropdown-full" style="">
                                         <li id="menu-item-94" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children  menu-item-94 nav-dropdown-col">
                                             <a href="https://classic.vn/cua-hang/cham-soc-toc/">Chăm Sóc Tóc</a>
@@ -521,7 +534,7 @@
                                     </ul>
                                 </li>
                                 <li id="menu-item-3257" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children active  menu-item-3257 has-dropdown">
-                                    <a class="nav-top-link">Thương Hiệu<i class="icon-angle-down"></i></a>
+                                    <a href="/Brands">Thương Hiệu</a>
                                     <ul class="nav-dropdown nav-dropdown-simple">
                                         <li id="menu-item-11443" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  menu-item-11443 nav-dropdown-col">
                                             <a href="https://vietwax.com">A B C D E F</a>
@@ -577,15 +590,15 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li id="menu-item-14208" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-14208"><a href="https://vietwax.com/cua-hang/gift-sets/" class="nav-top-link">Quà Tặng</a></li>
-                                <li id="menu-item-5455" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5455"><a href="https://vietwax.com/cua-hang/hot-combo/" class="nav-top-link">Khuyến Mãi</a></li>
-                                <li id="menu-item-1251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-1251 has-dropdown">
-                                    <a href="https://classic.vn/tin-tuc/" class="nav-top-link">Tạp Chí<i class="icon-angle-down"></i></a>
-                                    <ul class="nav-dropdown nav-dropdown-simple">
-                                        <li id="menu-item-1297" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-1297"><a href="https://classic.vn/phong-cach-dan-ong/">Phong Cách Đàn Ông</a></li>
-                                        <li id="menu-item-1292" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-1292"><a href="https://classic.vn/danh-gia-san-pham/">Đánh giá sản phẩm</a></li>
-                                    </ul>
-                                </li>
+                                @*<li id="menu-item-14208" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-14208"><a href="https://vietwax.com/cua-hang/gift-sets/" class="nav-top-link">Quà Tặng</a></li>
+                                    <li id="menu-item-5455" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-5455"><a href="https://vietwax.com/cua-hang/hot-combo/" class="nav-top-link">Khuyến Mãi</a></li>
+                                    <li id="menu-item-1251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-1251 has-dropdown">
+                                        <a href="https://classic.vn/tin-tuc/" class="nav-top-link">Tạp Chí<i class="icon-angle-down"></i></a>
+                                        <ul class="nav-dropdown nav-dropdown-simple">
+                                            <li id="menu-item-1297" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-1297"><a href="https://classic.vn/phong-cach-dan-ong/">Phong Cách Đàn Ông</a></li>
+                                            <li id="menu-item-1292" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-1292"><a href="https://classic.vn/danh-gia-san-pham/">Đánh giá sản phẩm</a></li>
+                                        </ul>
+                                    </li>*@
                             </ul>
                         </div><!-- flex-col -->
 
@@ -614,27 +627,33 @@
                 <div class="row large-columns-3 mb-0">
                     <div id="text-15" class="col pb-0 widget widget_text">
                         <span class="widget-title">THÔNG TIN LIÊN HỆ</span><div class="is-divider small"></div>			<div class="textwidget">
-                            <p><strong>CLASSIC STORE – MEN’S GROOMING</strong></p>
+                            <p><strong>Weedkend STORE – MEN’S GROOMING</strong></p>
                             <p>
                                 &gt; Giấy CNĐKDN: 0314770232<br>
                                 &gt; Địa chỉ: 26 Hoa Phượng Phường 2 Quận Phú Nhuận TP.HCM<br>
                                 &gt; Hotline:&nbsp;<b>0931 255 777</b><br>
-                                &gt; Email:&nbsp;<b>info@classic.vn</b>
+                                &gt; Email:&nbsp;<b>info@Weedkend.vn</b>
                             </p>
-                            <p><a href="https://www.google.com/maps?ll=10.793057,106.673745&amp;z=15&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=embed&amp;cid=595544602649810267" rel="follow">( Bản Đồ Hướng Dẫn )</a></p>
+                            <p><a href="#" rel="follow">( Bản Đồ Hướng Dẫn )</a></p>
                         </div>
                     </div><div id="text-14" class="col pb-0 widget widget_text">
                         <span class="widget-title">ĐIỀU KHOẢN DỊCH VỤ</span><div class="is-divider small"></div>			<div class="textwidget">
                             <p>
-                                <a href=" https://vietwax.com/chinh-sach-quy-dinh/">&gt; Chính Sách &amp; Quy Định</a><br>
-                                <a href="https://vietwax.com/huong-dan-dat-hang-qua-website/">&gt; Hướng dẫn mua hàng</a><br>
-                                <a href="https://vietwax.com/chinh-sach-giao-hang/">&gt; Chính sách giao hàng</a><br>
-                                <a href="https://vietwax.com/chinh-sach-doi-tra-hang-hoa/">&gt; Chính sách đổi trả</a><br>
-                                <a href="https://vietwax.com/cau-hoi-faq/">&gt; Câu hỏi FAQ</a><br>
-                                <a href="https://vietwax.com/lien-he-dai-ly/">&gt; Đăng ký đại lý</a>
+                                <a href="#">&gt; Chính Sách &amp; Quy Định</a><br>
+                                <a href="#">&gt; Hướng dẫn mua hàng</a><br>
+                                <a href="#">&gt; Chính sách giao hàng</a><br>
+                                <a href="#">&gt; Chính sách đổi trả</a><br>
+                                <a href="#">&gt; Câu hỏi FAQ</a><br>
+                                <a href="#">&gt; Đăng ký đại lý</a>
                             </p>
                         </div>
-                    </div><div id="custom_html-2" class="widget_text col pb-0 widget widget_custom_html"><span class="widget-title">THEO DÕI CLASSIC</span><div class="is-divider small"></div><div class="textwidget custom-html-widget"><div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/classicstore.vn" data-tabs="timeline" data-width="340" data-height="200" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=340&amp;height=200&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fclassicstore.vn&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=340"><span style="vertical-align: bottom; width: 340px; height: 200px;"><iframe name="f37c36796c690e" width="340" height="200" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.12/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D44%23cb%3Df1f4f596647fd4%26domain%3Dclassic.vn%26origin%3Dhttps%253A%252F%252Fclassic.vn%252Ffd1cae049a2b74%26relation%3Dparent.parent&amp;container_width=340&amp;height=200&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fclassicstore.vn&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=340" style="border: none; visibility: visible; width: 340px; height: 200px;" class=""></iframe></span></div></div></div>
+                    </div>
+                @*<div id="custom_html-2" class="widget_text col pb-0 widget widget_custom_html">
+                    <span class="widget-title">THEO DÕI CLASSIC</span>
+                    <div class="is-divider small">
+                           </div><div class="textwidget custom-html-widget">
+                    <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/classicstore.vn" data-tabs="timeline" data-width="340" data-height="200" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=340&amp;height=200&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fclassicstore.vn&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=340"><span style="vertical-align: bottom; width: 340px; height: 200px;"><iframe name="f37c36796c690e" width="340" height="200" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.12/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D44%23cb%3Df1f4f596647fd4%26domain%3Dclassic.vn%26origin%3Dhttps%253A%252F%252Fclassic.vn%252Ffd1cae049a2b74%26relation%3Dparent.parent&amp;container_width=340&amp;height=200&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fclassicstore.vn&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=340" style="border: none; visibility: visible; width: 340px; height: 200px;" class=""></iframe></span></div></div>
+                </div>*@
                 </div><!-- end row -->
             </div><!-- end footer 2 -->
 
@@ -643,7 +662,7 @@
             <div class="absolute-footer dark medium-text-center small-text-center">
                 <div class="container clearfix">
 
-                    <div class="footer-secondary pull-right">
+                    @*<div class="footer-secondary pull-right">
                         <div class="footer-text inline-block small-block">
                             <a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=40863"> <img src="https://vietwax.com/wp-content/uploads/2018/01/20150827110756-dathongbao.png" width="100"></a>
 
@@ -665,11 +684,11 @@
                                 </svg>
                             </div>
                         </div>
-                    </div><!-- -right -->
+                    </div>*@<!-- -right -->
 
                     <div class="footer-primary pull-left">
                         <div class="copyright-footer">
-                            Copyright 2019 © <strong><a href="http://vietwax.com/">Classic Store</a> </strong><br>
+                            Copyright 2019 © <strong><a href="/">Weedkend Store</a> </strong><br>
                         </div>
                     </div><!-- .left -->
                 </div><!-- .container -->
@@ -686,10 +705,10 @@
                 <li class="header-search-form search-form html relative has-icon">
                     <div class="header-search-form-wrapper">
                         <div class="searchform-wrapper ux-search-box relative form-flat is-normal">
-                            <form role="search" method="get" class="searchform" action="https://classic.vn/">
+                            <form method="get" action="/products">
                                 <div class="flex-row relative">
                                     <div class="flex-col flex-grow">
-                                        <input type="search" class="search-field mb-0" name="s" value="" placeholder="Tìm kiếm…" autocomplete="off">
+                                        <input placeholder="Tìm kiếm…" autocomplete="off">
                                         <input type="hidden" name="post_type" value="product">
                                     </div><!-- .flex-col -->
                                     <div class="flex-col">
