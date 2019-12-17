@@ -11,9 +11,9 @@
         <div class="flex-col flex-grow medium-text-center">
             <div class="is-large">
                 <nav class="woocommerce-breadcrumb breadcrumbs">
-                    <a href="https://classic.vn">Trang chủ</a>
+                    <a href="/">Trang chủ</a>
                     <span class="divider">/</span>
-                    <a href="https://classic.vn/shop/">Shop</a>
+                    <a href="/products">Shop</a>
                     <span class="divider">/</span>@Model.Products[0].CategoryNavigation.CategoryName
                 </nav>
             </div>
@@ -27,7 +27,7 @@
             </div>
         </div><!-- .flex-left -->
 
-        <div class="flex-col medium-text-center">
+        @*<div class="flex-col medium-text-center">
 
 
             <p class="woocommerce-result-count hide-for-medium">
@@ -43,33 +43,26 @@
                 </select>
                 <input type="hidden" name="paged" value="1">
             </form>
-        </div><!-- .flex-right -->
+        </div>*@<!-- .flex-right -->
 
     </div><!-- flex-row -->
 </div><!-- .page-title -->
 
-<main id="main" class="">
-    <div class="row category-page-row">
+<div class="row category-page-row">
 
-        <div class="col large-3 hide-for-medium ">
-            <div id="shop-sidebar" class="sidebar-inner col-inner">
-                <aside id="search-5" class="widget widget_search">
-                    <span class="widget-title shop-sidebar">TÌM KIẾM</span><div class="is-divider small"></div><form method="get" class="searchform" action="https://classic.vn/" role="search">
-                        <div class="flex-row relative">
-                            <div class="flex-col flex-grow">
-                                <input type="search" class="search-field mb-0" name="s" value="" id="s" placeholder="Tìm kiếm…" autocomplete="off">
-                            </div><!-- .flex-col -->
-                            <div class="flex-col">
-                                <button type="submit" class="ux-search-submit submit-button secondary button icon mb-0">
-                                    <i class="icon-search"></i>
-                                </button>
-                            </div><!-- .flex-col -->
-                        </div><!-- .flex-row -->
-                        <div class="live-search-results text-left z-top"><div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 300px; z-index: 9999;"></div></div>
-                    </form>
-                </aside><aside id="woocommerce_product_categories-3" class="widget woocommerce widget_product_categories">
-                    <span class="widget-title shop-sidebar">DANH MỤC SẢN PHẨM</span><div class="is-divider small"></div><ul class="product-categories">
-                        <li class="cat-item cat-item-154 cat-parent has-child" aria-expanded="false">
+    <div class="col large-3 hide-for-medium ">
+        <div id="shop-sidebar" class="sidebar-inner col-inner">
+            <aside id="woocommerce_product_categories-3" class="widget woocommerce widget_product_categories">
+                <span class="widget-title shop-sidebar">DANH MỤC SẢN PHẨM</span><div class="is-divider small"></div>
+                <ul class="product-categories">
+                    @foreach (var item in Model.Categories)
+                    {
+                        var ClassId = "cat-item " + item.CategoryId + " cat-parent has-child";
+                        <li class=@ClassId aria-expanded="false">
+                            <a asp-page="Brand" asp-route-id=@item.CategoryId>@item.CategoryName</a>
+                        </li>
+                    }
+                    @*<li class="cat-item cat-item-154 cat-parent has-child" aria-expanded="false">
                             <a href="https://classic.vn/cua-hang/cham-soc-rau/">Chăm Sóc Râu</a><button class="toggle"><i class="icon-angle-down"></i></button><ul class="children">
                                 <li class="cat-item cat-item-194"><a href="https://classic.vn/cua-hang/cham-soc-rau/truoc-khi-cao/">Trước Khi Cạo</a></li>
                                 <li class="cat-item cat-item-195"><a href="https://classic.vn/cua-hang/cham-soc-rau/sau-khi-cao/">Sau Khi Cạo</a></li>
@@ -79,14 +72,17 @@
                             </ul>
                         </li>
                         <li class="cat-item cat-item-231"><a href="https://classic.vn/cua-hang/gift-sets/">Gift Sets</a></li>
-                        <li class="cat-item cat-item-234"><a href="https://classic.vn/cua-hang/deal-99k-black-friday/">Deal 99k - Black Friday</a></li>
                         <li class="cat-item cat-item-235 cat-parent has-child" aria-expanded="false">
                             <a href="https://classic.vn/cua-hang/the-thao/">Thể Thao</a><button class="toggle"><i class="icon-angle-down"></i></button><ul class="children">
                                 <li class="cat-item cat-item-236"><a href="https://classic.vn/cua-hang/the-thao/gels-tan-mo/">Gels Tan Mỡ</a></li>
                             </ul>
-                        </li>
-                        <li class="cat-item cat-item-130 cat-parent has-child active" aria-expanded="true">
-                            <a href="https://classic.vn/cua-hang/thuong-hieu/">Thương Hiệu</a><button class="toggle"><i class="icon-angle-down"></i></button><ul class="children">
+                        </li>*@
+                    @* tu day *@
+                    @*<li class="cat-item cat-item-130 cat-parent has-child" aria-expanded="true">
+                            <a href="#">Thương Hiệu</a>
+                            <button class="toggle"><i class="icon-angle-down"></i>
+                                </button>
+                            <ul class="children">
                                 <li class="cat-item cat-item-149"><a href="https://classic.vn/cua-hang/thuong-hieu/morris-motley/">Morris Motley</a></li>
                                 <li class="cat-item cat-item-153"><a href="https://classic.vn/cua-hang/thuong-hieu/garnier-men/">Garnier Men</a></li>
                                 <li class="cat-item cat-item-160"><a href="https://classic.vn/cua-hang/thuong-hieu/billy-jealousy/">Billy Jealousy</a></li>
@@ -111,9 +107,10 @@
                                 <li class="cat-item cat-item-230"><a href="https://classic.vn/cua-hang/thuong-hieu/dapper-dan/">Dapper Dan</a></li>
                                 <li class="cat-item cat-item-232"><a href="https://classic.vn/cua-hang/thuong-hieu/heimon/">Heimon</a></li>
                                 <li class="cat-item cat-item-237"><a href="https://classic.vn/cua-hang/thuong-hieu/sweet-sweat/">Sweet Sweat</a></li>
+                                <li class="cat-item cat-item-240"><a href="https://classic.vn/cua-hang/thuong-hieu/philips/">Philips</a></li>
                                 <li class="cat-item cat-item-62"><a href="https://classic.vn/cua-hang/thuong-hieu/apestomen/">Apestomen</a></li>
                                 <li class="cat-item cat-item-33"><a href="https://classic.vn/cua-hang/thuong-hieu/by-vilain/">By Vilain</a></li>
-                                <li class="cat-item cat-item-32 current-cat active"><a href="https://classic.vn/cua-hang/thuong-hieu/hanz-de-fuko/">Hanz De Fuko</a></li>
+                                <li class="cat-item cat-item-32"><a href="https://classic.vn/cua-hang/thuong-hieu/hanz-de-fuko/">Hanz De Fuko</a></li>
                                 <li class="cat-item cat-item-63"><a href="https://classic.vn/cua-hang/thuong-hieu/kevin-murphy/">Kevin Murphy</a></li>
                                 <li class="cat-item cat-item-137"><a href="https://classic.vn/cua-hang/thuong-hieu/schwarzkopf/">Schwarzkopf</a></li>
                                 <li class="cat-item cat-item-35"><a href="https://classic.vn/cua-hang/thuong-hieu/blumaan/">Blumaan</a></li>
@@ -122,8 +119,9 @@
                                 <li class="cat-item cat-item-121"><a href="https://classic.vn/cua-hang/thuong-hieu/firsthand/">Firsthand</a></li>
                                 <li class="cat-item cat-item-64"><a href="https://classic.vn/cua-hang/thuong-hieu/grim-grease/">Grim Grease</a></li>
                             </ul>
-                        </li>
-                        <li class="cat-item cat-item-22 cat-parent has-child" aria-expanded="false">
+                        </li>*@
+                    @* toi day *@
+                    @*<li class="cat-item cat-item-22 cat-parent has-child" aria-expanded="false">
                             <a href="https://classic.vn/cua-hang/cham-soc-toc/">Chăm Sóc Tóc</a><button class="toggle"><i class="icon-angle-down"></i></button><ul class="children">
                                 <li class="cat-item cat-item-188"><a href="https://classic.vn/cua-hang/cham-soc-toc/nhuom-toc/">Nhuộm Tóc</a></li>
                                 <li class="cat-item cat-item-24"><a href="https://classic.vn/cua-hang/cham-soc-toc/sap-vuot-toc/">Sáp Vuốt Tóc</a></li>
@@ -161,134 +159,125 @@
                                         <li class="cat-item cat-item-210"><a href="https://classic.vn/cua-hang/nuoc-hoa-nam/khu-mui-co-the/lan-khu-mui/">Lăn Khử Mùi</a></li>
                                     </ul>
                                 </li>
-                                <li class="cat-item cat-item-175"><a href="https://classic.vn/cua-hang/nuoc-hoa-nam/nuoc-hoa/">Nước Hoa</a></li>
-                            </ul>
-                        </li>
-                        <li class="cat-item cat-item-135 cat-parent has-child" aria-expanded="false">
-                            <a href="https://classic.vn/cua-hang/phu-kien-nam/">Phụ Kiện Nam</a><button class="toggle"><i class="icon-angle-down"></i></button><ul class="children">
-                                <li class="cat-item cat-item-147 cat-parent has-child" aria-expanded="false">
-                                    <a href="https://classic.vn/cua-hang/phu-kien-nam/phu-kien-toc/">Phụ Kiện Tóc</a>	<button class="toggle"><i class="icon-angle-down"></i></button><ul class="children">
-                                        <li class="cat-item cat-item-186"><a href="https://classic.vn/cua-hang/phu-kien-nam/phu-kien-toc/luoc-tao-kieu/">Lược Tạo Kiểu</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="cat-item cat-item-66"><a href="https://classic.vn/cua-hang/hot-combo/">Combo Khuyến Mãi</a></li>
-                    </ul>
-                </aside><aside id="woocommerce_price_filter-12" class="widget woocommerce widget_price_filter">
-                    <span class="widget-title shop-sidebar">Lọc theo giá</span><div class="is-divider small"></div><form method="get" action="https://classic.vn/cua-hang/thuong-hieu/hanz-de-fuko/">
+                                <li class="cat-item cat-item-175"><a href="https://classic.vn/cua-hang/nuoc-hoa-nam/nuoc-hoa/">Nước Hoa</a>
+                            </li>*@
+                    @*</ul>
+                        </li>*@
+                    <li class="cat-item cat-item-66"><a href="https://classic.vn/cua-hang/hot-combo/">Combo Khuyến Mãi</a></li>
+                </ul>
+            </aside>
+            @*<aside id="woocommerce_price_filter-12" class="widget woocommerce widget_price_filter">
+                    <span class="widget-title shop-sidebar">Lọc theo giá</span><div class="is-divider small"></div><form method="get" action="https://classic.vn/shop/">
                         <div class="price_slider_wrapper">
                             <div class="price_slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style=""><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;"></span></div>
                             <div class="price_slider_amount" data-step="10">
-                                <input type="text" id="min_price" name="min_price" value="500000" data-min="500000" placeholder="Giá thấp nhất" style="display: none;">
-                                <input type="text" id="max_price" name="max_price" value="1080000" data-max="1080000" placeholder="Giá cao nhất" style="display: none;">
+                                <input type="text" id="min_price" name="min_price" value="30000" data-min="30000" placeholder="Giá thấp nhất" style="display: none;">
+                                <input type="text" id="max_price" name="max_price" value="2520000" data-max="2520000" placeholder="Giá cao nhất" style="display: none;">
                                 <button type="submit" class="button">Lọc</button>
                                 <div class="price_label" style="">
-                                    Giá <span class="from">500,000&nbsp;VNĐ</span> — <span class="to">1,080,000&nbsp;VNĐ</span>
+                                    Giá <span class="from">30,000&nbsp;VNĐ</span> — <span class="to">2,520,000&nbsp;VNĐ</span>
                                 </div>
 
                                 <div class="clear"></div>
                             </div>
                         </div>
                     </form>
-                </aside>
-            </div><!-- .sidebar-inner -->
-        </div><!-- #shop-sidebar -->
+                </aside>*@
+        </div><!-- .sidebar-inner -->
+    </div><!-- #shop-sidebar -->
 
-        <div class="col large-9">
-            <div class="shop-container">
-                <div class="woocommerce-notices-wrapper"></div>
-                <div class="products row row-small large-columns-4 medium-columns-3 small-columns-2">
+    <div class="col large-9">
+        <div class="shop-container">
+            <div class="woocommerce-notices-wrapper"></div>
+            <div class="products row row-small large-columns-4 medium-columns-3 small-columns-2">
 
-                    @foreach (var item in Model.Products)
-                    {
-                        var productClass = "product-small col has-hover product type-product " + item.ProductId + " has-post-thumbnail shipping-taxable purchasable product-type-simple";
-                        var imgURL = "/img/product/" + item.ImgUrl;
-                        @* class="productClass" *@
-                        <div class="@productClass">
-                            <div class="col-inner">
+                @foreach (var item in Model.Products)
+                {
+                    var productClass = "product-small col has-hover product type-product " + item.ProductId + " has-post-thumbnail shipping-taxable purchasable product-type-simple";
+                    var imgURL = "/img/product/" + item.ImgUrl;
+                    @* class="productClass" *@
+                    <div class="@productClass">
+                        <div class="col-inner">
 
-                                <div class="badge-container absolute left top z-1">
-                                </div>
-                                <div class="product-small box ">
-                                    <div class="box-image">
-                                        <div class="image-fade_in_back">
-                                            @* href *@
-                                            <a href="https://classic.vn/shop/dau-goi-hanz-de-fuko/">
-                                                <picture width="300" height="300" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail">
-                                                    @*<source type="image/webp" srcset="https://classic.vn/wp-content/uploads/2017/04/hanz-de-fuko.natural-shampoo.1500x1500-300x300.jpg.webp, https://classic.vn/wp-content/uploads/2017/04/hanz-de-fuko.natural-shampoo.1500x1500-100x100.jpg.webp 100w, https://classic.vn/wp-content/uploads/2017/04/hanz-de-fuko.natural-shampoo.1500x1500-280x280.jpg.webp 280w, https://classic.vn/wp-content/uploads/2017/04/hanz-de-fuko.natural-shampoo.1500x1500-400x400.jpg.webp 400w, https://classic.vn/wp-content/uploads/2017/04/hanz-de-fuko.natural-shampoo.1500x1500.jpg.webp 460w" sizes="(max-width: 300px) 100vw, 300px">*@
-                                                    @* src *@
-                                                    <img src="@imgURL" alt="" sizes="(max-width: 300px) 100vw, 300px">
-                                                </picture>
-                                            </a>
-                                        </div>
+                            <div class="badge-container absolute left top z-1">
+                            </div>
+                            <div class="product-small box ">
+                                <div class="box-image">
+                                    <div class="image-fade_in_back">
+                                        @* href *@
+                                        <a asp-page="detail" asp-route-id="@item.ProductId">
+                                            <picture width="300" height="300" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail">
+                                                @*<source type="image/webp" srcset="https://classic.vn/wp-content/uploads/2017/04/hanz-de-fuko.natural-shampoo.1500x1500-300x300.jpg.webp, https://classic.vn/wp-content/uploads/2017/04/hanz-de-fuko.natural-shampoo.1500x1500-100x100.jpg.webp 100w, https://classic.vn/wp-content/uploads/2017/04/hanz-de-fuko.natural-shampoo.1500x1500-280x280.jpg.webp 280w, https://classic.vn/wp-content/uploads/2017/04/hanz-de-fuko.natural-shampoo.1500x1500-400x400.jpg.webp 400w, https://classic.vn/wp-content/uploads/2017/04/hanz-de-fuko.natural-shampoo.1500x1500.jpg.webp 460w" sizes="(max-width: 300px) 100vw, 300px">*@
+                                                @* src *@
+                                                <img src="@imgURL" alt="" sizes="(max-width: 300px) 100vw, 300px">
+                                            </picture>
+                                        </a>
+                                    </div>
 
-                                        @* add to wish list *@
-                                        @*<div class="image-tools is-small top right show-on-hover">
-                                                <div class="wishlist-icon">
-                                                    <button class="wishlist-button button is-outline circle icon">
-                                                        <i class="icon-heart"></i>
-                                                    </button>
-                                                    <div class="wishlist-popup dark">
+                                    @* add to wish list *@
+                                    @*<div class="image-tools is-small top right show-on-hover">
+                                            <div class="wishlist-icon">
+                                                <button class="wishlist-button button is-outline circle icon">
+                                                    <i class="icon-heart"></i>
+                                                </button>
+                                                <div class="wishlist-popup dark">
 
-                                                        <div class="yith-wcwl-add-to-wishlist add-to-wishlist-2313">
-                                                            <div class="yith-wcwl-add-button show" style="display:block">
+                                                    <div class="yith-wcwl-add-to-wishlist add-to-wishlist-2313">
+                                                        <div class="yith-wcwl-add-button show" style="display:block">
 
 
-                                                                <a href="/cua-hang/thuong-hieu/hanz-de-fuko/?add_to_wishlist=2313" rel="nofollow" data-product-id="2313" data-product-type="simple" class="add_to_wishlist">
-                                                                    Add to Wishlist
-                                                                </a>
-                                                                <img src="https://classic.vn/wp-content/plugins/yith-woocommerce-wishlist/assets/images/wpspin_light.gif" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden">
-                                                            </div>
-
-                                                            <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
-                                                                <span class="feedback">Product added!</span>
-                                                                <a href="https://classic.vn/wishlist/" rel="nofollow">
-                                                                    Browse Wishlist
-                                                                </a>
-                                                            </div>
-
-                                                            <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
-                                                                <span class="feedback">The product is already in the wishlist!</span>
-                                                                <a href="https://classic.vn/wishlist/" rel="nofollow">
-                                                                    Browse Wishlist
-                                                                </a>
-                                                            </div>
-
-                                                            <div style="clear:both"></div>
-                                                            <div class="yith-wcwl-wishlistaddresponse"></div>
-
+                                                            <a href="/cua-hang/thuong-hieu/hanz-de-fuko/?add_to_wishlist=2313" rel="nofollow" data-product-id="2313" data-product-type="simple" class="add_to_wishlist">
+                                                                Add to Wishlist
+                                                            </a>
+                                                            <img src="https://classic.vn/wp-content/plugins/yith-woocommerce-wishlist/assets/images/wpspin_light.gif" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden">
                                                         </div>
 
-                                                        <div class="clear"></div>
+                                                        <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                                            <span class="feedback">Product added!</span>
+                                                            <a href="https://classic.vn/wishlist/" rel="nofollow">
+                                                                Browse Wishlist
+                                                            </a>
+                                                        </div>
+
+                                                        <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                                            <span class="feedback">The product is already in the wishlist!</span>
+                                                            <a href="https://classic.vn/wishlist/" rel="nofollow">
+                                                                Browse Wishlist
+                                                            </a>
+                                                        </div>
+
+                                                        <div style="clear:both"></div>
+                                                        <div class="yith-wcwl-wishlistaddresponse"></div>
+
                                                     </div>
+
+                                                    <div class="clear"></div>
                                                 </div>
-                                            </div>*@
-                                        <div class="image-tools is-small hide-for-small bottom left show-on-hover">
-                                        </div>
-                                        <div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-                                            <a class="quick-view quick-view-added" data-prod="2313" href="#quick-view">Quick View</a>
-                                        </div>
-                                    </div><!-- box-image -->
+                                            </div>
+                                        </div>*@
+                                    <div class="image-tools is-small hide-for-small bottom left show-on-hover">
+                                    </div>
+                                    <div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+                                        <a class="quick-view quick-view-added" data-prod="2313" href="#quick-view">Quick View</a>
+                                    </div>
+                                </div><!-- box-image -->
 
-                                    <div class="box-text box-text-products text-center grid-style-2">
-                                        <div class="title-wrapper">
-                                            <p class="category uppercase is-smaller no-text-overflow product-cat op-7">
-                                                @Model.Products[0].CategoryNavigation.CategoryName
-                                            </p>
-                                            @* href *@
-                                            <p class="name product-title"><a href="https://classic.vn/shop/dau-goi-hanz-de-fuko/">@item.ProName</a></p>
-                                        </div><div class="price-wrapper">
-                                            <span class="price"><span class="woocommerce-Price-amount amount">@item.Price&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
-                                        </div>
-                                    </div><!-- box-text -->
-                                </div><!-- box -->
-                            </div><!-- .col-inner -->
-                        </div><!-- col -->
-                    }
-                </div>
-            </div><!-- shop container -->
-        </div>
+                                <div class="box-text box-text-products text-center grid-style-2">
+                                    <div class="title-wrapper">
+                                        <p class="category uppercase is-smaller no-text-overflow product-cat op-7">
+                                            @Model.Products[0].CategoryNavigation.CategoryName
+                                        </p>
+                                        @* href *@
+                                        <p class="name product-title"><a href="https://classic.vn/shop/dau-goi-hanz-de-fuko/">@item.ProName</a></p>
+                                    </div><div class="price-wrapper">
+                                        <span class="price"><span class="woocommerce-Price-amount amount">@item.Price&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
+                                    </div>
+                                </div><!-- box-text -->
+                            </div><!-- box -->
+                        </div><!-- .col-inner -->
+                    </div><!-- col -->
+                }
+            </div>
+        </div><!-- shop container -->
     </div>
-
-</main><!-- #main -->
+</div>

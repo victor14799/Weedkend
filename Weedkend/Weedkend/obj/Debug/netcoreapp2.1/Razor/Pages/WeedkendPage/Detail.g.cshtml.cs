@@ -121,7 +121,7 @@ WriteAttributeValue("", 4999, ClassId, 4999, 8, false);
             WriteLiteral(" aria-expanded=\"false\">\r\n                                        ");
             EndContext();
             BeginContext(5072, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "badde2c23a5947079eaaa798d130f2fb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b7aa8db161b74816b6f09fcab44b1d24", async() => {
                 BeginContext(5120, 14, false);
 #line 63 "D:\Study\C#\Projects\Weedkend\Weedkend\Weedkend\Pages\WeedkendPage\Detail.cshtml"
                                                                                   Write(item.BrandName);
@@ -285,7 +285,7 @@ WriteAttributeValue("", 22482, imgUrl, 22482, 7, false);
             WriteLiteral("&nbsp;<span class=\"woocommerce-Price-currencySymbol\">VNĐ</span></span>\r\n                                    </p>\r\n                                </div>\r\n\r\n\r\n                                ");
             EndContext();
             BeginContext(24683, 2306, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a88bfeb26d4b4e2bab7e5149b423ef75", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18294f2c77e54c16a4dada6fd2cf9271", async() => {
                 BeginContext(24822, 408, true);
                 WriteLiteral(@"
                                     <div class=""sticky-add-to-cart-wrapper"">

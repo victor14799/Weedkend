@@ -18,12 +18,14 @@ namespace Weedkend.Pages.WeedkendPage
             _context = new MyContext();
         }
         public IList<Weedkend.Models.Product> Products { get; set; }
+        public IList<Category> Categories { get; set; }
         public async Task<IActionResult> OnGetAsync(string id)
         {
             Products = await _context.Product.Where(p => p.CategoryNavigation.CategoryId == id)
                                             .Include(p => p.ProBrandNavigation)
                                             .Include(p => p.CategoryNavigation)
                                             .ToListAsync();
+            Categories = _context.Category.ToList();
             return Page();
         }
     }
