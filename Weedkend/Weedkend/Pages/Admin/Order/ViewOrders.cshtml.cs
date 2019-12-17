@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -12,13 +13,36 @@ namespace Weedkend
     public class ViewOrdersModel : PageModel
     {
         public IList<Orders> Orders { get; set; }
-
-        public void OnGet()
+        public string FullName { get; set; }
+        public string Avatar { get; set; }
+        public string Role { get; set; }
+        public IActionResult OnGet()
         {
+            FullName = HttpContext.Session.GetString("username");
+            Avatar = HttpContext.Session.GetString("img");
+            Role = HttpContext.Session.GetString("role");
+
+            ViewData["FullName"] = FullName;
+            ViewData["Image"] = Avatar;
+
+            if (Role != "admin")
+            {
+                return Redirect("/login");
+            }
+            if (string.IsNullOrEmpty(FullName))
+            {
+                Redirect("/login");
+            }
             using (var context = new MyContext())
             {
                 Orders = context.Set<Orders>().Include(o => o.Customer).Include(o => o.OrdersDetail).OrderByDescending(o => o.Datetime).ToList();
             }
+            return Page();
+        }
+        public IActionResult OnGetLogout()
+        {
+            HttpContext.Session.Clear();
+            return Redirect("/login");
         }
     }
 }

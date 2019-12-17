@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -22,9 +23,19 @@ namespace Weedkend
         public List<Product> Products { get; set; }
 
         public double Total { get; set; }
-
+        public string Description = "";
         public async Task<IActionResult> OnGetAsync(Guid? id)
         {
+            string FullName = HttpContext.Session.GetString("username");
+            string Avatar = HttpContext.Session.GetString("img");
+            string Role = HttpContext.Session.GetString("role");
+
+            ViewData["FullName"] = FullName;
+            ViewData["Image"] = Avatar;
+            if (Role != "admin")
+            {
+                return Redirect("/login");
+            }
             if (id == null)
             {
                 return NotFound();
@@ -41,12 +52,13 @@ namespace Weedkend
                 .Where(p => p.OrdersDetail.FirstOrDefault(od => od.OrderId == id).OrderId == id)
                 .ToListAsync();
             Total = 0;
+
             foreach (var item in ODs)
             {
                 if (item.OrderId == id)
                 {
                     Total += item.GetTotal();
-
+                    Description += item.GetDescription();
                 }
             }
             if (OrdersDetail == null)
@@ -54,6 +66,11 @@ namespace Weedkend
                 return NotFound();
             }
             return Page();
+        }
+        public IActionResult OnGetLogout()
+        {
+            HttpContext.Session.Clear();
+            return Redirect("/login");
         }
     }
 }

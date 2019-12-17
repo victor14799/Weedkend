@@ -70,7 +70,7 @@ using Weedkend;
                 <span class=""widget-title shop-sidebar"">TÌM KIẾM</span><div class=""is-divider small""></div>");
             EndContext();
             BeginContext(514, 972, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a36e179d659496193ed74cfcff1e260", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "810ac57f4be54958a86da83a7adb01df", async() => {
                 BeginContext(595, 884, true);
                 WriteLiteral(@"
                     <div class=""flex-row relative"">
@@ -141,7 +141,7 @@ using Weedkend;
                                             ");
             EndContext();
             BeginContext(17970, 871, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "62e66eb39018477a995a02c2e1e0d7b3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5b0f8fa96a604b10b667e55c47b33cd6", async() => {
                 BeginContext(18022, 154, true);
                 WriteLiteral("\r\n                                                <picture width=\"300\" height=\"300\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\">\r\n");
                 EndContext();

@@ -137,7 +137,7 @@ using Weedkend;
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(1160, 71, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb12c615f0eb4460be57bcc8e6c7aac6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fe0a91521f444438b7ff1b17c2b3b6c5", async() => {
                 BeginContext(1219, 8, true);
                 WriteLiteral("Chi tiết");
                 EndContext();

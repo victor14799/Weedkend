@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.IO;
+using System.Web;
 
 namespace Weedkend.Models
 {
@@ -21,5 +23,11 @@ namespace Weedkend.Models
 
         public double GetTotal() { return UnitPrice * Quantity; }
 
+        public string GetDescription()
+        {
+            string desctip = Product.ProName + " x " + Quantity + " x " + UnitPrice.ToString("#,###") +" | ";
+            return desctip;
+
+        }
     }
 }

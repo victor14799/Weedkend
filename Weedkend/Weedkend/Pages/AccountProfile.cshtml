@@ -1,0 +1,72 @@
+﻿@page "/accountdetail"
+@model Weedkend.AccountProfileModel
+
+@{
+    ViewData["Title"] = "AccountProfile";
+    TempData["FullName"] = @Model.FullName;
+    TempData["Image"] = @Model.Avatar;
+    TempData["Role"] = Model.Role;
+    if (TempData["Role"].Equals("admin"))
+    {
+        Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
+
+    }
+    else
+    {
+        Layout = "~/Pages/Shared/_Weedkend.cshtml";
+    }
+}
+
+<h2>Account Profile</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" asp-page-handler="edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @ViewData["error"]
+            <div class="form-group">
+                <label asp-for="Account.UserName" class="control-label"></label>
+                <input type="text" asp-for="Account.UserName" class="form-control" readonly/>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.Password" class="control-label"></label>
+                <input asp-for="Account.Password" class="form-control" />
+                <span asp-validation-for="Account.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.FullName" class="control-label"></label>
+                <input asp-for="Account.FullName" class="form-control" />
+                <span asp-validation-for="Account.FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.Role" class="control-label"></label>
+                <select asp-for="Account.Role" class="form-control" asp-items="ViewBag.Role" disabled></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.PhoneNo" class="control-label"></label>
+                <input asp-for="Account.PhoneNo" class="form-control" />
+                <span asp-validation-for="Account.PhoneNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.Email" class="control-label"></label>
+                <input asp-for="Account.Email" class="form-control" />
+                <span asp-validation-for="Account.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.Address" class="control-label"></label>
+                <input asp-for="Account.Address" class="form-control" />
+                <span asp-validation-for="Account.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.ImgAvatar" class="control-label"></label>
+                <input asp-for="Account.ImgAvatar" type="file" class="form-control" />
+                <span asp-validation-for="Account.ImgAvatar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+

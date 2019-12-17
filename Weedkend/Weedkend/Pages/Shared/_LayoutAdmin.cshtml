@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>@TempData["Title"] - Weedkend</title>
+    <title>@ViewData["Title"] - Weedkend</title>
 
     <!-- Custom fonts for this template-->
     <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -29,7 +29,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" asp-page="Admin/adminpage">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -128,7 +128,7 @@
             </li>
             <!-- Nav Item - Account -->
             <li class="nav-item">
-                <a class="nav-link" href="/viewAccount">
+                <a class="nav-link" href="/Admin/showaccount">
                     <i class="fas fa-fw fa-user"></i>
                     <span>Account</span>
                 </a>
@@ -136,7 +136,7 @@
 
             <!-- Nav Item - Product -->
             <li class="nav-item">
-                <a class="nav-link" href="/viewProduct">
+                <a class="nav-link" href="/viewProducts">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Product</span>
                 </a>
@@ -311,12 +311,12 @@
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">@TempData["FullName"]</span>
-                                <img class="img-profile rounded-circle" src="@TempData["Image"]">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">@ViewData["FullName"]</span>
+                                <img class="img-profile rounded-circle" src="@ViewData["Image"]">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="/accountdetail">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -329,7 +329,7 @@
                                         Activity Log
                                     </a>*@
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" asp-page-handler="logout" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>

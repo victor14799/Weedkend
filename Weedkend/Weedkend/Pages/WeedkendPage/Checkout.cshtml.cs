@@ -27,6 +27,7 @@ namespace Weedkend.Pages.WeedkendPage
         }
         public IActionResult OnPostCheckOut(string FullName, string phone, string email, string address)
         {
+
             cart = SessionExtensions.Get<List<Item>>(HttpContext.Session, "cart");
             if (cart != null)
             {
@@ -51,7 +52,6 @@ namespace Weedkend.Pages.WeedkendPage
             {
                 Err.AddressErr = "Xin hãy điền địa chỉ của bạn";
                 IsValid = false;
-
             }
             Regex regx;
             Match match;

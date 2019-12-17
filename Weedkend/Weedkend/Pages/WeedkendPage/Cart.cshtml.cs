@@ -26,6 +26,7 @@ namespace Weedkend.Pages.WeedkendPage
 
         }
         public IActionResult OnPostBuyNow(string id, int quantity)
+
         {
             var productModel = new ProductModel();
             cart = SessionExtensions.Get<List<Item>>(HttpContext.Session, "cart");
