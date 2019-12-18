@@ -162,7 +162,7 @@
                                 <div class="product-small box ">
                                     <div class="box-image">
                                         <div class="image-fade_in_back">
-                                            <a href="@detailUrl_np">
+                                            <a asp-page="Detail" asp-route-id=@NewProduct[3].ProductId>
                                                 <picture width="300" height="300" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail">
                                                     <img src="@imgUrl_np" alt="" sizes="(max-width: 300px) 100vw, 300px">
                                                 </picture>
@@ -180,7 +180,7 @@
                                             <p class="category uppercase is-smaller no-text-overflow product-cat op-7">
                                                 Dapper Dan
                                             </p>
-                                            <p class="name product-title"><a href="@detailUrl_np">Dapper Dan Matte Paste 100ml</a></p>
+                                            <p class="name product-title"><a asp-page="Detail" asp-route-id=@NewProduct[3].ProductId>Dapper Dan Matte Paste 100ml</a></p>
                                         </div><div class="price-wrapper">
                                             <span class="price"><span class="woocommerce-Price-amount amount">480,000&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
                                         </div>
@@ -739,7 +739,7 @@
                                                         <p class="category uppercase is-smaller no-text-overflow product-cat op-7">
                                                             @item.CategoryNavigation.CategoryName
                                                         </p>
-                                                        <p class="name product-title"><a href="http://localhost:52334/WeedkendPage/Detail?id=c">@item.ProName</a></p>
+                                                        <p class="name product-title">@item.ProName</p>
                                                     </div><div class="price-wrapper">
                                                         @*<div class="star-rating" role="img" aria-label="Được xếp hạng 4.88 5 sao"><span style="width:97.6%">Được xếp hạng <strong class="rating">4.88</strong> 5 sao</span></div>*@
                                                         <span class="price"><span class="woocommerce-Price-amount amount">@item.Price&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
@@ -856,7 +856,7 @@
                                                         <p class="category uppercase is-smaller no-text-overflow product-cat op-7">
                                                             @item.ProBrandNavigation.BrandName
                                                         </p>
-                                                        <p class="name product-title"><a href="https://classic.vn/shop/bulldog-oil-control-face-wash-150ml/">@item.ProName</a></p>
+                                                        <p class="name product-title">@item.ProName</p>
                                                     </div><div class="price-wrapper">
                                                         @*<div class="star-rating" role="img" aria-label="Được xếp hạng 5.00 5 sao"><span style="width:100%">Được xếp hạng <strong class="rating">5.00</strong> 5 sao</span></div>*@
                                                         <span class="price"><span class="woocommerce-Price-amount amount">@item.Price&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
@@ -875,11 +875,10 @@
                         <div class="col-inner">
 
                             <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_996933386">
-                                <a class="" href="http://localhost:52334/WeedkendPage/Category?id=1" target="_self">
+                                @*<a class="" href="http://localhost:52334/WeedkendPage/Category?id=1" target="_self">*@
                                     <div class="img-inner image-zoom-fade dark">
-                                        <img width="519" height="775" src="https://classic.vn/wp-content/uploads/2019/11/skincare.jpg" class="attachment-large size-large" alt="" srcset="https://classic.vn/wp-content/uploads/2019/11/skincare.jpg 519w, https://classic.vn/wp-content/uploads/2019/11/skincare-268x400.jpg 268w" sizes="(max-width: 519px) 100vw, 519px">
                                     </div>
-                                </a>
+                               @* </a>*@
                                 <style scope="scope">
 
                                     #image_996933386 {
@@ -1006,7 +1005,7 @@
                                                         <p class="category uppercase is-smaller no-text-overflow product-cat op-7">
                                                             @item.ProBrandNavigation.BrandName
                                                         </p>
-                                                        <p class="name product-title"><a href="https://classic.vn/shop/xit-toan-than-all-over-body-spray-100ml/">@item.ProName</a></p>
+                                                        <p class="name product-title">@item.ProName</p>
                                                     </div><div class="price-wrapper">
                                                         <span class="price"><span class="woocommerce-Price-amount amount">@item.Price&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
                                                     </div>
@@ -1167,11 +1166,11 @@
                     <div class="col-inner">
 
                         <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1211521725">
-                            <a class="" href="http://localhost:52334/WeedkendPage/Brand?id=6" target="_self">
+                            @*<a class="" href="http://localhost:52334/WeedkendPage/Brand?id=6" target="_self">*@
                                 <div class="img-inner image-zoom dark">
                                     <img width="495" height="800" src="https://classic.vn/wp-content/uploads/2019/11/APESTOMEN-BRAND-compressed-495x800.jpg" class="attachment-large size-large" alt="" srcset="https://classic.vn/wp-content/uploads/2019/11/APESTOMEN-BRAND-compressed-495x800.jpg 495w, https://classic.vn/wp-content/uploads/2019/11/APESTOMEN-BRAND-compressed-248x400.jpg 248w, https://classic.vn/wp-content/uploads/2019/11/APESTOMEN-BRAND-compressed.jpg 519w" sizes="(max-width: 495px) 100vw, 495px">
                                 </div>
-                            </a>
+                            @*</a>*@
                             <style scope="scope">
                                 #image_1211521725 {
                                     width: 100%;

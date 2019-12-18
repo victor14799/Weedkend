@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study\\C#\\Projects\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj": {}
+    "C:\\Users\\PC\\Desktop\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj": {}
   },
   "projects": {
-    "D:\\Study\\C#\\Projects\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj": {
+    "C:\\Users\\PC\\Desktop\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\C#\\Projects\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj",
         "projectName": "Weedkend",
-        "projectPath": "D:\\Study\\C#\\Projects\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj",
-        "packagesPath": "C:\\Users\\Hiep\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\C#\\Projects\\Weedkend\\Weedkend\\Weedkend\\obj\\",
+        "projectPath": "C:\\Users\\PC\\Desktop\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\Weedkend\\Weedkend\\Weedkend\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Hiep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,10 +61,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
