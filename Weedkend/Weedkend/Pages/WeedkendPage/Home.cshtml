@@ -162,7 +162,7 @@
                                 <div class="product-small box ">
                                     <div class="box-image">
                                         <div class="image-fade_in_back">
-                                            <a asp-page="Detail" asp-route-id=@NewProduct[3].ProductId>
+                                            <a asp-page="Detail" asp-route-id=@NewProduct[0].ProductId>
                                                 <picture width="300" height="300" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail">
                                                     <img src="@imgUrl_np" alt="" sizes="(max-width: 300px) 100vw, 300px">
                                                 </picture>
@@ -180,9 +180,9 @@
                                             <p class="category uppercase is-smaller no-text-overflow product-cat op-7">
                                                 Dapper Dan
                                             </p>
-                                            <p class="name product-title"><a asp-page="Detail" asp-route-id=@NewProduct[3].ProductId>Dapper Dan Matte Paste 100ml</a></p>
+                                            <p class="name product-title"><a asp-page="Detail" asp-route-id=@NewProduct[0].ProductId>@NewProduct[0].ProName</a></p>
                                         </div><div class="price-wrapper">
-                                            <span class="price"><span class="woocommerce-Price-amount amount">480,000&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
+                                            <span class="price"><span class="woocommerce-Price-amount amount">@NewProduct[0].Price.ToString("#,###")&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
                                         </div>
                                     </div><!-- box-text -->
                                 </div><!-- box -->
@@ -217,9 +217,9 @@
                                             <p class="category uppercase is-smaller no-text-overflow product-cat op-7">
                                                 Dapper Dan
                                             </p>
-                                            <p class="name product-title"><a asp-page="Detail" asp-route-id=@NewProduct[1].ProductId>Dapper Dan Ultra Matte Clay 100ml</a></p>
+                                            <p class="name product-title"><a asp-page="Detail" asp-route-id=@NewProduct[1].ProductId>@NewProduct[1].ProName</a></p>
                                         </div><div class="price-wrapper">
-                                            <span class="price"><span class="woocommerce-Price-amount amount">@NewProduct[1].Price&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
+                                            <span class="price"><span class="woocommerce-Price-amount amount">@NewProduct[1].Price.ToString("#,###")&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
                                         </div>
                                     </div><!-- box-text -->
                                 </div><!-- box -->
@@ -254,9 +254,9 @@
                                             <p class="category uppercase is-smaller no-text-overflow product-cat op-7">
                                                 Khử Mùi Cơ Thể
                                             </p>
-                                            <p class="name product-title"><a asp-page="Detail" asp-route-id=@NewProduct[1].ProductId>Lăn Khử Mùi Old Spice Timber 73g</a></p>
+                                            <p class="name product-title"><a asp-page="Detail" asp-route-id=@NewProduct[2].ProductId>@NewProduct[2].ProName</a></p>
                                         </div><div class="price-wrapper">
-                                            <span class="price"><span class="woocommerce-Price-amount amount">@NewProduct[2].Price&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
+                                            <span class="price"><span class="woocommerce-Price-amount amount">@NewProduct[2].Price.ToString("#,###")&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
                                         </div>
                                     </div><!-- box-text -->
                                 </div><!-- box -->
@@ -289,9 +289,9 @@
                                             <p class="category uppercase is-smaller no-text-overflow product-cat op-7">
                                                 Lược Tạo Kiểu
                                             </p>
-                                            <p class="name product-title"><a asp-page="Detail" asp-route-id=@NewProduct[3].ProductId>Bộ Lược Chải 7 Cây Blue Zoo</a></p>
+                                            <p class="name product-title"><a asp-page="Detail" asp-route-id=@NewProduct[3].ProductId>@NewProduct[3].ProName</a></p>
                                         </div><div class="price-wrapper">
-                                            <span class="price"><span class="woocommerce-Price-amount amount">@NewProduct[3].Price&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
+                                            <span class="price"><span class="woocommerce-Price-amount amount">@NewProduct[3].Price.ToString("#,###")&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
                                         </div>
                                     </div><!-- box-text -->
                                 </div><!-- box -->
@@ -326,7 +326,7 @@
                                             <p class="category uppercase is-smaller no-text-overflow product-cat op-7">
                                                 Chăm Sóc Râu
                                             </p>
-                                            <p class="name product-title"><a asp-page="Detail" asp-route-id=@NewProduct[4].ProductId>Lưỡi Dao Gillette Mach3 Classic</a></p>
+                                            <p class="name product-title"><a asp-page="Detail" asp-route-id=@NewProduct[4].ProductId>@NewProduct[4].ProName</a></p>
                                         </div><div class="price-wrapper">
                                             <span class="price"><span class="woocommerce-Price-amount amount">@NewProduct[4]&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
                                         </div>
@@ -742,7 +742,7 @@
                                                         <p class="name product-title">@item.ProName</p>
                                                     </div><div class="price-wrapper">
                                                         @*<div class="star-rating" role="img" aria-label="Được xếp hạng 4.88 5 sao"><span style="width:97.6%">Được xếp hạng <strong class="rating">4.88</strong> 5 sao</span></div>*@
-                                                        <span class="price"><span class="woocommerce-Price-amount amount">@item.Price&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
+                                                        <span class="price"><span class="woocommerce-Price-amount amount">@item.Price.ToString("#,###")&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
                                                     </div>
                                                 </div><!-- box-text -->
                                             </div><!-- box -->
@@ -859,7 +859,7 @@
                                                         <p class="name product-title">@item.ProName</p>
                                                     </div><div class="price-wrapper">
                                                         @*<div class="star-rating" role="img" aria-label="Được xếp hạng 5.00 5 sao"><span style="width:100%">Được xếp hạng <strong class="rating">5.00</strong> 5 sao</span></div>*@
-                                                        <span class="price"><span class="woocommerce-Price-amount amount">@item.Price&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
+                                                        <span class="price"><span class="woocommerce-Price-amount amount">@item.Price.ToString("#,###")&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
                                                     </div>
                                                 </div><!-- box-text -->
                                             </div><!-- box -->
@@ -876,9 +876,9 @@
 
                             <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_996933386">
                                 @*<a class="" href="http://localhost:52334/WeedkendPage/Category?id=1" target="_self">*@
-                                    <div class="img-inner image-zoom-fade dark">
-                                    </div>
-                               @* </a>*@
+                                <div class="img-inner image-zoom-fade dark">
+                                </div>
+                                @* </a>*@
                                 <style scope="scope">
 
                                     #image_996933386 {
@@ -1007,7 +1007,7 @@
                                                         </p>
                                                         <p class="name product-title">@item.ProName</p>
                                                     </div><div class="price-wrapper">
-                                                        <span class="price"><span class="woocommerce-Price-amount amount">@item.Price&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
+                                                        <span class="price"><span class="woocommerce-Price-amount amount">@item.Price.ToString("#,###")&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
                                                     </div>
                                                 </div><!-- box-text -->
                                             </div><!-- box -->
@@ -1154,9 +1154,12 @@
 
             </div>*@
 
-        <div class="container section-title-container"><h3 class="section-title section-title-normal"><b></b><span class="section-title-main" style="color:rgba(0, 0, 0, 0.87);">thương hiệu nỗi bật</span><b></b>
-            @*<a href="https://vietwax.com/cua-hang/thuong-hieu/" target="">Xem thêm<i class="icon-angle-right"></i></a>*@
-              </h3></div><!-- .section-title -->
+        <div class="container section-title-container">
+            <h3 class="section-title section-title-normal">
+                <b></b><span class="section-title-main" style="color:rgba(0, 0, 0, 0.87);">thương hiệu nỗi bật</span><b></b>
+                @*<a href="https://vietwax.com/cua-hang/thuong-hieu/" target="">Xem thêm<i class="icon-angle-right"></i></a>*@
+            </h3>
+        </div><!-- .section-title -->
 
         <div class="banner-grid-wrapper">
             <div id="banner-grid-198411701" class="banner-grid row row-grid hide-for-medium row-small" data-packery-options="" style="position: relative; height: 400px;">
@@ -1167,9 +1170,9 @@
 
                         <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1211521725">
                             @*<a class="" href="http://localhost:52334/WeedkendPage/Brand?id=6" target="_self">*@
-                                <div class="img-inner image-zoom dark">
-                                    <img width="495" height="800" src="https://classic.vn/wp-content/uploads/2019/11/APESTOMEN-BRAND-compressed-495x800.jpg" class="attachment-large size-large" alt="" srcset="https://classic.vn/wp-content/uploads/2019/11/APESTOMEN-BRAND-compressed-495x800.jpg 495w, https://classic.vn/wp-content/uploads/2019/11/APESTOMEN-BRAND-compressed-248x400.jpg 248w, https://classic.vn/wp-content/uploads/2019/11/APESTOMEN-BRAND-compressed.jpg 519w" sizes="(max-width: 495px) 100vw, 495px">
-                                </div>
+                            <div class="img-inner image-zoom dark">
+                                <img width="495" height="800" src="https://classic.vn/wp-content/uploads/2019/11/APESTOMEN-BRAND-compressed-495x800.jpg" class="attachment-large size-large" alt="" srcset="https://classic.vn/wp-content/uploads/2019/11/APESTOMEN-BRAND-compressed-495x800.jpg 495w, https://classic.vn/wp-content/uploads/2019/11/APESTOMEN-BRAND-compressed-248x400.jpg 248w, https://classic.vn/wp-content/uploads/2019/11/APESTOMEN-BRAND-compressed.jpg 519w" sizes="(max-width: 495px) 100vw, 495px">
+                            </div>
                             @*</a>*@
                             <style scope="scope">
                                 #image_1211521725 {

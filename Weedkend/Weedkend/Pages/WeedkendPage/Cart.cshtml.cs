@@ -27,36 +27,45 @@ namespace Weedkend.Pages.WeedkendPage
         }
         public IActionResult OnPostBuyNow(string id, int quantity)
         {
-            var productModel = new ProductModel();
-            cart = SessionExtensions.Get<List<Item>>(HttpContext.Session, "cart");
-            if (cart == null)
+            try
             {
-                cart = new List<Item>();
-                cart.Add(new Item
+
+
+                var productModel = new ProductModel();
+                cart = SessionExtensions.Get<List<Item>>(HttpContext.Session, "cart");
+                if (cart == null)
                 {
-                    Product = productModel.Find(id),
-                    Quantity = quantity
-                });
-                SessionExtensions.Set(HttpContext.Session, "cart", cart);
-            }
-            else
-            {
-                int index = Exists(cart, id);
-                if (index == -1)
-                {
+                    cart = new List<Item>();
                     cart.Add(new Item
                     {
                         Product = productModel.Find(id),
                         Quantity = quantity
                     });
+                    SessionExtensions.Set(HttpContext.Session, "cart", cart);
                 }
                 else
                 {
-                    cart[index].Quantity++;
+                    int index = Exists(cart, id);
+                    if (index == -1)
+                    {
+                        cart.Add(new Item
+                        {
+                            Product = productModel.Find(id),
+                            Quantity = quantity
+                        });
+                    }
+                    else
+                    {
+                        cart[index].Quantity++;
+                    }
+                    SessionExtensions.Set(HttpContext.Session, "cart", cart);
                 }
-                SessionExtensions.Set(HttpContext.Session, "cart", cart);
+                return RedirectToPage("Cart");
             }
-            return RedirectToPage("Cart");
+            catch (Exception ex)
+            {
+                return Redirect("/Error");
+            }
         }
         public IActionResult OnGetDelete(string id)
         {

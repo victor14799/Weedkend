@@ -22,36 +22,56 @@ namespace Weedkend.Pages.Admin
         }
 
         public Weedkend.Models.Product Product { get; set; }
-
-        public async Task<IActionResult> OnGetAsync(Guid id)
+        public IActionResult OnGetLogout()
         {
-            FullName = HttpContext.Session.GetString("username");
-            Avatar = HttpContext.Session.GetString("img");
-            Role = HttpContext.Session.GetString("role");
-
-            if (string.IsNullOrEmpty(FullName))
+            try
             {
+                HttpContext.Session.Clear();
                 return Redirect("/login");
             }
-
-            if (Role == "admin")
+            catch
             {
-                if (id == null)
-                {
-                    return NotFound();
-                }
-
-                Product = await _context.Product
-                    .Include(p => p.CategoryNavigation)
-                    .Include(p => p.ProBrandNavigation).FirstOrDefaultAsync(m => m.ProductId == id);
-
-                if (Product == null)
-                {
-                    return NotFound();
-                }
-                return Page();
+                return Redirect("/error");
             }
-            else return Redirect("/notAccess");
+
+        }
+        public async Task<IActionResult> OnGetAsync(Guid id)
+        {
+            try
+            {
+                FullName = HttpContext.Session.GetString("username");
+                Avatar = HttpContext.Session.GetString("img");
+                Role = HttpContext.Session.GetString("role");
+
+                if (string.IsNullOrEmpty(FullName))
+                {
+                    return Redirect("/login");
+                }
+
+                if (Role == "admin")
+                {
+                    if (id == null)
+                    {
+                        return NotFound();
+                    }
+
+                    Product = await _context.Product
+                        .Include(p => p.CategoryNavigation)
+                        .Include(p => p.ProBrandNavigation).FirstOrDefaultAsync(m => m.ProductId == id);
+
+                    if (Product == null)
+                    {
+                        return NotFound();
+                    }
+                    return Page();
+                }
+                else return Redirect("/notAccess");
+            }
+            catch
+            {
+                return Redirect("/error");
+            }
+
         }
     }
 }

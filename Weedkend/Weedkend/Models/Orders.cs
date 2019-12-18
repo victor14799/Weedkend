@@ -19,5 +19,7 @@ namespace Weedkend.Models
         public Customer Customer { get; set; }
         public Account UserNameNavigation { get; set; }
         public ICollection<OrdersDetail> OrdersDetail { get; set; }
+
+       
     }
 }

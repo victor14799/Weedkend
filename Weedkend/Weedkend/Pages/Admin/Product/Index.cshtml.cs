@@ -18,27 +18,51 @@ namespace Weedkend.Pages.Admin.Product
         public IList<Weedkend.Models.Product> Products { get; set; }
         public async Task<IActionResult> OnGetAsync()
         {
-
-            FullName = HttpContext.Session.GetString("username");
-            Avatar = HttpContext.Session.GetString("img");
-            Role = HttpContext.Session.GetString("role");
-
-            if (string.IsNullOrEmpty(FullName))
+            try
             {
+                FullName = HttpContext.Session.GetString("username");
+                Avatar = HttpContext.Session.GetString("img");
+                Role = HttpContext.Session.GetString("role");
+
+                ViewData["FullName"] = FullName;
+                ViewData["Image"] = Avatar;
+
+                if (string.IsNullOrEmpty(FullName))
+                {
+                    return Redirect("/login");
+                }
+
+                if (Role == "admin")
+                {
+                    using (var context = new MyContext())
+                    {
+                        Products = await context.Product.Include(p => p.ProBrandNavigation)
+                                                        .Include(p => p.CategoryNavigation)
+                                                        .ToListAsync();
+                    }
+                    return Page();
+                }
+                else return Redirect("/notAccess");
+            }
+            catch
+            {
+                return Redirect("/error");
+            }
+
+
+        }
+        public IActionResult OnGetLogout()
+        {
+            try
+            {
+                HttpContext.Session.Clear();
                 return Redirect("/login");
             }
-
-            if (Role == "admin")
+            catch
             {
-                using (var context = new MyContext())
-                {
-                    Products = await context.Product.Include(p => p.ProBrandNavigation)
-                                                    .Include(p => p.CategoryNavigation)
-                                                    .ToListAsync();
-                }
-                return Page();
+                return Redirect("/error");
             }
-            else return Redirect("/notAccess");
+
         }
     }
 }

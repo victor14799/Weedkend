@@ -37,7 +37,7 @@
 
     <div class="col large-3 hide-for-medium ">
         <div id="shop-sidebar" class="sidebar-inner col-inner">
-            <aside id="woocommerce_product_categories-3" class="widget woocommerce widget_product_categories">
+            <asi`de id="woocommerce_product_categories-3" class="widget woocommerce widget_product_categories">
                 <span class="widget-title shop-sidebar">DANH MỤC SẢN PHẨM</span><div class="is-divider small"></div>
                 <ul class="product-categories">
                     @foreach (var item in Model.Categories)
@@ -150,7 +150,7 @@
                         </li>*@
                     @*<li class="cat-item cat-item-66"><a href="https://classic.vn/cua-hang/hot-combo/">Combo Khuyến Mãi</a></li>*@
                 </ul>
-            </aside>
+            </asi`de>
             @*<aside id="woocommerce_price_filter-12" class="widget woocommerce widget_price_filter">
                     <span class="widget-title shop-sidebar">Lọc theo giá</span><div class="is-divider small"></div><form method="get" action="https://classic.vn/shop/">
                         <div class="price_slider_wrapper">
@@ -252,7 +252,7 @@
                                             <p class="category uppercase is-smaller no-text-overflow product-cat op-7">
                                                 @item.CategoryNavigation.CategoryName
                                             </p>
-                                            <p class="name product-title"><a href="/products/{@item.ProductId}"> @item.ProName&amp;Guy</a></p>
+                                            <p class="name product-title"><a asp-page="detail" asp-route-id="@item.ProductId"> @item.ProName&amp;Guy</a></p>
                                         </div><div class="price-wrapper">
                                             <span class="price"><span class="woocommerce-Price-amount amount">@item.Price.ToString("#,###")&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></span></span>
                                         </div>

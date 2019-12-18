@@ -15,14 +15,23 @@ namespace Weedkend
         public IList<Weedkend.Models.Brand> Brands { get; set; }
         public void OnGet(string id)
         {
-            double TotalPrice = SessionExtensions.Get<double>(HttpContext.Session, "total");
-            ViewData["Total"] = TotalPrice.ToString("#,###");
-            using (var context = new MyContext())
+            try
             {
-                product = context.Set<Product>().FirstOrDefault(p => p.ProductId.ToString() == id);
+                double TotalPrice = SessionExtensions.Get<double>(HttpContext.Session, "total");
+                ViewData["Total"] = TotalPrice.ToString("#,###");
+                using (var context = new MyContext())
+                {
+                    product = context.Set<Product>().FirstOrDefault(p => p.ProductId.ToString() == id);
 
-                Brands = context.Brand.ToList();
+                    Brands = context.Brand.ToList();
+                }
             }
+            catch
+            {
+                Redirect("Error");
+            }
+
+
         }
     }
 }

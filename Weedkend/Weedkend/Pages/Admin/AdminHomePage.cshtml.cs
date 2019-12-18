@@ -15,26 +15,42 @@ namespace Weedkend.Pages.Admin
         public string Role { get; set; }
         public IActionResult OnGet()
         {
-            FullName = HttpContext.Session.GetString("username");
-            Avatar = HttpContext.Session.GetString("img");
-            Role = HttpContext.Session.GetString("role");
-
-            if (string.IsNullOrEmpty(FullName))
+            try
             {
-                return Redirect("/login");
+                FullName = HttpContext.Session.GetString("username");
+                Avatar = HttpContext.Session.GetString("img");
+                Role = HttpContext.Session.GetString("role");
+
+                if (string.IsNullOrEmpty(FullName))
+                {
+                    return Redirect("/login");
+                }
+
+                if (Role == "admin")
+                {
+                    return Page();
+                }
+                else return Redirect("/notAccess");
+            }
+            catch
+            {
+                return Redirect("/error");
             }
 
-            if (Role == "admin")
-            {
-                return Page();
-            }
-            else return Redirect("/notAccess");
         }
 
         public IActionResult OnGetLogout()
         {
-            HttpContext.Session.Clear();
-            return Redirect("/login");
+            try
+            {
+                HttpContext.Session.Clear();
+                return Redirect("/login");
+            }
+            catch
+            {
+                return Redirect("/error");
+            }
+
         }
     }
 }

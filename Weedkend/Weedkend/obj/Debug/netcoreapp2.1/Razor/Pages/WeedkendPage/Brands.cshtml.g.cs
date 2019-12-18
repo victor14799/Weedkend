@@ -114,7 +114,7 @@ WriteAttributeValue("", 1896, ClassId, 1896, 8, false);
             WriteLiteral(" aria-expanded=\"false\">\r\n                            ");
             EndContext();
             BeginContext(1957, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "690a86390afc494aafd6ffd6d9dab61e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3fd08fc30f64342980efadb783dddc9", async() => {
                 BeginContext(2005, 14, false);
 #line 47 "C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\Pages\WeedkendPage\Brands.cshtml"
                                                                       Write(item.BrandName);

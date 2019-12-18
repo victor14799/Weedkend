@@ -1,9 +1,9 @@
 ﻿@page "/Admin/adminpage"
 @model Weedkend.Pages.Admin.AdminHomePageModel
 @{
-    TempData["FullName"] = @Model.FullName;
-    TempData["Image"] = @Model.Avatar;
-    TempData["Title"] = "Admin";
+    ViewData["FullName"] = @Model.FullName;
+    ViewData["Image"] = @Model.Avatar;
+    ViewData["Title"] = "Admin";
     Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
 }
 @*<div class="container-fluid"> 

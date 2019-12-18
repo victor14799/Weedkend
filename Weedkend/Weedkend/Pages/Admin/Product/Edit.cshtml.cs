@@ -30,86 +30,116 @@ namespace Weedkend.Pages.Admin
 
         public async Task<IActionResult> OnGetAsync(Guid id)
         {
-            FullName = HttpContext.Session.GetString("username");
-            Avatar = HttpContext.Session.GetString("img");
-            Role = HttpContext.Session.GetString("role");
-
-            if (string.IsNullOrEmpty(FullName))
+            try
             {
-                return Redirect("/login");
-            }
+                FullName = HttpContext.Session.GetString("username");
+                Avatar = HttpContext.Session.GetString("img");
+                Role = HttpContext.Session.GetString("role");
 
-            if (Role == "admin")
-            {
-                using (var context = new MyContext())
+                ViewData["FullName"] = FullName;
+                ViewData["Image"] = Avatar;
+                if (string.IsNullOrEmpty(FullName))
                 {
-                    if (id == null)
-                    {
-                        return NotFound();
-                    }
-
-                    Product = await context.Product
-                        .Include(p => p.CategoryNavigation)
-                        .Include(p => p.ProBrandNavigation)
-                        .FirstOrDefaultAsync(m => m.ProductId == id);
-
-                    if (Product == null)
-                    {
-                        return NotFound();
-                    }
-
-                    ProCategory = context.Category.Select(c => new SelectListItem
-                    {
-                        Value = c.CategoryId.ToString(),
-                        Text = c.CategoryName
-                    }).ToList();
-
-                    ViewData["ProCategory"] = ProCategory;
-
-                    ProBrand = context.Brand.Select(b => new SelectListItem
-                    {
-                        Value = b.BrandId.ToString(),
-                        Text = b.BrandName
-                    }).ToList();
-
-                    ViewData["ProBrand"] = ProBrand;
+                    return Redirect("/login");
                 }
-                return Page();
+
+                if (Role == "admin")
+                {
+                    using (var context = new MyContext())
+                    {
+                        if (id == null)
+                        {
+                            return NotFound();
+                        }
+
+                        Product = await context.Product
+                            .Include(p => p.CategoryNavigation)
+                            .Include(p => p.ProBrandNavigation)
+                            .FirstOrDefaultAsync(m => m.ProductId == id);
+
+                        if (Product == null)
+                        {
+                            return NotFound();
+                        }
+
+                        ProCategory = context.Category.Select(c => new SelectListItem
+                        {
+                            Value = c.CategoryId.ToString(),
+                            Text = c.CategoryName
+                        }).ToList();
+
+                        ViewData["ProCategory"] = ProCategory;
+
+                        ProBrand = context.Brand.Select(b => new SelectListItem
+                        {
+                            Value = b.BrandId.ToString(),
+                            Text = b.BrandName
+                        }).ToList();
+
+                        ViewData["ProBrand"] = ProBrand;
+                    }
+                    return Page();
+                }
+                else return Redirect("/notAccess");
             }
-            else return Redirect("/notAccess");
+            catch
+            {
+                return Redirect("/error");
+            }
+
         }
 
         public async Task<IActionResult> OnPostAsync()
         {
-            using (var context = new MyContext())
+            try
             {
-                if (!ModelState.IsValid)
+                using (var context = new MyContext())
                 {
-                    return Page();
-                }
-
-                context.Attach(Product).State = EntityState.Modified;
-
-                try
-                {
-                    await context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ProductExists(Product.ProductId))
+                    if (!ModelState.IsValid)
                     {
-                        return NotFound();
+                        return Page();
                     }
-                    else
-                    {
-                        throw;
-                    }
-                }
 
-                return RedirectToPage("./Index");
+                    context.Attach(Product).State = EntityState.Modified;
+
+                    try
+                    {
+                        await context.SaveChangesAsync();
+                    }
+                    catch (DbUpdateConcurrencyException)
+                    {
+                        if (!ProductExists(Product.ProductId))
+                        {
+                            return NotFound();
+                        }
+                        else
+                        {
+                            throw;
+                        }
+                    }
+
+                    return RedirectToPage("./Index");
+                }
             }
-        }
+            catch
+            {
+                return Redirect("/error");
+            }
 
+        }
+        public IActionResult OnGetLogout()
+        {
+            try
+            {
+                HttpContext.Session.Clear();
+                return Redirect("/login");
+            }
+            catch
+            {
+                return Redirect("/error");
+            }
+
+        }
         private bool ProductExists(Guid id)
         {
             using (var context = new MyContext())

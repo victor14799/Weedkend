@@ -125,7 +125,7 @@ WriteAttributeValue("", 2809, ClassId, 2809, 8, false);
             WriteLiteral(" aria-expanded=\"false\">\r\n                            ");
             EndContext();
             BeginContext(2870, 72, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0236dab2386c4e47899c8a2105ff795e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c964105f21a4968a319ebaff9c61903", async() => {
                 BeginContext(2921, 17, false);
 #line 62 "C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\Pages\WeedkendPage\Category.cshtml"
                                                                          Write(item.CategoryName);
@@ -222,7 +222,7 @@ WriteAttributeValue("", 18138, productClass, 18138, 13, false);
             WriteLiteral("                                        ");
             EndContext();
             BeginContext(18604, 1132, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e65fba605b9a4b0b8afa44676455ef59", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28a9f6c8f5f64c0b9af5afa5729fd781", async() => {
                 BeginContext(18656, 150, true);
                 WriteLiteral("\r\n                                            <picture width=\"300\" height=\"300\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thumbnail\">\r\n");
                 EndContext();

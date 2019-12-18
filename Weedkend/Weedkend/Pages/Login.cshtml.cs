@@ -17,30 +17,45 @@ namespace Weedkend
         }
         public IActionResult OnPostLogin(string username, string password)
         {
-            using (var context = new MyContext())
+            try
             {
-                var user = context.Set<Account>().FirstOrDefault(u => (u.UserName == username || u.Email == username) && u.Password == password && u.Status.Equals("active"));
-
-                if (user == null)
+                using (var context = new MyContext())
                 {
-                    TempData["ERROR"] = "Username or password is incorrect!";
-                    return Page();
-                }
-                else
-                {
-                    var role = context.Set<Role>().FirstOrDefault(r => r.RoleId == user.Role);
-                    HttpContext.Session.SetString("username", user.FullName);
-                    HttpContext.Session.SetString("role", role.RoleName);
-                    HttpContext.Session.SetString("img", user.ImgAvatar);
+                    var user = context.Set<Account>().FirstOrDefault(u => (u.UserName == username || u.Email == username) && u.Password == password && u.Status.Equals("active"));
 
-                    if (role.RoleName == "admin")
+                    if (user == null)
                     {
-                        return Redirect("/Admin/adminpage");
+                        TempData["ERROR"] = "Username or password is incorrect!";
+                        return Page();
                     }
-                    else return Redirect("/");
+                    else
+                    {
+                        var role = context.Set<Role>().FirstOrDefault(r => r.RoleId == user.Role);
+                        HttpContext.Session.SetString("fullname", user.UserName);
+                        HttpContext.Session.SetString("username", user.FullName);
+                        HttpContext.Session.SetString("role", role.RoleName);
+                        HttpContext.Session.SetString("img", user.ImgAvatar);
+
+                        string FullName = HttpContext.Session.GetString("username");
+                        string Avatar = HttpContext.Session.GetString("img");
+                        string Role = HttpContext.Session.GetString("role");
+                        ViewData["FullName"] = FullName;
+                        ViewData["Image"] = Avatar;
+
+                        if (role.RoleName == "admin")
+                        {
+                            return Redirect("/Admin/adminpage");
+                        }
+                        else return Redirect("/");
+                    }
                 }
             }
+            catch
+            {
+                return Redirect("Error");
+            }
+
         }
-        
+
     }
 }

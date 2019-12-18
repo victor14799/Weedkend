@@ -21,15 +21,23 @@ namespace Weedkend.Pages.WeedkendPage
         public string brand { get; set; }
         public async Task<IActionResult> OnGetAsync(string id)
         {
-            Products = await _context.Product.Where(p => p.ProBrandNavigation.BrandId == id)
-                                            .Include(p => p.ProBrandNavigation)
-                                            .Include(p => p.CategoryNavigation)
-                                            .ToListAsync();
-            brand = _context.Product.Where(p => p.ProBrandNavigation.BrandId == id)
-                                    .FirstOrDefault()
-                                    .ToString();
-            Brands = _context.Brand.ToList();
-            return Page();
+            try
+            {
+                Products = await _context.Product.Where(p => p.ProBrandNavigation.BrandId == id)
+                                                            .Include(p => p.ProBrandNavigation)
+                                                            .Include(p => p.CategoryNavigation)
+                                                            .ToListAsync();
+                brand = _context.Product.Where(p => p.ProBrandNavigation.BrandId == id)
+                                        .FirstOrDefault()
+                                        .ToString();
+                Brands = _context.Brand.ToList();
+                return Page();
+            }
+            catch
+            {
+                return Redirect("/error");
+            }
+
         }
 
     }

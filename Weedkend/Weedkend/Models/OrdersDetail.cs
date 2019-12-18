@@ -14,5 +14,14 @@ namespace Weedkend.Models
 
         public Orders Order { get; set; }
         public Product Product { get; set; }
+
+        public double GetTotal() { return UnitPrice * Quantity; }
+
+        public string GetDescription()
+        {
+            string desctip = Product.ProName + " x " + Quantity + " x " + UnitPrice.ToString("#,###") + " | ";
+            return desctip;
+
+        }
     }
 }

@@ -84,7 +84,7 @@ using Weedkend;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(255, 10511, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc3aa5ca981e4dc28eb09e081729a2e4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c6fda60dd2a495b965da9b92fe7f639", async() => {
                 BeginContext(261, 2132, true);
                 WriteLiteral(@"
     <!-- <link rel=""stylesheet"" href=""file1.css"">
@@ -388,7 +388,7 @@ using Weedkend;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(10770, 66146, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b8b26bccd4434c929d0ed0f9bb26ad66", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c51b1555e40475584ec4cea4cfdc629", async() => {
                 BeginContext(10980, 1543, true);
                 WriteLiteral(@"
     <div id=""yith-wcwl-popup-message"" style=""display: none;""><div id=""yith-wcwl-message""></div></div>
@@ -448,7 +448,7 @@ using Weedkend;
                                 ");
                 EndContext();
                 BeginContext(15061, 121, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ae94dfc1ea8e4477bb0405361a54c58d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f475f86b3d224a29a2cab8b3e75dc17a", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -494,7 +494,7 @@ using Weedkend;
                                             ");
                 EndContext();
                 BeginContext(16669, 1287, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a96a25f953414f1aac1b1a9fb02a16a2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0844da378f2c4c42854d33d9ff657193", async() => {
                     BeginContext(16758, 1191, true);
                     WriteLiteral(@"
                                                 <div class=""flex-row relative"">
@@ -863,7 +863,7 @@ using Weedkend;
                 WriteLiteral("          <div class=\"searchform-wrapper ux-search-box relative form-flat is-normal\">\r\n                            ");
                 EndContext();
                 BeginContext(57546, 1104, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eae37165382c49e7a4c81486a81c48fb", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0ab1c963462045709f44659de68e07c8", async() => {
                     BeginContext(57584, 1059, true);
                     WriteLiteral(@"
                                 <div class=""flex-row relative"">
