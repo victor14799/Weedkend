@@ -17,7 +17,13 @@ C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Weedkend.
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Weedkend.TagHelpers.output.cache
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Weedkend.RazorCoreGenerate.cache
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\About.cshtml.g.cs
+C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\AccountCreate.cshtml.g.cs
+C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\AccountProfile.cshtml.g.cs
+C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Account\AccountEdit.cshtml.g.cs
+C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Account\AccountShow.cshtml.g.cs
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\AdminHomePage.cshtml.g.cs
+C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Order\ViewOrderDetail.cshtml.g.cs
+C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Order\ViewOrders.cshtml.g.cs
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Product\Create.cshtml.g.cs
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Product\Delete.cshtml.g.cs
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Product\Details.cshtml.g.cs
@@ -34,6 +40,7 @@ C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pag
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_Weedkend.cshtml.g.cs
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Brand.cshtml.g.cs
+C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Brands.cshtml.g.cs
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Cart.cshtml.g.cs
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Category.cshtml.g.cs
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\WeedkendPage\Checkout.cshtml.g.cs
@@ -49,9 +56,3 @@ C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Weedkend.
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Weedkend.dll
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Weedkend.pdb
 C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Weedkend.csproj.CopyComplete
-C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Order\ViewOrders.cshtml.g.cs
-C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Order\ViewOrderDetail.cshtml.g.cs
-C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\AccountCreate.cshtml.g.cs
-C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\AccountProfile.cshtml.g.cs
-C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Account\AccountEdit.cshtml.g.cs
-C:\Users\PC\Desktop\Weedkend\Weedkend\Weedkend\obj\Debug\netcoreapp2.1\Razor\Pages\Admin\Account\AccountShow.cshtml.g.cs

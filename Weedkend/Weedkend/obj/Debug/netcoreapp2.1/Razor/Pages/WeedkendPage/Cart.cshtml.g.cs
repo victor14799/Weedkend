@@ -95,7 +95,7 @@ using Weedkend;
             WriteLiteral("                </div>\r\n            </div><div class=\"woocommerce row row-large row-divided\">\r\n                <div class=\"col large-7 pb-0 \">\r\n\r\n\r\n                    ");
             EndContext();
             BeginContext(1733, 7669, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a2350368252f4cbf8e496bc7d2075299", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc7d830eaba749f39a938ceb9b985f3b", async() => {
                 BeginContext(1799, 201, true);
                 WriteLiteral("\r\n                        <div class=\"cart-wrapper sm-touch-scroll\">\r\n                            <table class=\"shop_table shop_table_responsive cart woocommerce-cart-form__contents\" cellspacing=\"0\">\r\n");
                 EndContext();
@@ -129,7 +129,7 @@ using Weedkend;
                 WriteLiteral("                                            <tr class=\"woocommerce-cart-form__cart-item cart_item\">\r\n\r\n                                                <td class=\"product-remove\">\r\n                                                    ");
                 EndContext();
                 BeginContext(3018, 203, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5ea520f02fb749758c435e5cbc7442c8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dbb48bf897734a0b93c93301c2fcd866", async() => {
                     BeginContext(3216, 1, true);
                     WriteLiteral("×");
                     EndContext();
@@ -294,7 +294,7 @@ WriteAttributeValue("", 6702, item.Quantity, 6702, 14, false);
                                                 ");
                 EndContext();
                 BeginContext(8092, 135, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c87fd928b0264e10ac7dc8e70f0e32e1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "cefccbb59fbb4395b52c85bd05f2150b", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_FormActionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormActionTagHelper>();

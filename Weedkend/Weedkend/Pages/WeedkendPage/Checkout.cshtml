@@ -16,13 +16,13 @@
                     <div class="woocommerce">
                         <div class="woocommerce-notices-wrapper"></div><div class="woocommerce-form-login-toggle">
 
-                            <div class="woocommerce-info message-wrapper">
+                            @*<div class="woocommerce-info message-wrapper">
                                 <div class="message-container container medium-text-center">
                                     Bạn đã có tài khoản? <a href="#" class="showlogin">Ấn vào đây để đăng nhập</a>
                                 </div>
-                            </div>
+                            </div>*@
                         </div>
-                        <form class="woocommerce-form woocommerce-form-login login" method="post" style="display:none;">
+                        @*<form class="woocommerce-form woocommerce-form-login login" method="post" style="display:none;">
 
 
                             <p>If you have shopped with us before, please enter your details below. If you are a new customer, please proceed to the Billing section.</p>
@@ -52,17 +52,17 @@
                             <div class="clear"></div>
 
 
-                        </form>
-                        <div class="woocommerce-form-coupon-toggle">
+                        </form>*@
+                        @*<div class="woocommerce-form-coupon-toggle">
 
                             <div class="woocommerce-info message-wrapper">
                                 <div class="message-container container medium-text-center">
                                     Bạn có mã ưu đãi? <a href="#" class="showcoupon">Ấn vào đây để nhập mã</a>
                                 </div>
                             </div>
-                        </div>
+                        </div>*@
 
-                        <form class="checkout_coupon woocommerce-form-coupon has-border is-dashed" method="post" style="display:none">
+                        @*<form class="checkout_coupon woocommerce-form-coupon has-border is-dashed" method="post" style="display:none">
 
                             <p>Nếu bạn có mã giảm giá, vui lòng điền vào phía bên dưới.</p>
                             <div class="coupon">
@@ -73,16 +73,16 @@
                                     <div class="flex-col">
                                         <button type="submit" class="button expand" name="apply_coupon" value="Áp dụng">Áp dụng</button>
                                     </div>
-                                </div><!-- row -->
-                            </div><!-- coupon -->
-                        </form>
-                        <div class="woocommerce-notices-wrapper">
+                                </div> row 
+                            </div> coupon 
+                        </form>*@
+                        @*<div class="woocommerce-notices-wrapper">
                             <div class="woocommerce-message message-wrapper" role="alert">
                                 <div class="message-container container success-color medium-text-center">
                                     <i class="icon-checkmark"></i>			Customer matched zone "Hồ Chí Minh"
                                 </div>
                             </div>
-                        </div>
+                        </div>*@
                         <form name="checkout" method="post" class="checkout woocommerce-checkout " asp-page-handler="checkOut" enctype="multipart/form-data" novalidate="novalidate">
 
                             <div class="row pt-0 ">
@@ -96,7 +96,7 @@
                                                 <h3>Thông tin thanh toán</h3>
 
 
-                                                <div class="get_address_byphone_wrap">
+                                                @*<div class="get_address_byphone_wrap">
                                                     <button class="get_address_byphone" type="button" data-mfp-src="#get_address_content">+ Lấy địa chỉ mua hàng trước</button>
                                                     <div id="get_address_content" class="mfp-hide">
                                                         <div class="get_address_content_input">
@@ -109,7 +109,7 @@
                                                         </div>
                                                         <div class="get_address_content_footer"></div>
                                                     </div>
-                                                </div>
+                                                </div>*@
 
                                                 <div class="woocommerce-billing-fields__field-wrapper">
                                                     <p class="form-row form-row-wide validate-required" id="billing_last_name_field" data-priority="10">

@@ -100,7 +100,7 @@ using Weedkend;
                             <span class=""widget-title shop-sidebar"">TÌM KIẾM SẢN PHẨM</span><div class=""is-divider small""></div>");
             EndContext();
             BeginContext(4578, 1116, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e3586034164541af81e1a53134105a61", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fa71f283a4ed4082a2380f349e2eaad7", async() => {
                 BeginContext(4659, 1028, true);
                 WriteLiteral(@"
                                 <div class=""flex-row relative"">
@@ -326,7 +326,7 @@ WriteAttributeValue(" ", 26300, product.ImgUrl, 26301, 15, false);
             WriteLiteral("&nbsp;<span class=\"woocommerce-Price-currencySymbol\">VNĐ</span></span>\r\n                                    </p>\r\n                                </div>\r\n\r\n\r\n                                ");
             EndContext();
             BeginContext(28817, 2306, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e16c2333fd2242d1b080d8085544b12f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bdffba70deab4d75835acac31756595e", async() => {
                 BeginContext(28956, 408, true);
                 WriteLiteral(@"
                                     <div class=""sticky-add-to-cart-wrapper"">

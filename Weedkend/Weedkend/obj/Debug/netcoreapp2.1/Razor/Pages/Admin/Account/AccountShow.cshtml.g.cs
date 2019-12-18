@@ -254,7 +254,7 @@ WriteAttributeValue("", 1762, Html.DisplayFor(modelItem => item.ImgAvatar), 1762
             WriteLiteral("\r\n                    </td>\r\n                    <td>\r\n                        ");
             EndContext();
             BeginContext(2903, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ae038a1deb054e3594ba3e874b389c84", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec4abd7471f94e8590fdaba663f88aa2", async() => {
                 BeginContext(2961, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -299,7 +299,7 @@ WriteAttributeValue("", 1762, Html.DisplayFor(modelItem => item.ImgAvatar), 1762
             WriteLiteral("                                ");
             EndContext();
             BeginContext(3125, 70, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d7d7f74d17b4dc09104f43018898c48", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "53e973e11be84ad29a0642c4246ca45b", async() => {
                 BeginContext(3184, 7, true);
                 WriteLiteral("Disable");
                 EndContext();
@@ -344,7 +344,7 @@ WriteAttributeValue("", 1762, Html.DisplayFor(modelItem => item.ImgAvatar), 1762
             WriteLiteral("                                ");
             EndContext();
             BeginContext(3325, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c6ca7a1ddf5a4e5ca8b194f74d880c34", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef2fe2be7e1f4707a37dca7bf051e9dd", async() => {
                 BeginContext(3384, 6, true);
                 WriteLiteral("Active");
                 EndContext();
