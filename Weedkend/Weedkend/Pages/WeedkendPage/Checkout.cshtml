@@ -5,6 +5,7 @@
     Layout = "~/Pages/Shared/_Weedkend.cshtml";
     var cart = @Model.cart;
     var total = ViewData["Total"];
+    var err = Model.Err;
 }
 
 <main id="main" class="">
@@ -15,73 +16,73 @@
                     <div class="woocommerce">
                         <div class="woocommerce-notices-wrapper"></div><div class="woocommerce-form-login-toggle">
 
-                            <div class="woocommerce-info message-wrapper">
-                                <div class="message-container container medium-text-center">
-                                    Bạn đã có tài khoản? <a href="#" class="showlogin">Ấn vào đây để đăng nhập</a>
-                                </div>
-                            </div>
-                        </div>
-                        <form class="woocommerce-form woocommerce-form-login login" method="post" style="display:none;">
-
-
-                            <p>If you have shopped with us before, please enter your details below. If you are a new customer, please proceed to the Billing section.</p>
-
-                            <p class="form-row form-row-first">
-                                <label for="username">Tên đăng nhập hoặc email&nbsp;<span class="required">*</span></label>
-                                <input type="text" class="input-text" name="username" id="username" autocomplete="username">
-                            </p>
-                            <p class="form-row form-row-last">
-                                <label for="password">Mật khẩu&nbsp;<span class="required">*</span></label>
-                                <input class="input-text" type="password" name="password" id="password" autocomplete="current-password">
-                            </p>
-                            <div class="clear"></div>
-
-
-                            <p class="form-row">
-                                <label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
-                                    <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever"> <span>Ghi nhớ mật khẩu</span>
-                                </label>
-                                <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="6232fc208f"><input type="hidden" name="_wp_http_referer" value="/checkout-2/">		<input type="hidden" name="redirect" value="https://classic.vn/checkout-2/">
-                                <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Đăng nhập">Đăng nhập</button>
-                            </p>
-                            <p class="lost_password">
-                                <a href="https://classic.vn/my-account-2/lost-password/">Quên mật khẩu?</a>
-                            </p>
-
-                            <div class="clear"></div>
-
-
-                        </form>
-                        <div class="woocommerce-form-coupon-toggle">
-
-                            <div class="woocommerce-info message-wrapper">
-                                <div class="message-container container medium-text-center">
-                                    Bạn có mã ưu đãi? <a href="#" class="showcoupon">Ấn vào đây để nhập mã</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <form class="checkout_coupon woocommerce-form-coupon has-border is-dashed" method="post" style="display:none">
-
-                            <p>Nếu bạn có mã giảm giá, vui lòng điền vào phía bên dưới.</p>
-                            <div class="coupon">
-                                <div class="flex-row medium-flex-wrap">
-                                    <div class="flex-col flex-grow">
-                                        <input type="text" name="coupon_code" class="input-text" placeholder="Mã ưu đãi" id="coupon_code" value="">
+                            @*<div class="woocommerce-info message-wrapper">
+                                    <div class="message-container container medium-text-center">
+                                        Bạn đã có tài khoản? <a href="#" class="showlogin">Ấn vào đây để đăng nhập</a>
                                     </div>
-                                    <div class="flex-col">
-                                        <button type="submit" class="button expand" name="apply_coupon" value="Áp dụng">Áp dụng</button>
-                                    </div>
-                                </div><!-- row -->
-                            </div><!-- coupon -->
-                        </form>
-                        <div class="woocommerce-notices-wrapper">
-                            <div class="woocommerce-message message-wrapper" role="alert">
-                                <div class="message-container container success-color medium-text-center">
-                                    <i class="icon-checkmark"></i>			Customer matched zone "Hồ Chí Minh"
-                                </div>
-                            </div>
+                                </div>*@
                         </div>
+                        @*<form class="woocommerce-form woocommerce-form-login login" method="post" style="display:none;">
+
+
+                                <p>If you have shopped with us before, please enter your details below. If you are a new customer, please proceed to the Billing section.</p>
+
+                                <p class="form-row form-row-first">
+                                    <label for="username">Tên đăng nhập hoặc email&nbsp;<span class="required">*</span></label>
+                                    <input type="text" class="input-text" name="username" id="username" autocomplete="username">
+                                </p>
+                                <p class="form-row form-row-last">
+                                    <label for="password">Mật khẩu&nbsp;<span class="required">*</span></label>
+                                    <input class="input-text" type="password" name="password" id="password" autocomplete="current-password">
+                                </p>
+                                <div class="clear"></div>
+
+
+                                <p class="form-row">
+                                    <label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
+                                        <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever"> <span>Ghi nhớ mật khẩu</span>
+                                    </label>
+                                    <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="6232fc208f"><input type="hidden" name="_wp_http_referer" value="/checkout-2/">		<input type="hidden" name="redirect" value="https://classic.vn/checkout-2/">
+                                    <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Đăng nhập">Đăng nhập</button>
+                                </p>
+                                <p class="lost_password">
+                                    <a href="https://classic.vn/my-account-2/lost-password/">Quên mật khẩu?</a>
+                                </p>
+
+                                <div class="clear"></div>
+
+
+                            </form>*@
+                        @*<div class="woocommerce-form-coupon-toggle">
+
+                                <div class="woocommerce-info message-wrapper">
+                                    <div class="message-container container medium-text-center">
+                                        Bạn có mã ưu đãi? <a href="#" class="showcoupon">Ấn vào đây để nhập mã</a>
+                                    </div>
+                                </div>
+                            </div>*@
+
+                        @*<form class="checkout_coupon woocommerce-form-coupon has-border is-dashed" method="post" style="display:none">
+
+                                <p>Nếu bạn có mã giảm giá, vui lòng điền vào phía bên dưới.</p>
+                                <div class="coupon">
+                                    <div class="flex-row medium-flex-wrap">
+                                        <div class="flex-col flex-grow">
+                                            <input type="text" name="coupon_code" class="input-text" placeholder="Mã ưu đãi" id="coupon_code" value="">
+                                        </div>
+                                        <div class="flex-col">
+                                            <button type="submit" class="button expand" name="apply_coupon" value="Áp dụng">Áp dụng</button>
+                                        </div>
+                                    </div> row
+                                </div> coupon
+                            </form>*@
+                        @*<div class="woocommerce-notices-wrapper">
+                                <div class="woocommerce-message message-wrapper" role="alert">
+                                    <div class="message-container container success-color medium-text-center">
+                                        <i class="icon-checkmark"></i>			Customer matched zone "Hồ Chí Minh"
+                                    </div>
+                                </div>
+                            </div>*@
                         <form name="checkout" method="post" class="checkout woocommerce-checkout " asp-page-handler="checkOut" enctype="multipart/form-data" novalidate="novalidate">
 
                             <div class="row pt-0 ">
@@ -95,41 +96,57 @@
                                                 <h3>Thông tin thanh toán</h3>
 
 
-                                                <div class="get_address_byphone_wrap">
-                                                    <button class="get_address_byphone" type="button" data-mfp-src="#get_address_content">+ Lấy địa chỉ mua hàng trước</button>
-                                                    <div id="get_address_content" class="mfp-hide">
-                                                        <div class="get_address_content_input">
-                                                            <input name="sdt_get_address" id="sdt_get_address" placeholder="Nhập số điện thoại mua lần trước">
+                                                @*<div class="get_address_byphone_wrap">
+                                                        <button class="get_address_byphone" type="button" data-mfp-src="#get_address_content">+ Lấy địa chỉ mua hàng trước</button>
+                                                        <div id="get_address_content" class="mfp-hide">
+                                                            <div class="get_address_content_input">
+                                                                <input name="sdt_get_address" id="sdt_get_address" placeholder="Nhập số điện thoại mua lần trước">
+                                                            </div>
+                                                            <div class="get_address_content_mess"></div>
+                                                            <div class="get_address_content_button">
+                                                                <a href="#" class="btn_get_address">Tiếp tục</a>
+                                                                <a href="#" class="btn_cancel">Hủy</a>
+                                                            </div>
+                                                            <div class="get_address_content_footer"></div>
                                                         </div>
-                                                        <div class="get_address_content_mess"></div>
-                                                        <div class="get_address_content_button">
-                                                            <a href="#" class="btn_get_address">Tiếp tục</a>
-                                                            <a href="#" class="btn_cancel">Hủy</a>
-                                                        </div>
-                                                        <div class="get_address_content_footer"></div>
-                                                    </div>
-                                                </div>
+                                                    </div>*@
 
                                                 <div class="woocommerce-billing-fields__field-wrapper">
                                                     <p class="form-row form-row-wide validate-required" id="billing_last_name_field" data-priority="10">
                                                         <label for="billing_last_name" class="">
                                                             Họ và tên&nbsp;<abbr class="required" title="bắt buộc">*</abbr>
                                                         </label><span class="woocommerce-input-wrapper">
+
                                                             <input required type="text" class="input-text " name="FullName" placeholder="Họ tên của bạn" value="">
+                                                            @if (!string.IsNullOrEmpty(err.FullNameErr))
+                                                            {
+                                                                <span style="color:red">@err.FullNameErr</span>
+                                                            }
                                                         </span>
                                                     </p>
+
                                                     <p class="form-row form-row-first validate-required validate-phone" data-priority="20">
                                                         <label for="billing_phone" class="">
                                                             Số điện thoại&nbsp;<abbr class="required" title="bắt buộc">*</abbr>
                                                         </label>
                                                         <span class="woocommerce-input-wrapper">
+
                                                             <input required type="tel" class="input-text " name="phone" placeholder="Số điện thoại của bạn" value="" autocomplete="tel">
+                                                            @if (!string.IsNullOrEmpty(err.PhoneNoErr))
+                                                            {
+                                                                <span style="color:red">@err.PhoneNoErr</span>
+                                                            }
                                                         </span>
                                                     </p>
                                                     <p class="form-row form-row-last validate-required validate-email" id="billing_email_field" data-priority="21">
                                                         <label for="billing_email" class="">Địa chỉ email&nbsp;<abbr class="required" title="bắt buộc">*</abbr></label>
                                                         <span class="woocommerce-input-wrapper">
+
                                                             <input required type="email" class="input-text " name="email" id="billing_email" placeholder="Email của bạn" value="" autocomplete="email username">
+                                                            @if (!string.IsNullOrEmpty(err.EmailErr))
+                                                            {
+                                                                <span style="color:red">@err.EmailErr</span>
+                                                            }
                                                         </span>
                                                     </p>
                                                     @*<p class="form-row form-row-first address-field update_totals_on_change validate-required" id="billing_state_field" data-priority="30">
@@ -243,7 +260,12 @@
                                                             Địa chỉ&nbsp;<abbr class="required" title="bắt buộc">*</abbr>
                                                         </label>
                                                         <span class="woocommerce-input-wrapper">
+
                                                             <input type="text" class="input-text " name="address" placeholder="Ví dụ: Số 20, ngõ 90" value="" required>
+                                                            @if (!string.IsNullOrEmpty(err.AddressErr))
+                                                            {
+                                                                <span style="color:red">@err.AddressErr</span>
+                                                            }
                                                         </span>
                                                     </p>
                                                 </div>
@@ -548,7 +570,5 @@
             </div><!-- .large-12 -->
         </div><!-- .row -->
     </div>
-
-
 </main>
 
