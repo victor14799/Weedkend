@@ -1,0 +1,101 @@
+﻿@page "/Admin/showaccount"
+@model Weedkend.AccountShowModel
+
+@{
+    TempData["FullName"] = @Model.FullName;
+    TempData["Image"] = @Model.Avatar;
+    TempData["Title"] = "Admin";
+    ViewData["Title"] = "Account List";
+    Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Account List</h2>
+
+<div style="overflow-x:auto;">
+    <table class="table" id="showaccount">
+
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Account[0].ImgAvatar)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Account[0].UserName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Account[0].Password)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Account[0].FullName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Account[0].PhoneNo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Account[0].Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Account[0].Address)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Account[0].Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Account[0].RoleNavigation)
+                </th>
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Account)
+            {
+                <tr>
+                    <td>
+                        <img src="@Html.DisplayFor(modelItem => item.ImgAvatar)" width=20 height=20 />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Password)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FullName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PhoneNo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RoleNavigation.RoleName)
+                    </td>
+                    <td>
+                        <a asp-page="./AccountEdit" asp-route-id="@item.UserName">Edit</a>
+                        @{
+                            if (item.Status.Equals("Active"))
+                            {
+                                <a asp-page-handler="delete" asp-route-id="@item.UserName">Disable</a>
+                            }
+                            else
+                            {
+                                <a asp-page-handler="active" asp-route-id="@item.UserName">Active</a>
+
+                            }
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

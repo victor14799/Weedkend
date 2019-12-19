@@ -1,0 +1,175 @@
+﻿@page "/brands"
+@model Weedkend.Pages.WeedkendPage.BrandsModel
+@{
+    ViewData["Title"] = "Brands";
+    Layout = "~/Pages/Shared/_Weedkend.cshtml";
+}
+
+
+<div class="shop-page-title category-page-title page-title ">
+
+    <div class="page-title-inner flex-row  medium-flex-wrap container">
+        <div class="flex-col flex-grow medium-text-center">
+            <div class="is-large">
+                <nav class="woocommerce-breadcrumb breadcrumbs">
+                    <a href="/">Trang chủ</a>
+                    <span class="divider">/</span>
+                    <a href="/products">Shop</a>
+                    <span class="divider">/</span>
+                    Thương Hiệu
+                </nav>
+            </div>
+            <div class="category-filtering category-filter-row show-for-medium">
+                <a href="#" data-open="#shop-sidebar" data-visible-after="true" data-pos="left" class="filter-button uppercase plain">
+                    <i class="icon-menu"></i>
+                    <strong>Lọc</strong>
+                </a>
+                <div class="inline-block">
+                </div>
+            </div>
+        </div><!-- .flex-left -->
+
+
+    </div><!-- flex-row -->
+</div><!-- .page-title -->
+
+<div class="row category-page-row">
+
+    <div class="col large-3 hide-for-medium ">
+        <div id="shop-sidebar" class="sidebar-inner col-inner">
+            <aside id="woocommerce_product_categories-3" class="widget woocommerce widget_product_categories">
+                <span class="widget-title shop-sidebar">DANH MỤC ThƯƠNG HIỆU</span><div class="is-divider small"></div>
+                <ul class="product-categories">
+                    @foreach (var item in Model.Brands)
+                    {
+                        var ClassId = "cat-item " + item.BrandId + " cat-parent has-child";
+                        <li class=@ClassId aria-expanded="false">
+                            <a asp-page="Brand" asp-route-id=@item.BrandId>@item.BrandName</a>
+                        </li>
+                    }
+                    @*<li class="cat-item cat-item-154 cat-parent has-child" aria-expanded="false">
+                            <a href="https://classic.vn/cua-hang/cham-soc-rau/">Chăm Sóc Râu</a><button class="toggle"><i class="icon-angle-down"></i></button><ul class="children">
+                                <li class="cat-item cat-item-194"><a href="https://classic.vn/cua-hang/cham-soc-rau/truoc-khi-cao/">Trước Khi Cạo</a></li>
+                                <li class="cat-item cat-item-195"><a href="https://classic.vn/cua-hang/cham-soc-rau/sau-khi-cao/">Sau Khi Cạo</a></li>
+                                <li class="cat-item cat-item-196"><a href="https://classic.vn/cua-hang/cham-soc-rau/kem-cao-rau/">Kem Cạo Râu</a></li>
+                                <li class="cat-item cat-item-197"><a href="https://classic.vn/cua-hang/cham-soc-rau/dung-cu-cao-rau/">Dụng Cụ Cạo Râu</a></li>
+                                <li class="cat-item cat-item-200"><a href="https://classic.vn/cua-hang/cham-soc-rau/duong-rau-moc-rau/">Dưỡng Râu | Mọc Râu</a></li>
+                            </ul>
+                        </li>
+                        <li class="cat-item cat-item-231"><a href="https://classic.vn/cua-hang/gift-sets/">Gift Sets</a></li>
+                        <li class="cat-item cat-item-235 cat-parent has-child" aria-expanded="false">
+                            <a href="https://classic.vn/cua-hang/the-thao/">Thể Thao</a><button class="toggle"><i class="icon-angle-down"></i></button><ul class="children">
+                                <li class="cat-item cat-item-236"><a href="https://classic.vn/cua-hang/the-thao/gels-tan-mo/">Gels Tan Mỡ</a></li>
+                            </ul>
+                        </li>*@
+                    @* tu day *@
+                    @*<li class="cat-item cat-item-130 cat-parent has-child" aria-expanded="true">
+                            <a href="#">Thương Hiệu</a>
+                            <button class="toggle"><i class="icon-angle-down"></i>
+                                </button>
+                            <ul class="children">
+                                <li class="cat-item cat-item-149"><a href="https://classic.vn/cua-hang/thuong-hieu/morris-motley/">Morris Motley</a></li>
+                                <li class="cat-item cat-item-153"><a href="https://classic.vn/cua-hang/thuong-hieu/garnier-men/">Garnier Men</a></li>
+                                <li class="cat-item cat-item-160"><a href="https://classic.vn/cua-hang/thuong-hieu/billy-jealousy/">Billy Jealousy</a></li>
+                                <li class="cat-item cat-item-161"><a href="https://classic.vn/cua-hang/thuong-hieu/bona-fide/">Bona Fide</a></li>
+                                <li class="cat-item cat-item-162"><a href="https://classic.vn/cua-hang/thuong-hieu/old-spice/">Old Spice</a></li>
+                                <li class="cat-item cat-item-165"><a href="https://classic.vn/cua-hang/thuong-hieu/ubersuave/">Ubersuave</a></li>
+                                <li class="cat-item cat-item-172"><a href="https://classic.vn/cua-hang/thuong-hieu/bulldog/">Bulldog Skincare</a></li>
+                                <li class="cat-item cat-item-174"><a href="https://classic.vn/cua-hang/thuong-hieu/reuzel/">Reuzel</a></li>
+                                <li class="cat-item cat-item-176"><a href="https://classic.vn/cua-hang/thuong-hieu/dior/">Dior</a></li>
+                                <li class="cat-item cat-item-177"><a href="https://classic.vn/cua-hang/thuong-hieu/chanel/">Chanel</a></li>
+                                <li class="cat-item cat-item-181"><a href="https://classic.vn/cua-hang/thuong-hieu/gucci/">GUCCI</a></li>
+                                <li class="cat-item cat-item-182"><a href="https://classic.vn/cua-hang/thuong-hieu/bvlgari/">Bvlgari</a></li>
+                                <li class="cat-item cat-item-183"><a href="https://classic.vn/cua-hang/thuong-hieu/versace/">VERSACE</a></li>
+                                <li class="cat-item cat-item-187"><a href="https://classic.vn/cua-hang/thuong-hieu/just-for-men/">Just For Men</a></li>
+                                <li class="cat-item cat-item-190"><a href="https://classic.vn/cua-hang/thuong-hieu/lab-series/">Lab Series</a></li>
+                                <li class="cat-item cat-item-199"><a href="https://classic.vn/cua-hang/thuong-hieu/proraso/">Proraso</a></li>
+                                <li class="cat-item cat-item-211"><a href="https://classic.vn/cua-hang/thuong-hieu/tigi-bed-head/">Tigi Bed Head</a></li>
+                                <li class="cat-item cat-item-218"><a href="https://classic.vn/cua-hang/thuong-hieu/jack-black/">Jack Black</a></li>
+                                <li class="cat-item cat-item-219"><a href="https://classic.vn/cua-hang/thuong-hieu/kai/">KAI</a></li>
+                                <li class="cat-item cat-item-222"><a href="https://classic.vn/cua-hang/thuong-hieu/moroccanoil/">Moroccanoil</a></li>
+                                <li class="cat-item cat-item-228"><a href="https://classic.vn/cua-hang/thuong-hieu/gillette/">Gillette</a></li>
+                                <li class="cat-item cat-item-230"><a href="https://classic.vn/cua-hang/thuong-hieu/dapper-dan/">Dapper Dan</a></li>
+                                <li class="cat-item cat-item-232"><a href="https://classic.vn/cua-hang/thuong-hieu/heimon/">Heimon</a></li>
+                                <li class="cat-item cat-item-237"><a href="https://classic.vn/cua-hang/thuong-hieu/sweet-sweat/">Sweet Sweat</a></li>
+                                <li class="cat-item cat-item-240"><a href="https://classic.vn/cua-hang/thuong-hieu/philips/">Philips</a></li>
+                                <li class="cat-item cat-item-62"><a href="https://classic.vn/cua-hang/thuong-hieu/apestomen/">Apestomen</a></li>
+                                <li class="cat-item cat-item-33"><a href="https://classic.vn/cua-hang/thuong-hieu/by-vilain/">By Vilain</a></li>
+                                <li class="cat-item cat-item-32"><a href="https://classic.vn/cua-hang/thuong-hieu/hanz-de-fuko/">Hanz De Fuko</a></li>
+                                <li class="cat-item cat-item-63"><a href="https://classic.vn/cua-hang/thuong-hieu/kevin-murphy/">Kevin Murphy</a></li>
+                                <li class="cat-item cat-item-137"><a href="https://classic.vn/cua-hang/thuong-hieu/schwarzkopf/">Schwarzkopf</a></li>
+                                <li class="cat-item cat-item-35"><a href="https://classic.vn/cua-hang/thuong-hieu/blumaan/">Blumaan</a></li>
+                                <li class="cat-item cat-item-67"><a href="https://classic.vn/cua-hang/thuong-hieu/gatsby/">Gatsby</a></li>
+                                <li class="cat-item cat-item-136"><a href="https://classic.vn/cua-hang/thuong-hieu/2vee/">2VEE</a></li>
+                                <li class="cat-item cat-item-121"><a href="https://classic.vn/cua-hang/thuong-hieu/firsthand/">Firsthand</a></li>
+                                <li class="cat-item cat-item-64"><a href="https://classic.vn/cua-hang/thuong-hieu/grim-grease/">Grim Grease</a></li>
+                            </ul>
+                        </li>*@
+                    @* toi day *@
+                    @*<li class="cat-item cat-item-22 cat-parent has-child" aria-expanded="false">
+                            <a href="https://classic.vn/cua-hang/cham-soc-toc/">Chăm Sóc Tóc</a><button class="toggle"><i class="icon-angle-down"></i></button><ul class="children">
+                                <li class="cat-item cat-item-188"><a href="https://classic.vn/cua-hang/cham-soc-toc/nhuom-toc/">Nhuộm Tóc</a></li>
+                                <li class="cat-item cat-item-24"><a href="https://classic.vn/cua-hang/cham-soc-toc/sap-vuot-toc/">Sáp Vuốt Tóc</a></li>
+                                <li class="cat-item cat-item-25"><a href="https://classic.vn/cua-hang/cham-soc-toc/pomade/">Pomade</a></li>
+                                <li class="cat-item cat-item-65"><a href="https://classic.vn/cua-hang/cham-soc-toc/hair-spray/">Hair Spray</a></li>
+                                <li class="cat-item cat-item-61"><a href="https://classic.vn/cua-hang/cham-soc-toc/tinh-dau/">Tinh Dầu Dưỡng Tóc</a></li>
+                                <li class="cat-item cat-item-31"><a href="https://classic.vn/cua-hang/cham-soc-toc/dau-goi-dau-xa/">Dầu Gội &amp; Dầu Xả</a></li>
+                            </ul>
+                        </li>
+                        <li class="cat-item cat-item-68 cat-parent has-child" aria-expanded="false">
+                            <a href="https://classic.vn/cua-hang/cham-soc-da/">Chăm Sóc Da</a><button class="toggle"><i class="icon-angle-down"></i></button><ul class="children">
+                                <li class="cat-item cat-item-152"><a href="https://classic.vn/cua-hang/cham-soc-da/sua-tam-nam/">Sửa Tắm Nam</a></li>
+                                <li class="cat-item cat-item-191"><a href="https://classic.vn/cua-hang/cham-soc-da/may-rua-mat/">Máy Rửa Mặt</a></li>
+                                <li class="cat-item cat-item-192"><a href="https://classic.vn/cua-hang/cham-soc-da/toner-nuoc-hoa-hong/">Toner - Nước hoa hồng</a></li>
+                                <li class="cat-item cat-item-193"><a href="https://classic.vn/cua-hang/cham-soc-da/face-mask-mat-na/">Face mask - Mặt Nạ</a></li>
+                                <li class="cat-item cat-item-220"><a href="https://classic.vn/cua-hang/cham-soc-da/son-duong-moi/">Son Dưỡng Môi</a></li>
+                                <li class="cat-item cat-item-221"><a href="https://classic.vn/cua-hang/cham-soc-da/duong-da-vung-mat/">Dưỡng Da Vùng Mắt</a></li>
+                                <li class="cat-item cat-item-227"><a href="https://classic.vn/cua-hang/cham-soc-da/kem-chong-nang/">Kem Chống Nắng</a></li>
+                                <li class="cat-item cat-item-133 cat-parent has-child" aria-expanded="false">
+                                    <a href="https://classic.vn/cua-hang/cham-soc-da/kem-duong-da/">Kem Dưỡng Da</a>	<button class="toggle"><i class="icon-angle-down"></i></button><ul class="children">
+                                        <li class="cat-item cat-item-225"><a href="https://classic.vn/cua-hang/cham-soc-da/kem-duong-da/duong-da-toan-than/">Dưỡng Da Toàn Thân</a></li>
+                                        <li class="cat-item cat-item-226"><a href="https://classic.vn/cua-hang/cham-soc-da/kem-duong-da/duong-da-tay/">Dưỡng Da Tay</a></li>
+                                    </ul>
+                                </li>
+                                <li class="cat-item cat-item-132"><a href="https://classic.vn/cua-hang/cham-soc-da/kem-tri-mun/">Kem Trị Mụn</a></li>
+                                <li class="cat-item cat-item-131"><a href="https://classic.vn/cua-hang/cham-soc-da/sua-rua-mat/">Sửa Rửa Mặt</a></li>
+                                <li class="cat-item cat-item-134"><a href="https://classic.vn/cua-hang/cham-soc-da/tay-te-bao-chet/">Tẩy Tế Bào Chết</a></li>
+                            </ul>
+                        </li>
+                        <li class="cat-item cat-item-40 cat-parent has-child" aria-expanded="false">
+                            <a href="https://classic.vn/cua-hang/nuoc-hoa-nam/">Nước Hoa Nam</a><button class="toggle"><i class="icon-angle-down"></i></button><ul class="children">
+                                <li class="cat-item cat-item-151 cat-parent has-child" aria-expanded="false">
+                                    <a href="https://classic.vn/cua-hang/nuoc-hoa-nam/khu-mui-co-the/">Khử Mùi Cơ Thể</a>	<button class="toggle"><i class="icon-angle-down"></i></button><ul class="children">
+                                        <li class="cat-item cat-item-209"><a href="https://classic.vn/cua-hang/nuoc-hoa-nam/khu-mui-co-the/xit-khu-mui/">Xịt Toàn Thân</a></li>
+                                        <li class="cat-item cat-item-210"><a href="https://classic.vn/cua-hang/nuoc-hoa-nam/khu-mui-co-the/lan-khu-mui/">Lăn Khử Mùi</a></li>
+                                    </ul>
+                                </li>
+                                <li class="cat-item cat-item-175"><a href="https://classic.vn/cua-hang/nuoc-hoa-nam/nuoc-hoa/">Nước Hoa</a>
+                            </li>*@
+                    @*</ul>
+                        </li>*@
+                    @*<li class="cat-item cat-item-66"><a href="https://classic.vn/cua-hang/hot-combo/">Combo Khuyến Mãi</a></li>*@
+                </ul>
+            </aside>
+            @*<aside id="woocommerce_price_filter-12" class="widget woocommerce widget_price_filter">
+                    <span class="widget-title shop-sidebar">Lọc theo giá</span><div class="is-divider small"></div><form method="get" action="https://classic.vn/shop/">
+                        <div class="price_slider_wrapper">
+                            <div class="price_slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style=""><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;"></span></div>
+                            <div class="price_slider_amount" data-step="10">
+                                <input type="text" id="min_price" name="min_price" value="30000" data-min="30000" placeholder="Giá thấp nhất" style="display: none;">
+                                <input type="text" id="max_price" name="max_price" value="2520000" data-max="2520000" placeholder="Giá cao nhất" style="display: none;">
+                                <button type="submit" class="button">Lọc</button>
+                                <div class="price_label" style="">
+                                    Giá <span class="from">30,000&nbsp;VNĐ</span> — <span class="to">2,520,000&nbsp;VNĐ</span>
+                                </div>
+
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </form>
+                </aside>*@
+        </div><!-- .sidebar-inner -->
+    </div><!-- #shop-sidebar -->
+
+</div>
+

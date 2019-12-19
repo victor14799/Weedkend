@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Weedkend.Models
 {
@@ -9,7 +10,7 @@ namespace Weedkend.Models
         {
             OrdersDetail = new HashSet<OrdersDetail>();
         }
-
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid OrderId { get; set; }
         public Guid? CustomerId { get; set; }
         public string UserName { get; set; }
@@ -18,5 +19,7 @@ namespace Weedkend.Models
         public Customer Customer { get; set; }
         public Account UserNameNavigation { get; set; }
         public ICollection<OrdersDetail> OrdersDetail { get; set; }
+
+       
     }
 }

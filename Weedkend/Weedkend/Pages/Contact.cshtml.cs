@@ -8,11 +8,12 @@ namespace Weedkend.Pages
 {
     public class ContactModel : PageModel
     {
-        public string Message { get; set; }
+
 
         public void OnGet()
         {
-            Message = "Your contact page.";
+            double TotalPrice = Models.SessionExtensions.Get<double>(HttpContext.Session, "total");
+            ViewData["Total"] = TotalPrice.ToString("#,###");
         }
     }
 }

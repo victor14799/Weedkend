@@ -59,4 +59,5 @@ create table OrdersDetail(
 						primary key(OrderID,ProductID)
 						)
 
+
 alter table Account add ImgAvatar varchar(MAX) null

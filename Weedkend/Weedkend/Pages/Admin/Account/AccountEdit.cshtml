@@ -1,0 +1,67 @@
+﻿@page
+@model Weedkend.AccountEditModel
+
+@{
+    TempData["FullName"] = @Model.FullName;
+    TempData["Image"] = @Model.Avatar;
+    ViewData["Title"] = "Edit Account";
+    Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Edit Account</h2>
+
+<h4>Account @ViewData["username"]</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" asp-page-handler="edit">
+            <span class="text-danger">@ViewData["error"]</span>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Account.UserName" />
+            <input type="hidden" asp-for="Account.Status" />
+            <span asp-validation-for="Account.Password" class="text-danger"></span>
+            <div class="form-group">
+                <label asp-for="Account.Password" class="control-label"></label>
+                <input asp-for="Account.Password" class="form-control" maxlength="50" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.FullName" class="control-label"></label>
+                <input asp-for="Account.FullName" class="form-control" maxlength="50" />
+                <span asp-validation-for="Account.FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.Role" class="control-label"></label>
+                <select asp-for="Account.Role" class="form-control" asp-items="ViewBag.Role" disabled></select>
+                <span asp-validation-for="Account.Role" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.PhoneNo" class="control-label"></label>
+                <input asp-for="Account.PhoneNo" class="form-control" type="number" min="0" maxlength="10" />
+                <span asp-validation-for="Account.PhoneNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.Email" class="control-label"></label>
+                <input asp-for="Account.Email" class="form-control" />
+                <span asp-validation-for="Account.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.Address" class="control-label"></label>
+                <input asp-for="Account.Address" class="form-control" />
+                <span asp-validation-for="Account.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account.ImgAvatar" class="control-label"></label>
+                <input asp-for="Account.ImgAvatar" type="file" class="form-control" />
+                <span asp-validation-for="Account.ImgAvatar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./AccountShow">Back to List Account</a>
+</div>
+

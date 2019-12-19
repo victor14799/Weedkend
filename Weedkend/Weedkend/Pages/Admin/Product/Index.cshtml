@@ -1,0 +1,75 @@
+﻿@page
+@model Weedkend.Pages.Admin.Product.IndexModel
+@{
+    TempData["FullName"] = @Model.FullName;
+    TempData["Image"] = @Model.Avatar;
+    TempData["Title"] = "Admin";
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>Product</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Products[0].ProName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Products[0].Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Products[0].ProBrand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Products[0].Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Products[0].ImgUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Products[0].Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Products)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProBrandNavigation.BrandName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryNavigation.CategoryName)
+            </td>
+            @{ 
+                var url = "/img/product/" + item.ImgUrl;
+                var subDescription = item.Description.Substring(0, 100) + "...";
+            }
+            <td>
+                <img src="@url" height="50" width="50"/>
+            </td>
+            <td>
+                @subDescription
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ProductId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ProductId">Details</a> |
+                @*<a asp-page="./Delete" asp-route-id="@item.ProductId">Delete</a>*@
+            </td>
+        </tr>
+         }
+    </tbody>
+</table>

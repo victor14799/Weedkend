@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Weedkend.Models
 {
@@ -9,7 +10,7 @@ namespace Weedkend.Models
         {
             Orders = new HashSet<Orders>();
         }
-
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid CustomerId { get; set; }
         public string FullName { get; set; }
         public string ShipAddress { get; set; }

@@ -1,0 +1,50 @@
+﻿@page "/viewOrder"
+@model Weedkend.ViewOrdersModel
+
+@{
+    ViewData["Title"] = "Orders";
+    Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
+    var Orders = Model.Orders;
+    int count = 1;
+}
+
+<h2>Orders List</h2>
+
+<table class="table">
+    <thead>
+
+        <tr>
+            <th>No.</th>
+            <th>Order Date</th>
+            <th>Customer</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Orders)
+        {
+            <tr>
+                <td>
+                    <p>@(count++)</p>
+                </td>
+                <td>
+                    <p>@item.Datetime.ToString("D")</p>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customer.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customer.ShipAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customer.PhoneNo)
+                </td>
+                <td>
+                    <a asp-page="viewOrderDetail" asp-route-id="@item.OrderId">Detail</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

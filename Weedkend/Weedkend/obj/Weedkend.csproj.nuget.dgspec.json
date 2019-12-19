@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CN5\\C#\\Prj\\Weedkend\\Weedkend\\Weedkend.csproj": {}
+    "C:\\Users\\PC\\Desktop\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj": {}
   },
   "projects": {
-    "E:\\CN5\\C#\\Prj\\Weedkend\\Weedkend\\Weedkend.csproj": {
+    "C:\\Users\\PC\\Desktop\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CN5\\C#\\Prj\\Weedkend\\Weedkend\\Weedkend.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj",
         "projectName": "Weedkend",
-        "projectPath": "E:\\CN5\\C#\\Prj\\Weedkend\\Weedkend\\Weedkend.csproj",
+        "projectPath": "C:\\Users\\PC\\Desktop\\Weedkend\\Weedkend\\Weedkend\\Weedkend.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "E:\\CN5\\C#\\Prj\\Weedkend\\Weedkend\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\Weedkend\\Weedkend\\Weedkend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.10, )"
             }
           },
           "imports": [

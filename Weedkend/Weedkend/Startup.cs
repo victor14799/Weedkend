@@ -23,6 +23,7 @@ namespace Weedkend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSession();
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -31,7 +32,11 @@ namespace Weedkend
             });
 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
+                .AddRazorPagesOptions(options =>
+            {
+                options.Conventions.AddPageRoute("/WeedkendPage/Home", "");
+            }); ;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +51,7 @@ namespace Weedkend
                 app.UseExceptionHandler("/Error");
             }
 
+            app.UseSession();
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
